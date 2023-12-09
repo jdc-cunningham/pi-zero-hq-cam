@@ -30,3 +30,25 @@ I have 3D models of each part at this point, doing some alignment/initial body l
 
 It is useful to leave the Pi Zero usb/hdmi ports accessbile in case SSH isn't possible, can still get into it and modify code
 
+2:02 AM
+
+I think I'm going to have to build some of the hardware first (solder) to get a better idea of size/where things will be.
+
+I think it's going to be a 2-board design
+
+I will have to:
+
+- solder male headers onto pi zero
+- update pi zero w model to include male headers
+- solder female header to skinny proto pcb board
+- wire out the buttons/power distribution
+
+Man... I don't really feel like soldering right now
+
+I do need an LD33V and some size resistor not sure what I used on the ML Hat Cam, it's a 10K Ohm
+
+2:24 AM
+
+hmm... yeah I think I'll wait to do the soldering/electronics until I have some sleep/fresh mind
+
+I can still do more rough designing of where things will go
