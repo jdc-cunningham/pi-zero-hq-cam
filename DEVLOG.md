@@ -21,3 +21,12 @@ I'm modeling the parts right now so I can arrange them in 3D space/get an idea o
 I am looking forward go going to the park when this is built and trying it out.
 
 I haven't been to the park in idk 4 months looks like.
+
+1:32 AM
+
+Oh man, Metallica Slither, reconnecting with my roots.
+
+I have 3D models of each part at this point, doing some alignment/initial body layout
+
+It is useful to leave the Pi Zero usb/hdmi ports accessbile in case SSH isn't possible, can still get into it and modify code
+
