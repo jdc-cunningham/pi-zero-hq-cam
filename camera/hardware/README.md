@@ -9,3 +9,19 @@
 - $60.00 35mm lens
 - $32 12mm lens
 - $60 5mm lens
+
+### Part layout
+
+<img src="./part-layout.png"/>
+
+### Pin out
+
+
+
+### Power
+
+<img src="./power.png"/>
+
+### D-pad, back and shutter buttons
+
+<img src="./buttons.png"/>
