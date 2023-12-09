@@ -1,17 +1,3 @@
-12/08/2023
-
-10:25 PM
-
-I wish I could say I was super excited/actively pursuing this. Right now the main thing on my mind is avoiding being homeless ha since I am unemployed/waiting to get my background check to work at amazon warehouse. This is all my own doing, I had a great job/quit, got another job slightly worse and that also didn't work out.
-
-Anyway this is a project that I've had on my mind for a while/had the parts for but didn't get around to making.
-
-I haven't worked on a hardware project since about 6 months ago. My most recent in-office job plus driving took about 11 hours of my day away every M-F.
-
-I'm gonna get this done because it's a big project (lots of things to do) but I can still get it done in a few days. I'll just get lost it in for now.
-
-I will also note yesterday I tried to reset my sleep pattern and I didn't finish it eg. slept at 9AM and woke up 6PM... so I'm kind of out of it.
-
 12/09/2023
 
 12:47 AM
@@ -66,3 +52,85 @@ the main concern I had is if this idea of mine where I would have a semi-real-ti
 I can start designing the software though, even without the wiring
 
 The d-pad will have to get screwed into the back case, since it gets pushed, OLED will be too just so it's under the case/flush
+
+4:29 PM
+
+Oh man... I just had an idea that will make this project even harder... add an IMU to it, for the horizon
+
+The thing about this project is the OLED is the flaw... it is not bright enough in the sun/outside. So that makes the project kind of worthless but... it's a cool challenge to make/build a system (the hardware/menu).
+
+I will solder the male headers first and make a basic power board with an LD33V to power the OLED because I need to get SPI to work... the waveshare library is too slow specifically the repaint. On Amazon I have seen someone playing a video/fast frame rate, that's what I need for this project.
+
+4:54 PM
+
+ugh man I'm feeling lazy... soldering is so nasty with my setup, this flux gets on my hands
+
+I'm looking at this library, it's different than what I used for the ml hat cam
+
+Damn... I did buy 2 OLEDs at some point... I gutted the ml hat cam for its OLED nooooo
+
+ahh well... that project was gonna evolve anyway
+
+the problem is I'm so disorganized, I have parts scattered all over the floor, have to look at my Amazon order history to figure out what I own.
+
+5:15 PM
+
+oh man my neck, I just soldered a 40 pin header to the RPi
+
+inhaled more of that cancer smoke #living
+
+okay, going to test that OLED library now
+
+5:23 PM
+
+Pi local IP 160
+
+the IMU thing like using it isn't a problem, my concern is overlaying an image... which I can do that with OpenCV... but speed... is the issue.
+
+what I'm going to test is the refresh rate with this library
+
+I'm not sure how I'll have a camera display and seperate "take photo" if the camera is in use... will be interesting.
+
+5:28 PM
+
+slowed down by updating rpi zero, have to put git on it too and write code between deskop/pi to test hardware
+
+5:34 PM
+
+oh man this is taking a while, I just ran `sudo apt upgrade`
+
+43% lol
+
+I'll do most of the hardware soldering today... I was thinking I should use the bottom pins under the USB for power but it is also more convenient to power the Pi via its 5V GPIO pin... so there is just the female/male header connection that wires everything together.
+
+There is a primary proto board and daughter board (shutter) but yeah.
+
+the IMU will be using i2c so no pin worry, then just find 7 GPIO pins for the buttons
+
+5:41 PM
+
+99%
+
+5:46 PM
+
+ugh... I should not have looked/been reminded of my future that factory misery oh well I did it to myself
+
+5:51 PM
+
+alright pushing up then working through pi zero ssh for a bit
+
+---
+
+12/08/2023
+
+10:25 PM
+
+I wish I could say I was super excited/actively pursuing this. Right now the main thing on my mind is avoiding being homeless ha since I am unemployed/waiting to get my background check to work at amazon warehouse. This is all my own doing, I had a great job/quit, got another job slightly worse and that also didn't work out.
+
+Anyway this is a project that I've had on my mind for a while/had the parts for but didn't get around to making.
+
+I haven't worked on a hardware project since about 6 months ago. My most recent in-office job plus driving took about 11 hours of my day away every M-F.
+
+I'm gonna get this done because it's a big project (lots of things to do) but I can still get it done in a few days. I'll just get lost it in for now.
+
+I will also note yesterday I tried to reset my sleep pattern and I didn't finish it eg. slept at 9AM and woke up 6PM... so I'm kind of out of it.
