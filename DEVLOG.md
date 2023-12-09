@@ -52,3 +52,17 @@ I do need an LD33V and some size resistor not sure what I used on the ML Hat Cam
 hmm... yeah I think I'll wait to do the soldering/electronics until I have some sleep/fresh mind
 
 I can still do more rough designing of where things will go
+
+the camera board will screw into the front case
+
+pi zero w will be floating, other than being aligned by the ports/sd card slots, it's held in place by the GPIO connection
+
+2:29 AM
+
+I am still awake, I just don't want to attempt soldering right now, so I'll work on the software part
+
+the main concern I had is if this idea of mine where I would have a semi-real-time image preview/zoom crop and display on the slow refresh OLED, to see if it was in focus
+
+I can start designing the software though, even without the wiring
+
+The d-pad will have to get screwed into the back case, since it gets pushed, OLED will be too just so it's under the case/flush
