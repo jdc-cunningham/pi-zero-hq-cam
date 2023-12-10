@@ -10,6 +10,8 @@
 - $32 12mm lens
 - $60 5mm lens
 
+M1.7*6 screws
+
 ### Part layout
 
 <img src="./part-layout.png"/>

@@ -193,6 +193,14 @@ man. I'm losing the drive, but gotta keep going
 
 did the wiring diagram, it's not 100% but shows where things should go
 
+9:43 PM
+
+I'm kind of lost right now, there's so much to do still but it's not hard
+
+I need the body... but I also want to solder everything and program...
+
+
+
 ---
 
 12/08/2023
