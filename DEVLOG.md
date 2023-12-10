@@ -10,7 +10,15 @@ Then update the design with regard to the hardware change and final dimensions
 
 The wiring is nasty unfortunately since the wires I'm using are thick and not grouped together like those ribbon cables that are joined
 
+Okay I'll work on soldering the buttons to the board, it's not a huge deal but would be nice to verify those are functioning/bind them in a python loop
 
+2:24 AM
+
+oof... I just had a thought, if I'm not using a video stream/buffer directly to OLED then this thing will be even worse/slower than these 3 sample images because the images have to be generated before displaying so it'll be even slower, damn.
+
+
+
+---
 
 12/09/2023
 
