@@ -36,7 +36,11 @@ I'm aligning stuff/doing the screw holes now
 
 ugh it's ugly af... too round (corners)
 
+5:07 PM been working on this since 4PM I'd say
 
+5:48 PM
+
+making progress just designing, getting close to printing again, unfortunately it's night time so I can't really print much
 
 ---
 
