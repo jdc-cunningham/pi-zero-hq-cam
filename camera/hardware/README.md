@@ -21,10 +21,6 @@ M1.7*6 screws
 
 <img src="./wiring.png"/>
 
-### Power
-
-<img src="./power.png"/>
-
 ### D-pad, back and shutter buttons
 
 <img src="./buttons.png"/>

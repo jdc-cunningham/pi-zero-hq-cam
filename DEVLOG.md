@@ -34,6 +34,10 @@ Dang... I'm spent... I've got the base dimensions down just based on the wiring/
 
 I'm aligning stuff/doing the screw holes now
 
+ugh it's ugly af... too round (corners)
+
+
+
 ---
 
 12/09/2023
