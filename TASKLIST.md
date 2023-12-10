@@ -1,4 +1,4 @@
-- [ ] solder male header pins to pi zero w
+- [x] solder male header pins to pi zero w
 - [ ] solder female to proto pcb
 - [ ] solder 6 buttons for d-pad, back button on another pcb
 - [ ] solder button for shutter

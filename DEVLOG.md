@@ -157,6 +157,32 @@ I will try shifting an image around and see what that might look like
 
 oh man... my Sony A7 2 took a 6000x4000 image lol... scaling that down to 500x500 and then cropping 128x128 against it
 
+7:00 PM
+
+I think it is possible to make the refresh rate even faster but for now I need to build this thing
+
+doing more soldering
+
+7:18 PM
+
+omg... I just thought of something stupid, it's like "why does it have an IMU in it? slow oled, slow img overlay..."
+
+It can be a pedometer! omg... doesn't make sense, carry it in your hand, but that could be neat
+
+thinking magnetometer but nah... not worth it, just use the 6 axis
+
+7:22 PM
+
+I'm getting dimensions now of how big the case will be, where stuff is, this way I can size the boards/start soldering those/doing the wiring
+
+7:39 PM
+
+Damn... this thing is not ergonomic at all, I'm trying to avoid sharp edges at least
+
+8:01 PM
+
+food break
+
 
 
 ---
