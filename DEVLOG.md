@@ -199,6 +199,8 @@ I'm kind of lost right now, there's so much to do still but it's not hard
 
 I need the body... but I also want to solder everything and program...
 
+ehh.... I think I'll put the JST plugs for the batteries on top of the camera in channels, then you just tape over them with black electrical tape to blend in... ugly but I don't want to make some hinge mechanism or deal with a balancing charger for two parallel cells
+
 
 
 ---
