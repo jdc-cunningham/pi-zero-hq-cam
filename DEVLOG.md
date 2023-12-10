@@ -119,6 +119,28 @@ ugh... I should not have looked/been reminded of my future that factory misery o
 
 alright pushing up then working through pi zero ssh for a bit
 
+6:05 PM
+
+ugh... there's a path problem
+
+6:15 PM
+
+god... why am I stuck on such a dumb thing "cAn'T fInD tHe FoLdEr"
+
+6:23 PM
+
+ugh... this is a weirdly named error message but I also can't read debug lines I guess
+
+when trying to open SPI via `spi.open(0,0)` it says the "no such file or directory" which is misleading
+
+https://forums.raspberrypi.com/viewtopic.php?t=154317
+
+it runs now but nothing displayed
+
+I have to verify the pins mapped in `OLED_Driver.py`
+
+6:37 PM it's working, had a pin in the wrong spot, after updating the mapping in the driver file
+
 ---
 
 12/08/2023
