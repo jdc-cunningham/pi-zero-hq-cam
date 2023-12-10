@@ -183,7 +183,15 @@ Damn... this thing is not ergonomic at all, I'm trying to avoid sharp edges at l
 
 food break
 
+I will have to make the two halves of the body nearly equal, bias with the front being shallow so I can get a screw driver in there to mount the shutter board... I'm thinking I'll just have connecting/sliding plates, orthogonal and then screws go into those to hold the thing together vs. deep screw holes or a deep body/back cover plate.
 
+8:14 PM back on
+
+man. I'm losing the drive, but gotta keep going
+
+9:36 PM
+
+did the wiring diagram, it's not 100% but shows where things should go
 
 ---
 

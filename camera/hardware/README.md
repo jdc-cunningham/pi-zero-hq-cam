@@ -14,9 +14,9 @@
 
 <img src="./part-layout.png"/>
 
-### Pin out
+### Pin out/wiring
 
-
+<img src="./wiring.png"/>
 
 ### Power
 
