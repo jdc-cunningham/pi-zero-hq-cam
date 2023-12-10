@@ -153,6 +153,12 @@ I see the nested loop iterating over each pixel and yeah... it's probably just h
 
 I will try shifting an image around and see what that might look like
 
+6:48 PM
+
+oh man... my Sony A7 2 took a 6000x4000 image lol... scaling that down to 500x500 and then cropping 128x128 against it
+
+
+
 ---
 
 12/08/2023
