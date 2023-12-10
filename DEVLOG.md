@@ -141,6 +141,18 @@ I have to verify the pins mapped in `OLED_Driver.py`
 
 6:37 PM it's working, had a pin in the wrong spot, after updating the mapping in the driver file
 
+Oh yeah the point of doing the OLED testing was more than just get it to work, wanted to see the refresh rate
+
+the refresh rate is decent, the problem is it repaints the line top to bottom visibly...
+
+it's probably wrong to use image display for a video stream
+
+ugh man... it's probably a hardware thing you know, it's not a high quality display made for HDMI so it's slow
+
+I see the nested loop iterating over each pixel and yeah... it's probably just how fast it can write data
+
+I will try shifting an image around and see what that might look like
+
 ---
 
 12/08/2023
