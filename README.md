@@ -18,4 +18,4 @@ See `/camera/hardware` folder for more info
 
 ### Disclaimer
 
-The 5V 1A micro usb charger's discharge cut off is very low around 2.5V so that is not relied upon for safety.
+The 5V 1A micro usb charger's discharge cut off is very low around 2.5V, keep that in mind.

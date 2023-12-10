@@ -16,7 +16,23 @@ Okay I'll work on soldering the buttons to the board, it's not a huge deal but w
 
 oof... I just had a thought, if I'm not using a video stream/buffer directly to OLED then this thing will be even worse/slower than these 3 sample images because the images have to be generated before displaying so it'll be even slower, damn.
 
+3:08 AM
 
+AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH I did not give the dpad much slack so it is far away from the OLED
+
+this means... I can fit an 18650 cell... means the design will have to change again...
+
+the only reason I don't want the 18650 cell is it needs a case... otherwise it is an ideal form factor
+
+No I won't do it
+
+ugh man... it will just be a block, I'm losing drive to make this thing fancy because I gotta go back to reality soon
+
+3:53 AM
+
+Dang... I'm spent... I've got the base dimensions down just based on the wiring/volume.
+
+I'm aligning stuff/doing the screw holes now
 
 ---
 
