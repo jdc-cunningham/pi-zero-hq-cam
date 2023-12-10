@@ -15,6 +15,7 @@
 - [x] test OLED display output
 - [ ] bind buttons to runtime
 - [ ] design menu
+- [ ] imu only menu, shows accel values and rotation for horizon (line)
 - [ ] build menu rendering state manager
 - [ ] create slow frame-by-frame camera loop for zoom
 
