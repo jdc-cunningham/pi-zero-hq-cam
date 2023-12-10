@@ -21,7 +21,7 @@ while True:
     print("CENTER")
   if GPIO.input(23) == GPIO.HIGH:
     print("RIGHT")
-  if GPIO.input(23) == GPIO.HIGH:
+  if GPIO.input(24) == GPIO.HIGH:
     print("DOWN")
   if GPIO.input(7) == GPIO.HIGH:
     print("BACK")
