@@ -5,17 +5,14 @@
 - [x] pick digital pins
 - [x] wire oled up (uses 3.3V power)
 
-- [ ] solder DC-DC boost convert to Pi/LD33V
-- [ ] solder OLED to proto board, align with RPi pins
-- [ ] solder LD33V to 10K Ohm resistor for buttons
+- [x] solder DC-DC boost convert to Pi/LD33V
+- [x] solder OLED to proto board, align with RPi pins
+- [x] solder LD33V to 10K Ohm resistor for buttons
 - [ ] solder buttons to proto board, align with RPi pins
-- [ ] solder Y-splitter for battery cells
-  - (2x) JST male plug (for charging)
-  - to 1S BMS for discharge, parallel connected, this goes to DC-DC boost converter 
 
 - [ ] design case
 
-- [ ] test OLED display output
+- [x] test OLED display output
 - [ ] bind buttons to runtime
 - [ ] design menu
 - [ ] build menu rendering state manager

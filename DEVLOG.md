@@ -1,3 +1,17 @@
+12/10/2023
+
+1:56 AM
+
+At this point I've gotten a lot of the soldering done, I accidentally mirrored the OLED pins on the RPi GPIO at least they were just digital pins/not live ones eg. 5V or ground.
+
+I still have to finish soldering the buttons and test them
+
+Then update the design with regard to the hardware change and final dimensions
+
+The wiring is nasty unfortunately since the wires I'm using are thick and not grouped together like those ribbon cables that are joined
+
+
+
 12/09/2023
 
 12:47 AM
@@ -201,7 +215,21 @@ I need the body... but I also want to solder everything and program...
 
 ehh.... I think I'll put the JST plugs for the batteries on top of the camera in channels, then you just tape over them with black electrical tape to blend in... ugly but I don't want to make some hinge mechanism or deal with a balancing charger for two parallel cells
 
+11:22 PM
 
+decided to change battery to 2S series, 800mAh it's smaller capacity but easier with regard to wiring/charging run time will be 3-4 hours (absoultely exhausted by 4).
+
+means stepping down too vs. step up, bigger component
+
+I have these 1100mAh packs but they seem puffy despite not being used...
+
+Ugh... idk what to do. I have these USB charging boards, that would be nicer but it's 1 cell... largest 1S pack I have is the 720mAh set... so that's a run time just over 3 hours, but that's continous... I would think it's rare to keep a camera on that long.
+
+turn it on to do your shots, turn it off to walk somewhere
+
+Ugh... this cutoff voltage is too low for a lipo, it cuts off at 2.5V
+
+oh man... alright just so it's more legit I'll use the charging board since that's prettier, USB in but it will still require a time-based battery check
 
 ---
 
