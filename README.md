@@ -2,9 +2,13 @@
 
 A pi zero camera body using the hq camera
 
-### Unique feature
+### Features
 
-I intend to do a slow frame-by-frame image crop/display on the OLED to be able to check image focus.
+- sqlite software battery indicator (time based no ADC)
+- 1.5" OLED display for camera pass through/focus assist via digital crop zoom
+- IMU for horizon leveling
+- bluetooth file transfer via mobile app
+- 7 button interface (d-pad, back, shutter)
 
 ### Estimated cost
 
