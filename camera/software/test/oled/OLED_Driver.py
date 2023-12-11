@@ -334,12 +334,18 @@ def Display_Image(Image):
         return
     
     Set_Coordinate(0,0)
+    print('before img load')
+    print(time.time())
     buffer1 = Image.load()
+    print('after img load')
+    print(time.time())
     for j in range(0, SSD1351_WIDTH):
         for i in range(0, SSD1351_HEIGHT):
             color_fill_byte[i*2] = ((buffer1[i,j][0] & 0xF8)|(buffer1[i,j][1] >> 5))
             color_fill_byte[i*2+1] = (((buffer1[i,j][1] << 3) & 0xE0)|(buffer1[i,j][2] >> 3))
         Write_Datas(color_fill_byte)
+    print('img written')
+    print(time.time())
 
 def Display_Buffer(Buffer):
     if(Buffer == None):

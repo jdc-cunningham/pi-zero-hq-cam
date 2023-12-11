@@ -158,6 +158,10 @@ Omg finally I got it... let's see how fast it can go
 
 ha... idea, IMU moves around the character on OLED moves with it
 
+3:54 AM
+
+Let me do a quick time check to see where the slowness is
+
 
 
 ---
