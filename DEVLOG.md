@@ -174,6 +174,26 @@ I'm still screwing around with framerate
 
 it's the same, visible update
 
+4:28 AM
+
+anyway the PIL/buffer part isn't slow, it's the writing data/SPI
+
+it takes about 60-70ms per frame
+
+which is around 15fps
+
+5:23 AM
+
+I was wrong above, each frame takes around 600ms+ so it's 1.5fps damn
+
+I want to believe it can be optimized... but I'm not sure if it can be done in C or what...
+
+I messed aroudn with the SPI speed, not any significant change
+
+Tried to figure out how to make an 8bit image, didn't get far on that
+
+
+
 ---
 
 12/10/2023
