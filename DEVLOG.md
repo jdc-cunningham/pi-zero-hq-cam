@@ -192,7 +192,9 @@ I messed aroudn with the SPI speed, not any significant change
 
 Tried to figure out how to make an 8bit image, didn't get far on that
 
+5:31 AM
 
+I'm going to have to move on from this for now, it's something that can be improved in the future
 
 ---
 
