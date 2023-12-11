@@ -202,6 +202,20 @@ Not bad progress though I mean I was able to make the passthrough despite it bei
 
 I'll continue later/start printing, gotta do a grocery run
 
+6:39 AM
+
+it's pitch black outside right now, waiting a little more before I go
+
+I was thinking. for the menu, I can do an image paint, then draw the square on its own around the active menu/unpaint the previous (need to track) state
+
+I should be able to fully build this thing today... a couple hours test prints then 13hrs for both parts
+
+I'm thinking of this arches look for the lens barrel wrappers hmm may look bad
+
+6:46 AM
+
+Ugh... I don't want to wait anymore... soon this will be the time that I work anyway
+
 ---
 
 12/10/2023
