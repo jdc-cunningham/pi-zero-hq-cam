@@ -196,6 +196,12 @@ Tried to figure out how to make an 8bit image, didn't get far on that
 
 I'm going to have to move on from this for now, it's something that can be improved in the future
 
+5:37 AM
+
+Not bad progress though I mean I was able to make the passthrough despite it being slow af
+
+I'll continue later/start printing, gotta do a grocery run
+
 ---
 
 12/10/2023
