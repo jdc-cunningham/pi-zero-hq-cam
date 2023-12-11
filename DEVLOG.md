@@ -42,6 +42,16 @@ ugh it's ugly af... too round (corners)
 
 making progress just designing, getting close to printing again, unfortunately it's night time so I can't really print much
 
+6:41 PM
+
+the charger turns blue when it's done
+
+I'm again running into the dumb problems sketchup has, I think it has a memory leak (leave it on long enough it gets slow as hell) the other issue is the surfaces... oh well, learn a real CAD program
+
+I will print parts of the body invididually to check clearance before printing the full thing
+
+
+
 ---
 
 12/09/2023
