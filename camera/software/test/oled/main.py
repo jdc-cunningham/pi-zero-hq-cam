@@ -1,5 +1,9 @@
 # -*- coding:UTF-8 -*-
 
+import io
+import time
+from picamera2 import Picamera2
+
 #--------------Driver Library-----------------#
 import RPi.GPIO as GPIO
 import OLED_Driver as OLED
@@ -169,14 +173,31 @@ try:
         # Test_Triangles()
         # OLED.Delay(2000)
 
-        while (True):
-            Display_Picture("picture1.jpg")
-            # OLED.Delay(2000)
-            Display_Picture("picture2.jpg")
-            # OLED.Delay(2000)
-            Display_Picture("picture3.jpg")
+        # while (True):
+        #     Display_Picture("picture1.jpg")
+        #     # OLED.Delay(2000)
+        #     Display_Picture("picture2.jpg")
+        #     # OLED.Delay(2000)
+        #     Display_Picture("picture3.jpg")
             # OLED.Delay(2000)
 
+        # try pi camera buffer
+        # this is rancid, just testing
+
+        picam2 = Picamera2()
+        capture_config = picam2.create_still_configuration(main={"size": (128, 128)})
+        picam2.start()
+
+        time.sleep(1)
+        data = io.BytesIO()
+        picam2.capture_file(data, format='jpeg')
+        print(data.getbuffer().nbytes)
+
+        time.sleep(1)
+        data = io.BytesIO()
+        picam2.switch_mode_and_capture_file(capture_config, data, format='jpeg')
+
+        OLED.Display_Buffer(data)
 
     if __name__ == '__main__':
         main()

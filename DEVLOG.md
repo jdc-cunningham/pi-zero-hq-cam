@@ -114,6 +114,14 @@ reeeeee I decided to rename the repo to a shorter more generic name
 
 getting tired of cd'ing into the directories in ssh
 
+2:47 AM
+
+oh damn this could work
+
+https://github.com/raspberrypi/picamera2/blob/main/examples/capture_to_buffer.py
+
+maybe
+
 
 
 ---
