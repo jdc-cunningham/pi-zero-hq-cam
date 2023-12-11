@@ -240,7 +240,9 @@ Full send baby GODDDDDD 8 hrs bro... it's 9 it won't be done till 5 damnnnnnn
 
 is that how time works?
 
+11:57 AM
 
+Damn... I'm so tired I can't even watch tv, I can't pay attention
 
 ---
 
