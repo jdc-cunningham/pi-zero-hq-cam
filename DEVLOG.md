@@ -170,7 +170,9 @@ I'm going to try solid color patterns
 
 I'm still screwing around with framerate
 
+4:24 PM
 
+it's the same, visible update
 
 ---
 

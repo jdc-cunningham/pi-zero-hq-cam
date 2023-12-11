@@ -177,6 +177,9 @@ try:
         Display_Picture("white-square.jpg")
         Display_Picture("blue-square.jpg")
 
+        OLED.Clear_Screen()
+        GPIO.cleanup()
+
         # while (True):
         #     Display_Picture("picture1.jpg")
         #     # OLED.Delay(2000)
