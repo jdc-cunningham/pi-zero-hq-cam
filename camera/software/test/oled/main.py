@@ -194,6 +194,9 @@ try:
             pil_img = picam2.capture_image()
             OLED.Display_Buffer(pil_img.load())
 
+        OLED.Clear_Screen()
+        GPIO.cleanup()
+
         # time.sleep(1)
         # data = io.BytesIO()
         # picam2.capture_file(data, format='jpeg')
@@ -215,8 +218,9 @@ try:
     if __name__ == '__main__':
         main()
 
-except Exception as e:
-    print(e)
+# except Exception as e:
+except:
+    # print(e)
     print("\r\nEnd")
     OLED.Clear_Screen()
     GPIO.cleanup()
