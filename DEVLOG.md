@@ -50,7 +50,23 @@ I'm again running into the dumb problems sketchup has, I think it has a memory l
 
 I will print parts of the body invididually to check clearance before printing the full thing
 
+8:25 PM
 
+ugh... I'm wondering if I should use a 9-axis IMU for true dead reckoning... maybe it's overkill. It's not too late.
+
+It's good enough... but.... I'll do it... they're the same form factor so it's just some soldering.
+
+issue now is I have to find a raspberry pi library to interface with this thing, it does not seem to be the same as an MPU9250
+
+I could just try it though...
+
+8:51 PM
+
+it still works wow... cool that'll work then.
+
+I have written dead reckoning code before not sure if I need it but it's in python/based on some matlab guide
+
+wow these things are not cheap $10 each
 
 ---
 

@@ -6,7 +6,7 @@ A pi zero camera body using the hq camera
 
 - sqlite software battery indicator (time based no ADC)
 - 1.5" OLED display for camera pass through/focus assist via digital crop zoom
-- IMU for horizon leveling
+- 10-axis IMU for horizon leveling
 - bluetooth file transfer via mobile app
 - 7 button interface (d-pad, back, shutter)
 
