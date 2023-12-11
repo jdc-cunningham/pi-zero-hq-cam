@@ -1,3 +1,25 @@
+12/11/2023
+
+12:03 AM
+
+I need to do a battery capacity usage check, before it becomes assembled
+
+I'll do this while writing some software
+
+I'm gonna take a quick mental break (watch tv) today will be a long long day ha... if I make it.
+
+My reward will be real food vs. pb&j
+
+12:12 AM
+
+I'm going to add a JST connector the battery so it's easy to swap it out if it dies, dies as in not rechargeable
+
+On at 12:18 AM, blue full charge
+
+Will run it for 1 hour
+
+It's just on though, camera is plugged in but not streaming
+
 12/10/2023
 
 1:56 AM
