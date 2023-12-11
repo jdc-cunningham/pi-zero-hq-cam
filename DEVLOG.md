@@ -38,6 +38,78 @@ as in it's like react where it's functional, you feed it states, renders... with
 
 I'm borrowing code from my ML Hat Cam project which was also a camera with a menu interface
 
+1:12 AM
+
+Ooh fun the menu can be a set of sprites then you move a square around the active one
+
+This is cool it's like a little OS UI (thinking of a watch)
+
+Oh man... you can add a scroller too...
+
+omg... a file system yo... I mean it enumerates the files but then generates tiles based on file count damn...
+
+yeah some menu system exists out there for oleds but it's fun to make your own/figure out how
+
+coming up on the time to check 1 hour of battery consumption, need to do some minor soldering
+
+I really wish the camera was assembled already but I can still do software work without being assembled
+
+1:25 AM
+
+Ugh... this test will not be accurate, I accidentally touched the pos/neg ends of the lipo together while desoldering from the charger reeeee
+
+1:32 AM
+
+oh man I'm excited... I just had an idea since I can put images on the menu/display I can be a weeb hahahaha
+
+actually not an original idea I was inspired by this Osaka OS project I saw on YouTube
+
+wow it only used 60 something mA for that hour it was on... I guess it makes sense it wasn't doing anything
+
+yeah says 65mA while idling dang
+
+1:52 AM
+
+lmao it is done, picked something from waifu labs
+
+I have to test some menu displays with the OLED, I've used it before but this library is different
+
+Have to see what primitives are there to work with
+
+2:06 AM
+
+I'm having trouble starting, so many things to do... I really wish the camera was in 1 piece
+
+the camera pass through thing is hard, the pieces are easy-ish
+
+actually I think the web stream may work since it produces a buffer and then you directly write it to the OLED display
+
+so you have that as a thread, always running then you can tap into it from the main process
+
+I do have to do some agressive scaling to show it on a 128 display
+
+4056x3040 oh yeah then to "take a picture" you don't discard the active image
+
+2:16 AM
+
+this battery discharge is distracting me, I'm waiting for it to do its annoying beep
+
+2:30 AM
+
+Alright fully present, 3.5 hrs before I gotta do shopping and then start 3D printing
+
+I gotta stay up 2 days in a row to flip my sleep pattern hopefully this time I commit, I should will have food
+
+2:34 AM
+
+doing some reading here
+
+https://raspberrypi.stackexchange.com/questions/58871/pi-camera-v2-fast-full-sensor-capture-mode-with-downsampling
+
+I want to first check what size image I can get
+
+
+
 ---
 
 12/10/2023
