@@ -2,6 +2,8 @@
 
 A pi zero camera body using the hq camera
 
+<img src="./design-see-through.JPG"/>
+
 ### Features
 
 - sqlite software battery indicator (time based no ADC)
