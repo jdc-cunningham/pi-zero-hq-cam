@@ -108,6 +108,12 @@ https://raspberrypi.stackexchange.com/questions/58871/pi-camera-v2-fast-full-sen
 
 I want to first check what size image I can get
 
+2:41 AM
+
+reeeeee I decided to rename the repo to a shorter more generic name
+
+getting tired of cd'ing into the directories in ssh
+
 
 
 ---
