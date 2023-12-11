@@ -185,24 +185,33 @@ try:
         # this is rancid, just testing
 
         picam2 = Picamera2()
-        capture_config = picam2.create_still_configuration(main={"size": (128, 128)})
+        capture_config = picam2.create_still_configuration(main={"size": (128, 128), "format": "RGB"})
         picam2.start()
 
-        time.sleep(1)
-        data = io.BytesIO()
-        picam2.capture_file(data, format='jpeg')
-        print(data.getbuffer().nbytes)
+        pil_img = picam2.capture_image()
 
-        time.sleep(1)
-        data = io.BytesIO()
-        picam2.switch_mode_and_capture_file(capture_config, data, format='jpeg')
+        # time.sleep(1)
+        # data = io.BytesIO()
+        # picam2.capture_file(data, format='jpeg')
+        # print(data.getbuffer().nbytes)
+        # print(data.getvalue())
 
-        OLED.Display_Buffer(data)
+        # time.sleep(1)
+        # data = io.BytesIO()
+        # picam2.switch_mode_and_capture_file(capture_config, data, format='jpeg')
+
+        # print(data.getbuffer())
+
+        OLED.Display_Buffer(pil_img.load())
+        time.sleep(5)
+        OLED.Clear_Screen()
+        GPIO.cleanup()
 
     if __name__ == '__main__':
         main()
 
-except:
+except Exception as e:
+    print(e)
     print("\r\nEnd")
     OLED.Clear_Screen()
     GPIO.cleanup()
