@@ -8,9 +8,9 @@
 - [x] solder DC-DC boost convert to Pi/LD33V
 - [x] solder OLED to proto board, align with RPi pins
 - [x] solder LD33V to 10K Ohm resistor for buttons
-- [ ] solder buttons to proto board, align with RPi pins
+- [x] solder buttons to proto board, align with RPi pins
 
-- [ ] design case
+- [x] design case
 
 - [x] test OLED display output
 - [ ] bind buttons to runtime
