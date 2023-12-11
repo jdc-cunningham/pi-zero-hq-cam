@@ -358,14 +358,3 @@ def Display_Buffer(Buffer):
             color_fill_byte[i*2] = ((buffer1[i,j][0] & 0xF8)|(buffer1[i,j][1] >> 5))
             color_fill_byte[i*2+1] = (((buffer1[i,j][1] << 3) & 0xE0)|(buffer1[i,j][2] >> 3))
         Write_Datas(color_fill_byte)
-            
-
-
-
-
-
-
-
-
-
-

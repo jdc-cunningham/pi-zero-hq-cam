@@ -173,7 +173,9 @@ try:
         # Test_Triangles()
         # OLED.Delay(2000)
 
-        Display_Picture("picture1.jpg")
+        Display_Picture("red-square.jpg")
+        Display_Picture("white-square.jpg")
+        Display_Picture("blue-square.jpg")
 
         # while (True):
         #     Display_Picture("picture1.jpg")

@@ -162,6 +162,14 @@ ha... idea, IMU moves around the character on OLED moves with it
 
 Let me do a quick time check to see where the slowness is
 
+it's the iteration that's slow
+
+4:21 AM
+
+I'm going to try solid color patterns
+
+I'm still screwing around with framerate
+
 
 
 ---
