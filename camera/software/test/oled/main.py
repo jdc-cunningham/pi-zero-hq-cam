@@ -189,10 +189,10 @@ try:
         picam2.configure(config)
         picam2.start()
 
-	while (True):
+        while (True):
 
-          pil_img = picam2.capture_image()
-          OLED.Display_Buffer(pil_img.load())
+            pil_img = picam2.capture_image()
+            OLED.Display_Buffer(pil_img.load())
 
         # time.sleep(1)
         # data = io.BytesIO()

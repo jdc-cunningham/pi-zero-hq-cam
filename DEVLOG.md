@@ -122,6 +122,42 @@ https://github.com/raspberrypi/picamera2/blob/main/examples/capture_to_buffer.py
 
 maybe
 
+3:08 AM
+
+dang it I'm close... I need to make the buffer into an iterable array
+
+3:15 AM
+
+omg... I wrote something to the camera nice
+
+3:21 AM
+
+I'm trying to figure out why my photo is a crop not scaled down
+
+3:22 AM
+
+I still have the issue of not using buffers directly, still juggling PIL
+
+3:29 AM
+
+I am wondering if it's inevitable to use a video stream, it has the high and lores (lores goes to oled)
+
+When you zoom that config has to change on the fly
+
+Or resize the image...
+
+crop info
+
+https://github.com/raspberrypi/picamera2/issues/498
+
+3:39 AM
+
+Omg finally I got it... let's see how fast it can go
+
+3:41 AM
+
+ha... idea, IMU moves around the character on OLED moves with it
+
 
 
 ---
