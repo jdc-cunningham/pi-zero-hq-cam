@@ -68,6 +68,12 @@ I have written dead reckoning code before not sure if I need it but it's in pyth
 
 wow these things are not cheap $10 each
 
+10:39 PM
+
+alright... I have the two halves, now need to design some way to join them together by a few screws
+
+I really wish I could print, will have to wait till tomorrow
+
 ---
 
 12/09/2023
