@@ -20,6 +20,26 @@ Will run it for 1 hour
 
 It's just on though, camera is plugged in but not streaming
 
+12:43 AM
+
+I bet there is a way to make a menu renderer in python
+
+as in it's like react where it's functional, you feed it states, renders... without the OLED
+
+- boots
+  - ask if charged (battery)
+  - show camera pass through, wait for buttons, maybe overlay telemetry/horizon,
+    sample imu in separate thread
+  - shutter (photo)
+  - button (show/navigate menu)
+  - CRON sqlite db counter for battery consumption
+
+12:58 AM
+
+I'm borrowing code from my ML Hat Cam project which was also a camera with a menu interface
+
+---
+
 12/10/2023
 
 1:56 AM
