@@ -216,6 +216,32 @@ I'm thinking of this arches look for the lens barrel wrappers hmm may look bad
 
 Ugh... I don't want to wait anymore... soon this will be the time that I work anyway
 
+7:52 AM
+
+let's goooo babyyyy man has provisions
+
+Also let's start printing
+
+8:08 AM
+
+So I'm gonna be homeless in like a month but right now I have food, I don't have a job, I don't have anywhere to be, I'm free!!!... for a bit lol. I'm psyched
+
+8:55 AM
+
+test prints are good, almost ready to do full prints
+
+will low-key design the menu interfaces while I binge eat/watch tv to stay up
+
+9:08 AM
+
+Camera test fit is good... do I full send... or test the gaps...
+
+Full send baby GODDDDDD 8 hrs bro... it's 9 it won't be done till 5 damnnnnnn
+
+is that how time works?
+
+
+
 ---
 
 12/10/2023
