@@ -12,7 +12,27 @@ these are more biased to a higher value
 
 I will turn the OLED on solid white I think that is the highest draw, this will be a good avg value for when the oled is just drawing stuff
 
+ssh active it's hovering around 200mah
 
+the software battery tracking I was thinking when it does some power intensive thing it will reduce the theoretical lifetime
+
+solid white spiked 400mA, 341 mA active
+
+black square is normal, off I guess makes sense
+
+so I think if it's a menu imag I can expect 275mA or 300mA as an average current draw
+
+4:37 AM
+
+two videos: hardware, software
+
+need to have the lens wrappers designed/printed first for all 3 lenses and shot at the park
+
+example photos taken by cam
+
+5:16 AM
+
+I forgot the hole for the switch dang
 
 ---
 
