@@ -88,6 +88,14 @@ I'll do it... the vertical line grip things... it'll look better, contrast the o
 
 dang... it's a 2.5 hour print for 1 piece
 
+8:53 AM
+
+I won't design the other ones now, I'll just use them as is no outer ring
+
+Alright I got into the zone/bust this code out
+
+I think the gap I cut out is not enough/needs to be more so it squeezes more.
+
 
 
 ---
