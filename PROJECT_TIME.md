@@ -6,4 +6,4 @@
 
 12/11/2023 23 hrs (mostly printing eg. 14-15 hrs)
 
-12/12/2023 8 hrs as of 12 PM
+12/12/2023 11 hrs as of 12 PM (assembly then printing, making videos)

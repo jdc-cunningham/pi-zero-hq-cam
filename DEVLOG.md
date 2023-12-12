@@ -120,6 +120,20 @@ I'm just going to keep it loose, it's easy to fix with some tape
 
 I'm unfortunately mentally spent, tired mostly, I'll get basic code written tomorrow where camera is usable in the wild, will skip battery part
 
+3:54 PM
+
+rings were printed... they are a bit loose, if you put tape in there to shim it, it makes them not sit straight
+
+the screwdriver hole needs to be larger too
+
+4:41 PM
+
+ugh... I tried increasing the gap on the focus ring but surface issues, oh well I'm past it
+
+I made the ring contact area have a higher tolerance
+
+I'm done today, I want to write the code but I'm spent
+
 ---
 
 12/11/2023
