@@ -34,6 +34,20 @@ example photos taken by cam
 
 I forgot the hole for the switch dang
 
+5:53 AM
+
+OMG it's assembled, 6.3oz weight no lens
+
+6:19 AM
+
+a little distracted, just charged up the battery
+
+planning the menu out/process logic
+
+I want to actually use it take pictures but I need those rotating rings
+
+
+
 ---
 
 12/11/2023
