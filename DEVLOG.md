@@ -86,7 +86,7 @@ I'll do it... the vertical line grip things... it'll look better, contrast the o
 
 8:36 AM
 
-dang... it's a 2 hour print for 1 piece
+dang... it's a 2.5 hour print for 1 piece
 
 
 
