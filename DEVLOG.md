@@ -62,6 +62,34 @@ I had some basic plan on what I'll be doing
 
 quick food break
 
+7:41 AM
+
+I'm gonna start designing/printing those barrell rings, I shouldn't (use fresh mind on code)
+
+But I'd like to print those while I'm writing code
+
+7:54 ehh... I'm just going to use glue
+
+I was thinking of screw holes but they might be deep, don't want to deal with cutting/testing
+
+hot glue will come off easily when wanted from metal
+
+8:00 AM
+
+ugh... I don't want to do it, to design the barrell parallel line grips
+
+damn it... I'll do the screw clamp
+
+8:03 AM
+
+I'll do it... the vertical line grip things... it'll look better, contrast the otherwise smooth body
+
+8:36 AM
+
+dang... it's a 2 hour print for 1 piece
+
+
+
 ---
 
 12/11/2023
