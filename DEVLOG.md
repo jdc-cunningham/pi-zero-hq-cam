@@ -1,3 +1,21 @@
+12/12/2023
+
+4:26 AM
+
+dang... up 32 hrs, only slept for 4 hrs, today will be rough but I'll follow the plan (reset sleep pattern) I think it was the salt that woke me up (ate ramen meal)
+
+on boot the camera jumps around 220mA is an average current draw
+
+then idling with no OLED on its around 170mA
+
+these are more biased to a higher value
+
+I will turn the OLED on solid white I think that is the highest draw, this will be a good avg value for when the oled is just drawing stuff
+
+
+
+---
+
 12/11/2023
 
 12:03 AM

@@ -173,12 +173,15 @@ try:
         # Test_Triangles()
         # OLED.Delay(2000)
 
-        # Display_Picture("red-square.jpg")
+        Display_Picture("white-square.jpg")
         # Display_Picture("white-square.jpg")
         # Display_Picture("blue-square.jpg")
 
-        # OLED.Clear_Screen()
-        # GPIO.cleanup()
+        time.sleep(5000)
+
+        OLED.Clear_Screen()
+        GPIO.cleanup()
+
 
         # while (True):
         #     Display_Picture("picture1.jpg")
@@ -188,19 +191,19 @@ try:
         #     Display_Picture("picture3.jpg")
             # OLED.Delay(2000)
 
+
         # try pi camera buffer
         # this is rancid, just testing
 
+        # picam2 = Picamera2()
+        # config = picam2.create_still_configuration(main={"size": (128, 128)})
+        # picam2.configure(config)
+        # picam2.start()
 
-        picam2 = Picamera2()
-        config = picam2.create_still_configuration(main={"size": (128, 128)})
-        picam2.configure(config)
-        picam2.start()
+        # while (True):
 
-        while (True):
-
-            pil_img = picam2.capture_image()
-            OLED.Display_Buffer(pil_img.load())
+        #     pil_img = picam2.capture_image()
+        #     OLED.Display_Buffer(pil_img.load())
 
 
     if __name__ == '__main__':
