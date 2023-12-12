@@ -5,5 +5,7 @@
 
 
 
-
+- [ ] animated boot image
+  - animate individual pixels eg. eyes blinking
 - [ ] boot runs system
+
