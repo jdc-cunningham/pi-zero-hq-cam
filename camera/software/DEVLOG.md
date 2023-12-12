@@ -20,7 +20,13 @@ I have done audio out with a pi zero but it requires a lot of parts, it wasn't w
 
 okay I need to hit goals... once it's late enough eg. 9 AM I'll design/print the lense barrel clamps
 
+9:13 AM
 
+I designed the barrel wrappers for the 35mm lens (main), not sure if I'll do the others today, each one is different and the printing is 2-4 hours per piece, 2 per lens
+
+
+
+---
 
 12/09/2023
 

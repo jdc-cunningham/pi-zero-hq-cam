@@ -96,6 +96,16 @@ Alright I got into the zone/bust this code out
 
 I think the gap I cut out is not enough/needs to be more so it squeezes more.
 
+Did have a thought, you could have a lens hood design
+
+9:22 AM
+
+Dang I feel tired, not sure how well I'll do with writing code today
+
+Today might be a wasted day (stay up late enough then sleep)
+
+Yeah... I think I'll work on the media stuf right now (YouTube videos/blog post)
+
 
 
 ---
