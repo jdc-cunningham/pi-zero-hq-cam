@@ -106,7 +106,15 @@ Today might be a wasted day (stay up late enough then sleep)
 
 Yeah... I think I'll work on the media stuf right now (YouTube videos/blog post)
 
+11:01 AM
 
+alright just printed... it's a little loose, I'll add back in the standard clearnace 0.01 that I take out.
+
+it's not unusable so I'll print the other part 4 hrs
+
+Dang... I think it'll look more legit if the end is closed
+
+I'm just going to keep it loose, it's easy to fix with some tape
 
 ---
 
