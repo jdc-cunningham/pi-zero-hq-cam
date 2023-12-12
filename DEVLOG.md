@@ -116,6 +116,10 @@ Dang... I think it'll look more legit if the end is closed
 
 I'm just going to keep it loose, it's easy to fix with some tape
 
+1:03 PM
+
+I'm unfortunately mentally spent, tired mostly, I'll get basic code written tomorrow where camera is usable in the wild, will skip battery part
+
 ---
 
 12/11/2023
