@@ -58,6 +58,10 @@ I didn't track when I turned the camera on, now it's time to write some code
 
 I had some basic plan on what I'll be doing
 
+7:08 AM
+
+quick food break
+
 ---
 
 12/11/2023

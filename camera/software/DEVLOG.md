@@ -1,3 +1,27 @@
+12/12/2023
+
+6:57 AM
+
+Okay it's assembled at this point, sitting on my desk powered on, nice
+
+I have an idea of how this thing will work
+
+the live camera pass through consumes a lot of current 550mA is an average
+
+so that will not be on all the time
+
+I think this thing will be like a Tomogachi/companion and a camera
+
+It has an IMU so it can sense motion
+
+there is no audio/light feedback though unfortunately except the OLED itself
+
+I have done audio out with a pi zero but it requires a lot of parts, it wasn't worth it to me for a shutter sound
+
+okay I need to hit goals... once it's late enough eg. 9 AM I'll design/print the lense barrel clamps
+
+
+
 12/09/2023
 
 3:38 AM
