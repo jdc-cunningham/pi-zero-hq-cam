@@ -270,7 +270,25 @@ doing some light thinking
 
 I've been up 28 hrs so far. 32 hrs baby, then I sleep, hopefully don't overshoot my wake up time
 
+9:05 PM
 
+ladies and gentlemen I had a thought... get a current draw measurement while it's doing the camera loop/paint
+
+dayum! it draws 546mA holy crap...
+
+damn I'm bad at math... this thing won't last 2 hours
+
+9:15 PM
+
+okay... what this means for now is... the passthrough won't run all the time
+
+and I will also get a larger 1S pack, there is plenty of room
+
+10:42 PM
+
+omg it fits so well... I'm tempted to assembled but I need to sleep
+
+tomorrow
 
 ---
 
