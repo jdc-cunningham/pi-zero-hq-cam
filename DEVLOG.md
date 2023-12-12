@@ -134,6 +134,8 @@ I made the ring contact area have a higher tolerance
 
 I'm done today, I want to write the code but I'm spent
 
+lens cap won't fit over barrel lens, it could but then you have to fish it out between the gap
+
 ---
 
 12/11/2023
