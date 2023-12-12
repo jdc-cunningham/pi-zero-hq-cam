@@ -46,7 +46,17 @@ planning the menu out/process logic
 
 I want to actually use it take pictures but I need those rotating rings
 
+6:23 AM
 
+oh right I gotta test that everything still works after being assembled
+
+I wish it had sound/led's or something, for indicators, I guess I'll just use the OLED, for the photo for example, I figured I'd flash the OLED white when it took a photo
+
+6:50 AM
+
+I didn't track when I turned the camera on, now it's time to write some code
+
+I had some basic plan on what I'll be doing
 
 ---
 
