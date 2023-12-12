@@ -25,3 +25,17 @@ M1.7*6 screws
 ### D-pad, back and shutter buttons
 
 <img src="./buttons.png"/>
+
+### Assembly order
+
+- camera board (remove lens, screw, goes in from inside)
+- imu (screw)
+- shutter (glue)
+- charger board (glue)
+- battery (double sided foam tape or some glue/free floating)
+- DC-DC free floating
+- OLED (screws)
+- push switch through (may have to bend ends temporarily, screw)
+- dpad (glue)
+
+join two halves together, 4 screws

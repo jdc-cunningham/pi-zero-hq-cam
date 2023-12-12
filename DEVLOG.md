@@ -250,6 +250,28 @@ first print is done
 
 also my fate is sealed at the warehouse, will be starting in 3 days RIP
 
+6:11 PM
+
+so spent... just waiting for the print, will assemble and program tomorrow, will get the lens rings done too, would be nice to take it out but I want the full effect... sadly Wednesday is cloudy
+
+First thing I'll do tomorrow after assembly is to program it, fresh brain
+
+6:17 PM
+
+I was screwing around with the lens and I was able to free/unlock the zoom on the 12mm, I'll try to do the same on 5mm, guess it was just stuck/turned too much in one way.
+
+6:18 PM
+
+heck yeah it's unfrozen, nice
+
+7:32 PM
+
+doing some light thinking
+
+I've been up 28 hrs so far. 32 hrs baby, then I sleep, hopefully don't overshoot my wake up time
+
+
+
 ---
 
 12/10/2023

@@ -4,6 +4,4 @@
 
 12/10/2023 12 hrs
 
-12/11/2023 5 hrs
-
-
+12/11/2023 23 hrs (mostly printing eg. 14-15 hrs)
