@@ -39,7 +39,7 @@ class Display:
   def draw_text(self, text):
     image = Image.new("RGB", (128, 128), "BLACK")
     draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype(self.font_path + "cambriab.ttf",24)
+    font = ImageFont.truetype(self.font_path + "cambriab.ttf", 12)
 
     draw.text((0, 96), text, fill = "WHITE", font = font)
 
