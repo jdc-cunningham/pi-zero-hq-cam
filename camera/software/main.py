@@ -26,10 +26,7 @@ class Main:
     self.buttons = Buttons(self.button_pressed)
     self.buttons_thread = Thread(target=self.buttons.start)
 
-def button_pressed(button):
-  print(button)
-
-# control = Buttons(button_pressed)
-# control.start()
+  def button_pressed(button):
+    print(button)
 
 Main()
