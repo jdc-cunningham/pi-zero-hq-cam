@@ -16,7 +16,9 @@ A problem for another time
 
 Alright I think I'm coming around with the barrel lens thing, it does make it more legit than the tiny lens
 
+10:25 AM
 
+quick break
 
 ---
 
