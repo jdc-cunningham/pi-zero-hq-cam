@@ -1,5 +1,5 @@
 # files
-.pyc
+*.pyc
 
 # folders
 captured-media/
