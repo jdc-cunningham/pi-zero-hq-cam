@@ -41,6 +41,7 @@ class Main:
     if (button == "SHUTTER"):
       if (not self.live_preview_active):
         self.camera.start_live_preview()
-        self.camera.take_photo()
+
+      self.camera.take_photo()
 
 Main()
