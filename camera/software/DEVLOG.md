@@ -36,7 +36,13 @@ I've had it for years, one time I bring it out break it
 
 hmm... stuck on callback not printing
 
-
+- [x] show splash screen
+- [x] bind buttons to main runtime
+- [ ] start camera
+- [ ] show camera pass through
+- [ ] take photo
+- [ ] show photo count
+- [ ] show basic menu
 
 12/12/2023
 
