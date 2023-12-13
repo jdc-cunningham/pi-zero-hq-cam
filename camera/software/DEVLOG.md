@@ -32,6 +32,10 @@ I gotta remember what happened with the ML Hat Cam before where it had a depende
 
 I've had it for years, one time I bring it out break it
 
+10:18 AM
+
+hmm... stuck on callback not printing
+
 
 
 12/12/2023
