@@ -38,6 +38,7 @@ class Main:
 
   def button_pressed(self, button):
     print(button)
+    print(self.live_preview_active)
 
     if (button == "SHUTTER"):
       if (not self.live_preview_active):

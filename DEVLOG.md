@@ -176,6 +176,10 @@ interesting when you take a photo the OLED refresh thing fails to work
 
 makes sense to stop/pause it while taking a photo
 
+2:50 PM
+
+soon as I try to take a photo the OLED update goes bad, still keeps going though
+
 
 
 ---
