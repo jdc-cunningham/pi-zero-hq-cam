@@ -43,7 +43,7 @@ class Main:
       if (not self.live_preview_active):
         self.live_preview_thread = Thread(target=self.camera.start_live_preview)
         self.live_preview_thread.start()
-
-      self.camera.take_photo()
+      else:
+        self.camera.take_photo()
 
 Main()
