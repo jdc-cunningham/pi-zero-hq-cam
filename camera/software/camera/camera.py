@@ -6,7 +6,6 @@ class Camera:
   def __init__(self, display, live_preview_active):
     self.display = display
     self.picam2 = Picamera2()
-    self.picam2.start()
     self.small_config = self.picam2.create_still_configuration(main={"size": (128, 128)})
     self.full_res_config = self.picam2.create_still_configuration()
     self.picam2.configure(self.small_config)
