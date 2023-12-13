@@ -22,6 +22,7 @@ from display.display import Display
 class Main:
   def __init__(self):
     self.on = True # what
+    self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
     self.display = Display(self.get_photo_count)
     self.display.show_boot_scene()
     self.live_preview_active = False
@@ -32,7 +33,6 @@ class Main:
     self.live_preview_thread = None
     self.live_preview_start = 0
     self.shutter_event_processing = False
-    self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
 
     # keep main running
     while (self.on):
