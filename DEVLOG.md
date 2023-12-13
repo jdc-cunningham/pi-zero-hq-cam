@@ -122,6 +122,60 @@ Alright I'll just move it... to 20 right next to the left button
 
 hmm... the code is not working well in a thread, not sure why
 
+1:41 PM
+
+no... please tell me my OLED did not die
+
+I'm hoping it's just low on battery
+
+Damn the charger melted the hot glue
+
+On the plus side the sun came out...
+
+It must be very low on power to get this hot
+
+1:58 PM
+
+Oh man that scared me... it's working
+
+The charging board is sus though, I wish it had a screw/mounting block, since it reheats the hot glue and detaches itself from the plastic... I added a double sided-foam tape but it's only one one side since the body splits in half
+
+I'll add theo ther half and when the body comes together hopefully that'll help shear
+
+I'm going to put it back together
+
+2:10 PM
+
+charging, need to continue writing some code, very basic text
+
+so far the photos are not good, need to be able to focus/compare
+
+2:15 PM
+
+Alright I'll keep going, then charge before I leave for the park
+
+Damn... I have to wait for it to charge.
+
+When the OLED starts to paint and then camera starts, the OLED dies
+
+hmm.... running low on time, have like 2 hours at best
+
+I need to drop the minimum code, what I'm missing is a file counter
+
+To tell me photos are being taken
+
+2:43 PM
+
+done charging, I'm hoping it's not like the camera + oled + pi is too much current that would be bad... shouldn't be, it's a 2A boost converter... worst case I use the higher paying one but then I'd be concerned about the battery
+
+I think if you use a 2S battery it uses lower current but I don't have a charger/bms thing for 2s
+
+2:46 PM
+
+interesting when you take a photo the OLED refresh thing fails to work
+
+makes sense to stop/pause it while taking a photo
+
 
 
 ---
