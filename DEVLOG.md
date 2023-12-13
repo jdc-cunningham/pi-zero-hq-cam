@@ -231,6 +231,20 @@ man I'm missing a small font size... whack I'll have to use the other font
 
 from ml hat cam but 18 works for now
 
+4:13 PM
+
+running out of time... this is not good how it seems to be having a power issue
+
+I may just sacrifice one of my 18650 cells (solder directly to it) but at least it would get past the capacity and possibly current capability issue.
+
+4:27 PM
+
+alright... it now runs on an 18650 cell
+
+I need to guarantee that it works before I go to the park
+
+quick break
+
 ---
 
 12/12/2023
