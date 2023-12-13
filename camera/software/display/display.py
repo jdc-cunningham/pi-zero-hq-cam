@@ -12,7 +12,7 @@ from PIL import ImageColor
 
 class Display:
   def __init__(self, get_photo_count):
-    self.base_path = "/home/pi/pi-zero-hq-cam/camera/software/display-images"
+    self.base_path = "/home/pi/pi-zero-hq-cam/camera/software/display-images/"
     self.font_path = "/home/pi/pi-zero-hq-cam/camera/software/display/"
     self.file_count = get_photo_count()
     Device_Init()
@@ -41,6 +41,6 @@ class Display:
     draw = ImageDraw.Draw(image)
     font = ImageFont.truetype(self.font_path + "cambriab.ttf",24)
 
-    draw.text((55, 96), text, fill = "WHITE", font = font)
+    draw.text((0, 96), text, fill = "WHITE", font = font)
 
-    self.display_image(image)
+    Display_Image(image)
