@@ -245,6 +245,28 @@ I need to guarantee that it works before I go to the park
 
 quick break
 
+4:47 PM
+
+I guess the sun will set faster than I thought
+
+man... even the file count display doesn't work now what gives
+
+yeah I don't think I'll make it there in time before the sun sets dang...
+
+I have work the next 4 days
+
+git failed again
+
+4:52 PM
+
+okay back to where we were before, looks like it can take a pic then need to restart
+
+oof... picture has 0 bytes not good
+
+took a photo... OLED failed hmm... alright this isn't happening today damn
+
+need to charge it anyway
+
 ---
 
 12/12/2023
