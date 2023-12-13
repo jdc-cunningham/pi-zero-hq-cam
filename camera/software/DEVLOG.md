@@ -24,6 +24,14 @@ Oh menu lens select would be nice, since no way to tell what lens is used
 
 I kinda wish I added a speaker... I would have had to make a little board with all the parts eg. capacitors then use Adafruit's speaker
 
+10:00 AM
+
+alright making progress
+
+I gotta remember what happened with the ML Hat Cam before where it had a dependency on local network and failed to work outside lol, had to plug an external display into it... which I broke in the same day damn
+
+I've had it for years, one time I bring it out break it
+
 
 
 12/12/2023

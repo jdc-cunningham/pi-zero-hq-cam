@@ -13,7 +13,7 @@
 
 from threading import Thread
 
-# from buttons.buttons import Buttons
+from buttons.buttons import Buttons
 # from battery.battery import BattDb
 # from camera.camera import Camera
 from display.display import Display
@@ -23,9 +23,11 @@ class Main:
   def __init__(self):
     self.display = Display()
     self.display.show_boot_scene()
+    self.buttons = Buttons(self.button_pressed)
+    self.buttons_thread = Thread(target=self.buttons.start)
 
-# def button_pressed(button):
-#   print(button)
+def button_pressed(button):
+  print(button)
 
 # control = Buttons(button_pressed)
 # control.start()
