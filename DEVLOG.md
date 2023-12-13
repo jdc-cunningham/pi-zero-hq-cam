@@ -194,6 +194,16 @@ I'll just assume it's even worse/bad
 
 the timer is not working
 
+3:14 PM
+
+hmm... I'm not sure if it's code or a power issue
+
+I have to leave soon for the park
+
+I think it's code... not being completed before starting something else
+
+
+
 ---
 
 12/12/2023
