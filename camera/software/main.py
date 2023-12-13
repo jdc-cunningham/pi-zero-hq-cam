@@ -44,8 +44,10 @@ class Main:
         self.live_preview_thread = Thread(target=self.camera.start_live_preview)
         self.live_preview_thread.start()
       else:
+        self.live_preview_active = False
         self.live_preview_thread.stop()
         self.display.clear_screen()
+        time.sleep(0.1)
         self.camera.take_photo()
 
 Main()
