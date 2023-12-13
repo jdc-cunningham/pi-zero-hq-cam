@@ -5,7 +5,7 @@ import time
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)  # UP
-GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # LEFT
+GPIO.setup(21, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # LEFT
 GPIO.setup(22, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # CENTER
 GPIO.setup(23, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # RIGHT
 GPIO.setup(24, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # DOWN
@@ -15,7 +15,7 @@ GPIO.setup(1, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)  # SHUTTER
 while True:
   if GPIO.input(4) == GPIO.HIGH:
     print("UP")
-  if GPIO.input(17) == GPIO.HIGH:
+  if GPIO.input(21) == GPIO.HIGH:
     print("LEFT")
   if GPIO.input(22) == GPIO.HIGH:
     print("CENTER")

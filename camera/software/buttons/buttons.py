@@ -25,7 +25,7 @@ class Buttons():
 
       if GPIO.input(4) == GPIO.HIGH:
         self.callback("UP")
-      if GPIO.input(17) == GPIO.HIGH:
+      if GPIO.input(21) == GPIO.HIGH:
         self.callback("LEFT")
       if GPIO.input(22) == GPIO.HIGH:
         self.callback("CENTER")
