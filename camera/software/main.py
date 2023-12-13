@@ -58,8 +58,9 @@ class Main:
         self.live_preview_active = False
         time.sleep(1.5)
         self.display.clear_screen()
+        time.sleep(2)
         self.camera.take_photo()
-        time.sleep(3)
+        time.sleep(5)
         self.start_live_preview()
 
 Main()
