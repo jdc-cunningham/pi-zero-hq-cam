@@ -32,7 +32,7 @@ class Main:
       print('on') # replace with battery check
       time.sleep(60)
 
-  def button_pressed(button):
+  def button_pressed(self, button):
     print(button)
 
 Main()
