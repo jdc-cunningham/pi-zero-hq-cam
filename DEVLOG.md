@@ -100,6 +100,12 @@ I'll verify if GPIO 1 is affected by the camera or not
 
 While I have it taken apart
 
+12:48 PM
+
+live preview not working, did it take a photo?
+
+no
+
 
 
 ---

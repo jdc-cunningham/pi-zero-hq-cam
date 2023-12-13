@@ -3,13 +3,13 @@ import time
 from picamera2 import Picamera2
 
 class Camera:
-  def __init__(self, display):
+  def __init__(self, display, live_preview_active):
     self.display = display
     self.picam2 = Picamera2()
     self.small_config = self.picam2.create_still_configuration(main={"size": (128, 128)})
     self.full_res_config = self.picam2.create_still_configuration()
     self.picam2.configure(self.small_config)
-    self.live_preview_active = False
+    self.live_preview_active = live_preview_active
     self.live_preview_start = 0 # time.time() to keep at 10 seconds max unless interaction
     self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
 
@@ -21,7 +21,7 @@ class Camera:
 
   def start_live_preview(self):
     self.live_preview_active = True
-    self.live_preview_active = time.time()
+    self.live_preview_start = time.time()
     self.display.clear_screen()
 
     while (self.live_preview_active):

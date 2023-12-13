@@ -25,7 +25,7 @@ class Main:
     self.display = Display()
     self.display.show_boot_scene()
     self.live_preview_active = False
-    self.camera = Camera(self.display)
+    self.camera = Camera(self.display, self.live_preview_active)
     self.buttons = Buttons(self.button_pressed)
     self.buttons_thread = Thread(target=self.buttons.start)
     self.buttons_thread.start()
