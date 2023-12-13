@@ -19,8 +19,13 @@ from camera.camera import Camera
 from display.display import Display
 from menu.menu import Menu
 
-def button_pressed(button):
-  print(button)
+class Main:
+  def __init__(self):
+    self.display = Display()
+    self.display.show_boot_scene()
 
-control = Buttons(button_pressed)
-control.start()
+# def button_pressed(button):
+#   print(button)
+
+# control = Buttons(button_pressed)
+# control.start()

@@ -3,9 +3,28 @@
 9:10 AM
 
 - boot
+
   show splash screen
+
   start main.py
-- 
+
+- idle state
+- click center/shutter button, show live camera pass through
+- zoom pan is hard, I need to think about it, I would like some form of zooming though for focus verification
+
+  this might be extra
+- count down 10 seconds if nothing happens disable
+- shutter = take photo, show black/photo taken message (all white is too much current draw lol)
+- first menu to see list of photos
+- display?
+
+There is unfortunately a lot of work to do still and I only have most of today to get something made
+
+Oh menu lens select would be nice, since no way to tell what lens is used
+
+I kinda wish I added a speaker... I would have had to make a little board with all the parts eg. capacitors then use Adafruit's speaker
+
+
 
 12/12/2023
 
