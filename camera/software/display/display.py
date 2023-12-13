@@ -33,7 +33,7 @@ class Display:
     self.clear_screen()
     
     # list files
-    self.display.draw_text("file count: " + self.file_count)
+    self.draw_text("file count: " + self.file_count)
 
   def draw_text(self, text):
     image = Image.new("RGB", (128, 128), "BLACK")
