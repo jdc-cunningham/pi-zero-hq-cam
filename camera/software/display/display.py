@@ -2,7 +2,7 @@ import time
 
 #--------------Driver Library-----------------#
 import RPi.GPIO as GPIO
-from .OLED_Driver import Device_Init, Display_Image, Clear_Screen
+from .OLED_Driver import Device_Init, Display_Image, Clear_Screen, Display_Buffer
 
 #--------------Image Library---------------#
 from PIL  import Image
@@ -18,6 +18,9 @@ class Display:
   def display_image(self, img_path):
     image = Image.open(img_path)
     Display_Image(image)
+
+  def display_buffer(self, buffer):
+    Display_Buffer(buffer)
 
   def clear_screen(self):
     Clear_Screen()

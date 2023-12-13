@@ -106,6 +106,10 @@ live preview not working, did it take a photo?
 
 no
 
+12:57 PM
+
+ooh I didn't start the camera... now we'll see if GPIO 1 is a problem
+
 
 
 ---
