@@ -31,6 +31,15 @@ def Test_Text():
 
     OLED.Display_Image(image)
 
+def Draw_Text(text):
+    image = Image.new("RGB", (OLED.SSD1351_WIDTH, OLED.SSD1351_HEIGHT), "BLACK")
+    draw = ImageDraw.Draw(image)
+    font = ImageFont.truetype('cambriab.ttf',24)
+
+    draw.text((55, 96), ' OLED', fill = "WHITE", font = font)
+
+    OLED.Display_Image(image)
+
 
 def Test_Pattern():
     image = Image.new("RGB", (OLED.SSD1351_WIDTH, OLED.SSD1351_HEIGHT), "BLACK")

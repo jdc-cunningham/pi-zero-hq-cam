@@ -9,7 +9,7 @@
   - CRON sqlite db counter for battery consumption
 '''
 
-import time
+import time, os
 
 from threading import Thread
 
@@ -32,11 +32,21 @@ class Main:
     self.live_preview_thread = None
     self.live_preview_start = 0
     self.shutter_event_processing = False
+    self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
+
+    # list files
+    file_count = self.get_photo_count()
+    self.display.draw_text("file count: " + file_count)
 
     # keep main running
     while (self.on):
       print('on') # replace with battery check
       time.sleep(60)
+
+  # https://stackoverflow.com/a/8311376/2710227
+  def get_photo_count(self):
+    _, _, files = next(os.walk(self.img_base_path))
+    return len(files)
 
   def start_live_preview(self):
     self.live_preview_active = True

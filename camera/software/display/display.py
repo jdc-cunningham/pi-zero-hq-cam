@@ -30,3 +30,12 @@ class Display:
     self.display_image(boot_img_path)
     time.sleep(3)
     self.clear_screen()
+
+  def draw_text(self, text):
+    image = Image.new("RGB", (128, 128), "BLACK")
+    draw = ImageDraw.Draw(image)
+    font = ImageFont.truetype('cambriab.ttf',24)
+
+    draw.text((55, 96), ' OLED', fill = "WHITE", font = font)
+
+    self.display_image(image)

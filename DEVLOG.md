@@ -210,8 +210,14 @@ I'll also use pause instead of stop
 
 I'm missing two things bare minimum:
 
-- boot entry
+- [x] boot entry
 - file counter, this can display on boot
+
+3:36 PM
+
+Alright I still need the file counter, I'll just call that function and display it as text
+
+
 
 ---
 
