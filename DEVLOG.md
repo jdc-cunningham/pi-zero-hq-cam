@@ -118,6 +118,10 @@ GPIO 7
 
 Alright I'll just move it... to 20 right next to the left button
 
+1:37 PM
+
+hmm... the code is not working well in a thread, not sure why
+
 
 
 ---
