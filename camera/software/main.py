@@ -13,11 +13,11 @@
 
 from threading import Thread
 
-from buttons.buttons import Buttons
-from battery.battery import BattDb
-from camera.camera import Camera
+# from buttons.buttons import Buttons
+# from battery.battery import BattDb
+# from camera.camera import Camera
 from display.display import Display
-from menu.menu import Menu
+# from menu.menu import Menu
 
 class Main:
   def __init__(self):
@@ -29,3 +29,5 @@ class Main:
 
 # control = Buttons(button_pressed)
 # control.start()
+
+Main()

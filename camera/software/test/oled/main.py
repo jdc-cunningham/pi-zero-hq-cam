@@ -173,11 +173,11 @@ try:
         # Test_Triangles()
         # OLED.Delay(2000)
 
-        Display_Picture("white-square.jpg")
+        Display_Picture("boot.jpg")
         # Display_Picture("white-square.jpg")
         # Display_Picture("blue-square.jpg")
 
-        time.sleep(5000)
+        time.sleep(20000)
 
         OLED.Clear_Screen()
         GPIO.cleanup()
