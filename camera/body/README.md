@@ -6,3 +6,5 @@
 - 35mm focus ring - 4.5 hrs
 
 20% infill, supports, PLA, 50mm/s print speed
+
+<img src="../../design-see-through.JPG"/>

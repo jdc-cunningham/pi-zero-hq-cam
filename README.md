@@ -6,7 +6,7 @@ A pi zero camera body using the hq camera
 
 <img src="./ring.JPG"/>
 
-<img src="./design-see-through.JPG"/>
+<img src="./cam.JPG"/>
 
 ### Features
 
