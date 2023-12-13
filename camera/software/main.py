@@ -56,7 +56,6 @@ class Main:
         self.start_live_preview()
       else:
         self.live_preview_active = False
-        self.live_preview_thread.stop()
         time.sleep(0.1)
         self.display.clear_screen()
         self.camera.take_photo()

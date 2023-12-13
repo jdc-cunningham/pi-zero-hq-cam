@@ -19,7 +19,6 @@ class Camera:
       self.picam2.switch_mode(self.small_config)
 
   def start_live_preview(self, live_preview_active, live_preview_start):
-    self.live_preview_start = time.time()
     self.display.clear_screen()
 
     while (live_preview_active):
@@ -28,6 +27,7 @@ class Camera:
 
       if (time.time() < live_preview_start - 10):
         live_preview_active = False
+        break
 
   def take_photo(self):
     self.change_mode('full')

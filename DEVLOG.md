@@ -188,6 +188,12 @@ there is a debounce problem with the button
 
 I have to not accept input until I'm done with the first event
 
+oh no... I never did a current draw for when the camera is active and oled showing
+
+I'll just assume it's even worse/bad
+
+the timer is not working
+
 ---
 
 12/12/2023
