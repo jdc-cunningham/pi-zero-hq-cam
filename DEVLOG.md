@@ -20,6 +20,26 @@ Alright I think I'm coming around with the barrel lens thing, it does make it mo
 
 quick break
 
+10:57 AM
+
+eating some food, I have the charger plugged in while the camera is on... kind of cool
+
+keep it topped off
+
+ugh... hate when an OS resumes wtih multiple monitors and windows shift around, happens in both windows and mac
+
+11:02 AM
+
+waiting for my ramen to cook (reduces my lifespan)
+
+I was thinking about the menu system, how you can individually repaint stuff like an icon in a corner, that would make for a more "real time" UI
+
+11:23 AM
+
+back on
+
+
+
 ---
 
 12/12/2023

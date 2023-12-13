@@ -44,6 +44,14 @@ hmm... stuck on callback not printing
 - [ ] show photo count
 - [ ] show basic menu
 
+11:33 AM
+
+Alright let's get the camera going/bound to main
+
+
+
+---
+
 12/12/2023
 
 6:57 AM

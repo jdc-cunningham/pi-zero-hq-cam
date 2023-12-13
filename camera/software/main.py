@@ -15,7 +15,7 @@ from threading import Thread
 
 from buttons.buttons import Buttons
 # from battery.battery import BattDb
-# from camera.camera import Camera
+from camera.camera import Camera
 from display.display import Display
 # from menu.menu import Menu
 
@@ -27,9 +27,10 @@ class Main:
     self.buttons = Buttons(self.button_pressed)
     self.buttons_thread = Thread(target=self.buttons.start)
     self.buttons_thread.start()
+    self.camera = Camera(self.display)
 
     # keep main running
-    while(self.on):
+    while (self.on):
       print('on') # replace with battery check
       time.sleep(60)
 
