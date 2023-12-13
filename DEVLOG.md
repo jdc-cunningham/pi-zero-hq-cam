@@ -110,6 +110,14 @@ no
 
 ooh I didn't start the camera... now we'll see if GPIO 1 is a problem
 
+1:07 PM
+
+oh no... back button looks like it's affected by the camera what pin is that
+
+GPIO 7
+
+Alright I'll just move it... to 20 right next to the left button
+
 
 
 ---
