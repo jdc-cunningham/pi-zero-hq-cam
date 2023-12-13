@@ -32,7 +32,6 @@ class Camera:
       if (time.time() < self.live_preview_start - 10):
         self.live_preview_active = False
 
-
   def stop_live_preview(self):
     self.live_preview_active = False
 

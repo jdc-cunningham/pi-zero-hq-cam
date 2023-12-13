@@ -29,6 +29,7 @@ class Main:
     self.buttons = Buttons(self.button_pressed)
     self.buttons_thread = Thread(target=self.buttons.start)
     self.buttons_thread.start()
+    self.live_preview_thread = None
 
     # keep main running
     while (self.on):
@@ -40,7 +41,8 @@ class Main:
 
     if (button == "SHUTTER"):
       if (not self.live_preview_active):
-        self.camera.start_live_preview()
+        self.live_preview_thread = Thread(target=self.camera.start_live_preview)
+        self.live_preview_thread.start()
 
       self.camera.take_photo()
 
