@@ -202,7 +202,16 @@ I have to leave soon for the park
 
 I think it's code... not being completed before starting something else
 
+3:21 PM
 
+One thing is, I need to stop the camera when the preview isn't active
+
+I'll also use pause instead of stop
+
+I'm missing two things bare minimum:
+
+- boot entry
+- file counter, this can display on boot
 
 ---
 
