@@ -78,6 +78,28 @@ Hmm... seems like if I clear the GPIO pins (end of OLED test) buttons are fine a
 
 hopefully this does not mean there is a conflict when OLED can be on/when buttons can listen
 
+12:26 PM
+
+hmm... still having a conflict
+
+12:29 PM
+
+oh man........ I've been trying... but maybe the easiest solution is to not use this pin
+
+since all the other pins are fine
+
+okay... I'll do it
+
+I'll use GPIO 21, it's random/far away from stuff, by ground
+
+12:43 PM
+
+soldered
+
+I'll verify if GPIO 1 is affected by the camera or not
+
+While I have it taken apart
+
 
 
 ---

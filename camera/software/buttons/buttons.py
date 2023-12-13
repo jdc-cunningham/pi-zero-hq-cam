@@ -8,21 +8,15 @@ class Buttons():
     self.exit = False
     self.callback = callback
 
-    GPIO.cleanup() # call due to OLED setting 17 to high
-    GPIO.setmode(GPIO.BCM)
+    # already set as BCM by OLED
 
     GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)  # UP
-    GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # LEFT
+    GPIO.setup(21, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # LEFT
     GPIO.setup(22, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # CENTER
     GPIO.setup(23, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # RIGHT
     GPIO.setup(24, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # DOWN
     GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)  # BACK
     GPIO.setup(1, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)  # SHUTTER
-
-    # setup OLED pins again
-    GPIO.setup(8, GPIO.OUT)  # CS
-    GPIO.setup(25, GPIO.OUT) # DC
-    GPIO.setup(27, GPIO.OUT) # RST
 
   # listen for input
   def start(self):
