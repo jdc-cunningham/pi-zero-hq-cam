@@ -1,3 +1,25 @@
+12/13/2023
+
+8:53 AM
+
+It's a new dawn... it's a new day
+
+Going to write the bare mnimimal functional code to use this at the park
+
+Man it's a gloomy grey day outside not a good day for photos oh well, I'll still get out there
+
+9:00 AM
+
+omg... I just screwed up my Chrome user profile... I accidentally hit "sign out" on YouTube and it signed me out of all my Google Accounts... wtf.
+
+A problem for another time
+
+Alright I think I'm coming around with the barrel lens thing, it does make it more legit than the tiny lens
+
+
+
+---
+
 12/12/2023
 
 4:26 AM
