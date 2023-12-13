@@ -26,7 +26,8 @@ class Camera:
 
     while (self.live_preview_active):
       pil_img = self.picam2.capture_image()
-      self.display.Display_Image(pil_img)
+      print('img captured')
+      self.display.display_image(pil_img)
 
       if (time.time() > self.live_preview_start - 10):
         self.live_preview_active = False
