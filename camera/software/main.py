@@ -9,7 +9,7 @@
   - CRON sqlite db counter for battery consumption
 '''
 
-# import os, sys, time
+import time
 
 from threading import Thread
 
@@ -21,10 +21,16 @@ from display.display import Display
 
 class Main:
   def __init__(self):
+    self.on = True # what
     self.display = Display()
     self.display.show_boot_scene()
     self.buttons = Buttons(self.button_pressed)
     self.buttons_thread = Thread(target=self.buttons.start)
+
+    # keep main running
+    while(self.on):
+      print('on') # replace with battery check
+      time.sleep(60)
 
   def button_pressed(button):
     print(button)
