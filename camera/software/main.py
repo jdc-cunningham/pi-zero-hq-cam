@@ -24,11 +24,11 @@ class Main:
     self.on = True # what
     self.display = Display()
     self.display.show_boot_scene()
+    self.live_preview_active = False
+    self.camera = Camera(self.display)
     self.buttons = Buttons(self.button_pressed)
     self.buttons_thread = Thread(target=self.buttons.start)
     self.buttons_thread.start()
-    self.live_preview_active = False
-    self.camera = Camera(self.display)
 
     # keep main running
     while (self.on):

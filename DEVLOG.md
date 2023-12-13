@@ -74,6 +74,10 @@ I tried setting the GPIO to low
 
 Hmm... seems like if I clear the GPIO pins (end of OLED test) buttons are fine again
 
+12:18 PM
+
+hopefully this does not mean there is a conflict when OLED can be on/when buttons can listen
+
 
 
 ---
