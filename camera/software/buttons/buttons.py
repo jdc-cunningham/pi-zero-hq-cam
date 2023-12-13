@@ -19,6 +19,11 @@ class Buttons():
     GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)  # BACK
     GPIO.setup(1, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)  # SHUTTER
 
+    # setup OLED pins again
+    GPIO.setup(8, GPIO.OUT)  # CS
+    GPIO.setup(25, GPIO.OUT) # DC
+    GPIO.setup(27, GPIO.OUT) # RST
+
   # listen for input
   def start(self):
     while True:
