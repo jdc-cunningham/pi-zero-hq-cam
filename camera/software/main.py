@@ -25,7 +25,7 @@ class Main:
     self.display = Display()
     self.display.show_boot_scene()
     self.buttons = Buttons(self.button_pressed)
-    self.buttons_thread = Thread(target=self.buttons.start)
+    self.buttons_thread = Thread(target=self.buttons.start, args=(self.button_pressed,))
 
     # keep main running
     while(self.on):
