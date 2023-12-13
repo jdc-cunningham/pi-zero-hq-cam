@@ -32,5 +32,4 @@ class Camera:
   def take_photo(self):
     self.change_mode('full')
     self.picam2.capture_file(self.img_base_path + str(time.time()).split(".")[0] + ".jpg")
-    self.live_preview_start = time.time() # keep 10 sec clock running
     self.change_mode('small')

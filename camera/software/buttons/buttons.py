@@ -38,4 +38,4 @@ class Buttons():
       if GPIO.input(1) == GPIO.HIGH:
         self.callback("SHUTTER")
 
-      time.sleep(0.1)
+      time.sleep(0.05)

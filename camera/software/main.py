@@ -31,28 +31,35 @@ class Main:
     self.buttons_thread.start()
     self.live_preview_thread = None
     self.live_preview_start = 0
+    self.shutter_event_processing = False
 
     # keep main running
     while (self.on):
       print('on') # replace with battery check
       time.sleep(60)
 
+  def start_live_preview(self):
+    self.live_preview_active = True
+    self.live_preview_start = time.time()
+    self.live_preview_thread = Thread(target=self.camera.start_live_preview, args=(self.live_preview_active, self.live_preview_start))
+    self.live_preview_thread.start()
+    self.shutter_event_processing = False
+
   def button_pressed(self, button):
     print(button)
     print(self.live_preview_active)
 
-    if (button == "SHUTTER"):
+    if (button == "SHUTTER" and not self.shutter_event_processing):
+      self.shutter_event_processing = True
+
       if (not self.live_preview_active):
-        self.live_preview_active = True
-        self.live_preview_start = time.time()
-        self.live_preview_thread = Thread(target=self.camera.start_live_preview, args=(self.live_preview_active, self.live_preview_start))
-        self.live_preview_thread.start()
+        self.start_live_preview()
       else:
         self.live_preview_active = False
+        self.live_preview_thread.stop()
         time.sleep(0.1)
         self.display.clear_screen()
         self.camera.take_photo()
-        self.live_preview_start = time.time()
-        self.live_preview_thread.start()
+        self.start_live_preview()
 
 Main()

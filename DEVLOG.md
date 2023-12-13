@@ -182,7 +182,11 @@ soon as I try to take a photo the OLED update goes bad, still keeps going though
 
 okay... it is a stale variable reference issue
 
+3:03 PM
 
+there is a debounce problem with the button
+
+I have to not accept input until I'm done with the first event
 
 ---
 
