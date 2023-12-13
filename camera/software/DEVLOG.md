@@ -1,3 +1,12 @@
+12/13/2023
+
+9:10 AM
+
+- boot
+  show splash screen
+  start main.py
+- 
+
 12/12/2023
 
 6:57 AM
@@ -23,8 +32,6 @@ okay I need to hit goals... once it's late enough eg. 9 AM I'll design/print the
 9:13 AM
 
 I designed the barrel wrappers for the 35mm lens (main), not sure if I'll do the others today, each one is different and the printing is 2-4 hours per piece, 2 per lens
-
-
 
 ---
 

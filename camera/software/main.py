@@ -1,10 +1,11 @@
 '''
 - boots
   - ask if charged (battery)
-  - show camera pass through, wait for buttons, maybe overlay telemetry/horizon,
+  - idle
+    (click center button or shutter) show camera pass through, wait for buttons, maybe overlay telemetry/horizon,
     sample imu in separate thread
   - shutter (photo)
-  - button (show/navigate menu)
+  - non-center d-pad button (show/navigate menu)
   - CRON sqlite db counter for battery consumption
 '''
 
