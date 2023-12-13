@@ -180,6 +180,8 @@ makes sense to stop/pause it while taking a photo
 
 soon as I try to take a photo the OLED update goes bad, still keeps going though
 
+okay... it is a stale variable reference issue
+
 
 
 ---
