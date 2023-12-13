@@ -38,6 +38,42 @@ I was thinking about the menu system, how you can individually repaint stuff lik
 
 back on
 
+11:53 AM
+
+oh no... I forgot about a GPIO being affected by the camera being on
+
+nooooo please, I don't want to take this thing apart
+
+oh no... this is odd though, GPIO 1 is the one that affects the camera
+
+but the buttons show LEFT (being printed/active without being pressed) which is 17
+
+11:57 AM
+
+I disabled the camera and I'm still seeing left huh
+
+could it be a short? why now
+
+try reboot
+
+dang shutter is bound to GPIO 1
+
+I'll use the test button code to see
+
+no short
+
+I wonder if it's from the OLED
+
+12:10 PM
+
+it's odd... it's just stuck in on
+
+I tried setting the GPIO to low
+
+12:14 PM
+
+Hmm... seems like if I clear the GPIO pins (end of OLED test) buttons are fine again
+
 
 
 ---

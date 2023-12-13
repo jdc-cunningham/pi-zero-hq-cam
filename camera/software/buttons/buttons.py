@@ -8,6 +8,7 @@ class Buttons():
     self.exit = False
     self.callback = callback
 
+    GPIO.cleanup() # call due to OLED setting 17 to high
     GPIO.setmode(GPIO.BCM)
 
     GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)  # UP

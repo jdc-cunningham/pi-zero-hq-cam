@@ -4,6 +4,7 @@ from picamera2 import Picamera2
 
 class Camera:
   def __init__(self, display):
+    self.display = display
     self.picam2 = Picamera2()
     self.small_config = self.picam2.create_still_configuration(main={"size": (128, 128)})
     self.full_res_config = self.picam2.create_still_configuration()
