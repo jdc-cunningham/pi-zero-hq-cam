@@ -36,6 +36,6 @@ class Display:
     draw = ImageDraw.Draw(image)
     font = ImageFont.truetype('cambriab.ttf',24)
 
-    draw.text((55, 96), ' OLED', fill = "WHITE", font = font)
+    draw.text((55, 96), text, fill = "WHITE", font = font)
 
     self.display_image(image)
