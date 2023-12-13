@@ -267,6 +267,14 @@ took a photo... OLED failed hmm... alright this isn't happening today damn
 
 need to charge it anyway
 
+no... the charger says it's full
+
+next thing to try would be a different step up booster
+
+I need to get a power measurement of the camera running... means taking it apart again dang
+
+well I gotta do this errand then I'll come back
+
 ---
 
 12/12/2023
