@@ -17,9 +17,9 @@ class Camera:
 
   def change_mode(self, mode):
     if (mode == "full"):
-      self.picam2.configure(self.full_res_config)
+      self.picam2.switch_mode(self.full_res_config)
     else:
-      self.picam2.configure(self.small_config)
+      self.picam2.switch_mode(self.small_config)
 
   def start_live_preview(self):
     self.live_preview_active = True
