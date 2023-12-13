@@ -227,7 +227,9 @@ how long does it take to boot?
 
 noooo corrupt git
 
+man I'm missing a small font size... whack I'll have to use the other font
 
+from ml hat cam but 18 works for now
 
 ---
 
