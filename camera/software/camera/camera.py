@@ -10,7 +10,7 @@ class Camera:
     self.picam2.configure(self.small_config)
     self.live_preview_active = False
     self.live_preview_start = 0 # time.time() to keep at 10 seconds max unless interaction
-    self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media"
+    self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
 
   def change_mode(self, mode):
     if (mode == "full"):
@@ -36,5 +36,5 @@ class Camera:
 
   def take_photo(self):
     self.change_mode('full')
-    self.picam2.capture_file()
-      
+    self.picam2.capture_file(self.img_base_path + str(time.time()).split(".")[0] + ".jpg")
+    self.live_preview_start = time.time() # keep 10 sec clock running
