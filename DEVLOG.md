@@ -217,7 +217,11 @@ I'm missing two things bare minimum:
 
 Alright I still need the file counter, I'll just call that function and display it as text
 
+3:46 PM
 
+how long does it take to boot?
+
+58 seconds damn
 
 ---
 

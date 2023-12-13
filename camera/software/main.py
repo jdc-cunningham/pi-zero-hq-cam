@@ -34,10 +34,6 @@ class Main:
     self.shutter_event_processing = False
     self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
 
-    # list files
-    file_count = self.get_photo_count()
-    self.display.draw_text("file count: " + file_count)
-
     # keep main running
     while (self.on):
       print('on') # replace with battery check
