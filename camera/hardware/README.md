@@ -42,5 +42,6 @@ M1.7*6 screws
 - OLED (screws)
 - push switch through (may have to bend ends temporarily, screw)
 - dpad (glue)
+- solder pi to hanger screw mount
 
 join two halves together, 4 screws
