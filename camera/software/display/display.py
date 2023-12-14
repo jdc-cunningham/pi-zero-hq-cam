@@ -44,3 +44,5 @@ class Display:
     draw.text((0, 96), text, fill = "WHITE", font = font)
 
     Display_Image(image)
+
+    time.sleep(2)

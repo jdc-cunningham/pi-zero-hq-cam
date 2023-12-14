@@ -275,6 +275,50 @@ I need to get a power measurement of the camera running... means taking it apart
 
 well I gotta do this errand then I'll come back
 
+5:00 PM
+
+camera weighs 11.9 oz now with the 18650 battery
+
+7:09 PM
+
+back on
+
+I'm gonna get a power reading when the camera/oled is on
+
+7:34 PM
+
+it seems like the OLED died, I at least have another one but this is concerning
+
+I don't know what's wrong... I swapped OLED's, the OLED fails to render partway, becomes solid white
+
+I'll check the converter next I guess
+
+8:21 PM
+
+man... even using an expensive step up converter, having problems
+
+I'm so sad
+
+it'll write an image but nothing happens on screen...
+
+could it be the LD33V?
+
+I measure 3.2V
+
+idk if this is the problem
+
+8:35 PM
+
+I swapped that around, so it goes from 5V vs. battery
+
+wasteful but it did go to 3.29 V
+
+ugh... it still acts up though idk what's wrong
+
+tries to write the image, flashes and goes black...
+
+next write, just black
+
 ---
 
 12/12/2023
