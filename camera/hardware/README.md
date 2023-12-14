@@ -12,6 +12,11 @@
 - $60 5mm lens
 - $10 GY-91 10-axis IMU
 
+#### Alternate parts
+
+- $9 18650 cell - 3400mAh 4.9A discharge
+- $14.33 mEZD41503A-A step-up converter 5V@3A
+
 M1.7*6 screws
 
 ### Part layout

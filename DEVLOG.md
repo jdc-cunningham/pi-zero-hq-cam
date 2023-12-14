@@ -28,6 +28,18 @@ but... crapped out maybe it is just code, hopefully
 
 Okay at this point I'm going to assume it's my code, I did post a question will get some insight, something I'm doing wrong that's obvious
 
+244 new ip
+
+5:46 PM
+
+It has to be code like memory build up or something
+
+I've been running the OLED camera pass through and it's going fine
+
+yeah almost 2 mins still running, it's my code
+
+---
+
 12/13/2023
 
 8:53 AM
