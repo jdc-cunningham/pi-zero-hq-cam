@@ -369,6 +369,26 @@ Now the RPi zero is dead... damn
 
 I don't have a spare I don't think... hmmmmmmmm
 
+I do have one... it's my year round time lapse cam dang, it almost made it to a year too
+
+Oh man... it has a female 40 pin header soldered to it... nooooooo
+
+Accept defeat Jacob come on
+
+you member when Pi zero's were $5?... peppridge farm members
+
+I was not trying to spend money on this project, I already had the parts
+
+11:42 PM
+
+Alright... I'm done for real now, I broke the other too lol trying to desoldere/resolder the 40 pins
+
+very sad day
+
+I did have a thought, I will try a Pi Zero 2 W maybe the higher power will help, since the RPi 4 had no problem running the same code
+
+I'll drive to a store tomorrow provided I still have the energy after work lol it's just training at least
+
 ---
 
 12/12/2023
