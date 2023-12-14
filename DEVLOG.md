@@ -1,3 +1,33 @@
+12/14/2023
+
+4:48 PM
+
+back from first day of new warehouse job
+
+I did go and buy pi zeros, thanks to Micro Center for selling them at $15 each vs. more.
+
+There was a 15 ct cap damn... but I only bought 3. No Pi Zero 2's unfortunately.
+
+If I can't get this project to work with a Pi Zero 1, I will buy the 2 even if it delays me more...
+
+I have a new idea on how to reduce the computation though... I think the issue is the camera being on and the OLED running at the same time.
+
+4:59 PM
+
+I snacked on these chile limon peanuts today, god they are nasty I feel sick/want to throw up.
+
+5:30 PM
+
+alright... resoldered pi zero w 1 #3
+
+it lasted much longer, even took a picture
+
+but... crapped out maybe it is just code, hopefully
+
+5:33 PM
+
+Okay at this point I'm going to assume it's my code, I did post a question will get some insight, something I'm doing wrong that's obvious
+
 12/13/2023
 
 8:53 AM
