@@ -319,6 +319,56 @@ tries to write the image, flashes and goes black...
 
 next write, just black
 
+8:43 PM
+
+it seems like a time issue... it's just odd this is happening now
+
+I did see this message about "bad lock file"
+
+8:52 PM
+
+might be a bad wire
+
+but which one? ha
+
+9:01 PM
+
+I will touch up all the wires, redo their solder joints
+
+9:49 PM
+
+Ugh... I'm so angry these problems...
+
+I'll test with the RPi 4 as a control
+
+9:57 PM
+
+wtf... they both work (OLEDs) lmao damn it
+
+AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+is it because of the hardware... bad wiring?
+
+dang it's also way faster the frame rate
+
+10:09 PM
+
+I don't know what it is, it starts working... then it stops and then subsequent runs are bad
+
+hmm... not sure
+
+10:17 PM
+
+one last try I'll resolder
+
+well... we're definitely done now
+
+I decided to separate the RPi Zero from the protoboard while it was on... that seems to have been a bad idea
+
+Now the RPi zero is dead... damn
+
+I don't have a spare I don't think... hmmmmmmmm
+
 ---
 
 12/12/2023
