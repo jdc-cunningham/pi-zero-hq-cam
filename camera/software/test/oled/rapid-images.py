@@ -37,9 +37,7 @@ try:
       else:
           img_id = 0
 
-
-    if __name__ == '__main__':
-        main()
+  main()
 
 # except Exception as e:
 except:
