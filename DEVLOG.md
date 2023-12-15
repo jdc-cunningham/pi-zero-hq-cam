@@ -38,6 +38,30 @@ I've been running the OLED camera pass through and it's going fine
 
 yeah almost 2 mins still running, it's my code
 
+6:06 PM
+
+I do have to finish this project by sometime next week if possible. Since I have to start making career moves (freelance, upskill, apply).
+
+8:39 PM
+
+let me do an hour of experimenting I'm mentally spent though
+
+8:49 PM
+
+I'm trying to figure out when I had this good run on my 3rd video about this project, what code I was running
+
+I have to update somewhere that my battery capacity is now 3400mAh which is nice
+
+I went back to a commit, same issue, stops working
+
+https://github.com/jdc-cunningham/pi-zero-hq-cam/commit/6672be5accffd451dd946ee0c1cc8a792ffc7f6e
+
+this one seems more promising
+
+bf47493bd96b764daf620f7ff500ecc467db8319
+
+I'm super tired though I'm gonna lay down
+
 ---
 
 12/13/2023
