@@ -164,55 +164,17 @@ try:
         #-------------OLED Init------------#
         OLED.Device_Init()
 
-        #-------------Draw Pictures------------#
-        # Test_Pattern()
-        # OLED.Delay(2000)
-        # Test_Text()
-        # OLED.Delay(2000)
-        # Test_Lines()
-        # OLED.Delay(2000)
-        # Test_HV_Lines()
-        # OLED.Delay(2000)
-        # Test_Rects()
-        # OLED.Delay(1000)
-        # Test_FillRects()
-        # OLED.Delay(2000)
-        # Test_Circles()
-        # OLED.Delay(2000)
-        # Test_Triangles()
-        # OLED.Delay(2000)
-
-        Display_Picture("boot.jpg")
-        # Display_Picture("white-square.jpg")
-        # Display_Picture("blue-square.jpg")
-
-        time.sleep(20000)
-
-        OLED.Clear_Screen()
-        GPIO.cleanup()
-
-
-        # while (True):
-        #     Display_Picture("picture1.jpg")
-        #     # OLED.Delay(2000)
-        #     Display_Picture("picture2.jpg")
-        #     # OLED.Delay(2000)
-        #     Display_Picture("picture3.jpg")
-            # OLED.Delay(2000)
-
-
         # try pi camera buffer
         # this is rancid, just testing
 
-        # picam2 = Picamera2()
-        # config = picam2.create_still_configuration(main={"size": (128, 128)})
-        # picam2.configure(config)
-        # picam2.start()
+        picam2 = Picamera2()
+        config = picam2.create_still_configuration(main={"size": (128, 128)})
+        picam2.configure(config)
+        picam2.start()
 
-        # while (True):
-
-        #     pil_img = picam2.capture_image()
-        #     OLED.Display_Buffer(pil_img.load())
+        while (True):
+            pil_img = picam2.capture_image()
+            OLED.Display_Buffer(pil_img.load())
 
 
     if __name__ == '__main__':
