@@ -32,7 +32,7 @@ try:
     while True:
       Display_Picture(images[img_id])
 
-      if (len(images) < 2):
+      if (img_id < 2):
         img_id += 1
       else:
           img_id = 0
