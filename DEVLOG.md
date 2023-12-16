@@ -1,3 +1,17 @@
+12/15/2023
+
+9:38 PM
+
+not doing anything today
+
+didn't sleep much yesteday, worked the 10 hr labor job, had to grocery shop after
+
+nothing yet on my request for help to figure out the display issue
+
+maybe I should just buy a pi zero 2
+
+---
+
 12/14/2023
 
 4:48 PM
