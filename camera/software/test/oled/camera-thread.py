@@ -42,12 +42,14 @@ try:
         if (get_photo):
           photo = picam2.capture_image()
 
-    Thread(target=cam_thread, args=(stop_camera, get_photo))
+    Thread(target=cam_thread, args=(stop_camera, get_photo)).start()
 
     while (True):
+      print(photo)
       get_photo = True
 
       if (photo):
+        get_photo = False
         OLED.Display_Buffer(photo.load())
 
       OLED.delay(60) # ms
