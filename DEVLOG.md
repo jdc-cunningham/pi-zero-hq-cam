@@ -10,6 +10,14 @@ nothing yet on my request for help to figure out the display issue
 
 maybe I should just buy a pi zero 2
 
+10:11 PM
+
+ugh... I want to do something but I'm spent... damn
+
+2 more days then 3 off
+
+need to wrap this up and then start upskilling/applying for jobs/freelancing
+
 ---
 
 12/14/2023
