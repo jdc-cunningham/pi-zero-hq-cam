@@ -40,7 +40,25 @@ but instead of a loop feeding the OLED... the camera thread gets a comamnd like 
 
 idk if that's a thing... like the processes are getting held up... I'll try it
 
+11:25 PM
 
+there's an exception
+
+11:33 PM
+
+this is slow because everytime the pi fails I have to restart it takes a minute to boot/ssh-able
+
+11:37 PM
+
+this is not working so far, can't exit the loop, nothing showing on OLED, thinking it's stuck variable (reference/scope issue)
+
+I got it, keep at least 2 ssh temrinals active
+
+11:41 PM
+
+ehh... I gotta stop, I need sleep
+
+I committed the failing test code (unexitable thread) eg. with ctrl + c, I can fix it
 
 ---
 
