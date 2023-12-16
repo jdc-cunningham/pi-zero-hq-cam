@@ -3,6 +3,7 @@
 import io
 import time
 from picamera2 import Picamera2
+from threading import Thread
 
 #--------------Driver Library-----------------#
 import RPi.GPIO as GPIO
@@ -25,24 +26,40 @@ try:
     #-------------OLED Init------------#
     OLED.Device_Init()
 
-    img_id = 0
+    stop_camera = False
+    get_photo = True
+    photo = None
 
-    images = ["picture1.jpg", "picture2.jpg", "picture3.jpg"]
+    def cam_thread(stop_camera, get_photo, photo):
+      picam2 = Picamera2()
+      config = picam2.create_still_configuration(main={"size": (128, 128)})
+      picam2.configure(config)
+      picam2.start()
 
-    while True:
-      Display_Picture(images[img_id])
+      while (not stop_camera):
+        if (get_photo):
+          photo = picam2.capture_image()
+          get_photo = False
 
-      if (img_id < 2):
-        img_id += 1
-      else:
-          img_id = 0
+    Thread(target=cam_thread, args=(stop_camera, get_photo)).start()
+
+    while (True):
+      print(photo)
+      get_photo = True
+
+      if (photo):
+        get_photo = False
+        OLED.Display_Buffer(photo.load())
+        get_photo = True
+
+      OLED.Delay(60) # ms
+
 
   main()
 
-# except Exception as e:
-except:
-    # print(e)
+except Exception as e:
+# except:
+    print(e)
     print("\r\nEnd")
     OLED.Clear_Screen()
     GPIO.cleanup()
-
