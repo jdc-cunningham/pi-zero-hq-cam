@@ -18,6 +18,30 @@ ugh... I want to do something but I'm spent... damn
 
 need to wrap this up and then start upskilling/applying for jobs/freelancing
 
+10:37 PM
+
+OMG the pain... ahhhhh my shoulder, I'm feeling it now Mr. Krabbs
+
+I will try one quick thing, so I don't feel shame when I return to work having acomplished, N O T H I N G
+
+10:58 PM
+
+nooo I got sucked into social media man ahhhhh
+
+okay let me bust this out, then I really need to sleep
+
+positive about my job is... I'm standing/constantly moving and I don't really have to think to do my job so... do I need sleep? idk
+
+I just want to turn this thing on 1 time
+
+plan is... turn the camera on as a thread (already tried this)
+
+but instead of a loop feeding the OLED... the camera thread gets a comamnd like "give me a picture" and it takes it/provides it... but then keeps going
+
+idk if that's a thing... like the processes are getting held up... I'll try it
+
+
+
 ---
 
 12/14/2023
