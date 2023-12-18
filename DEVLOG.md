@@ -214,6 +214,36 @@ looks like the preview while loop blocks the processing
 
 alright so was able to take a picture, but can't stop the preview, the 10 second time out isn't working
 
+1:37 PM
+
+That seems to be working now... ugh... I can't film this "debut" video with that LCD gap, need to design/print a small piece.
+
+1:45 PM
+
+A 2 min print nice, hopefully I don't bend it too bad while trying to get it off the bed
+
+ahh damn the dimensions were too small for my nozel I guess, it still printed something but missing the lip
+
+1:54 PM
+
+gonna verify the software is solid before I leave (can take photos)
+
+1:55 PM
+
+ooh... I almost forgot to re-add the systemd boot script lol that would have been bad
+
+2:01 PM
+
+the images are blurry, probably because slow shutter speed
+
+oh man... that's what it needs, to be able to set those values in a menu
+
+with the zoom pan crop, I'm seeing it now what I need to make
+
+this code is still buggy but it works/can fix itself
+
+when you take a photo it doesn't pause the live preview/too slow
+
 
 
 ---

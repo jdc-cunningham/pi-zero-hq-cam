@@ -60,6 +60,7 @@ class Main:
         self.live_preview_start = time.time()
         self.camera.start_live_preview()
       else:
+        self.main.live_preview_pause = True
         self.display.clear_screen()
         self.display.draw_text("Taking photo...")
         self.camera.take_photo()
