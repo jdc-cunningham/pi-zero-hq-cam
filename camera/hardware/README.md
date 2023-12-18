@@ -29,6 +29,10 @@ M1.7*6 screws
 
 ### D-pad, back and shutter buttons
 
+### Pi Zero (1/2) GPIO mappings
+
+<img src="./pin-mappings.jpg"/>
+
 <img src="./buttons.png"/>
 
 ### Assembly order

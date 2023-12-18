@@ -110,6 +110,48 @@ which case I can add a dev file to reset stuff
 
 need a quick break
 
+10:49 AM
+
+back on, I need this park trip, it looks like it's a great sunny day too, recharge my vitamin d stores
+
+10:53 AM
+
+seems like there is a problem, center is high all the time
+
+I'll try one more time before boot
+
+I might have to do some soldering
+
+it's not a hardware problem, testing the buttons after boot, they're fine
+
+it's the camera or OLED that's setting the button to high
+
+Maybe I should rebind the buttons after starting the camera
+
+left and back are problematic though, hardware issue probably joined pins
+
+I'm trying to avoid taking this thing apart because I have to for the pi zero 2
+
+10:58 AM
+
+the buttons are already bound last... when the camera turns on that's when it's problematic
+
+I should swap GPIO 1 which is being used for shutter right now
+
+says don't use GPIO 27, 28 but I use one for the OLED
+
+I might just do it... swap the pins now
+
+so it doesn't like GPIO 22 (next to 3.3V pin)
+
+I need a diagram so I know which pins are still available
+
+11:11 AM
+
+I feel so lethargic man... damn I gotta keep the fire going if I want to escape my current life situation
+
+
+
 ---
 
 12/15/2023
