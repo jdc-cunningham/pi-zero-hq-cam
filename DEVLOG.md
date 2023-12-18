@@ -150,7 +150,13 @@ I need a diagram so I know which pins are still available
 
 I feel so lethargic man... damn I gotta keep the fire going if I want to escape my current life situation
 
+11:27 AM
 
+Alright so I'll move 20 to 26 (across), this should address the left/back issue
+
+I'll move GPIO 1 to 7 (next to it)
+
+I'll move 22 to 18 (center)
 
 ---
 
