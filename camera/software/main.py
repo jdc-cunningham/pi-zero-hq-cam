@@ -23,7 +23,6 @@ class Main:
   def __init__(self):
     self.on = True # what
     self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
-    self.display = Display(self.get_photo_count)
     self.display.show_boot_scene()
     self.live_preview_active = False
     self.camera = Camera(self.display)

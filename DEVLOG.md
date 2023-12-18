@@ -38,6 +38,20 @@ I will see if that doesn't fail as bad
 
 I don't have a menu design yet in mind, I'm thinking icons that you can move/hover around, text bottom of screen with a message
 
+9:22 AM
+
+Damn... the repo on the RPi keeps getting corrupted
+
+I wrote some basic code
+
+I'm tempted to just go... it'll be 10 degrees warmer later is the thing, it's 32F now
+
+I can't think right now is the thing... I'm aimless
+
+9:28 AM
+
+bro wtf... my desktop just bluescreened lol... been a long time since that happened
+
 
 
 12/15/2023
