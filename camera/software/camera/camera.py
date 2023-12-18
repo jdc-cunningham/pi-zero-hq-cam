@@ -12,7 +12,7 @@ class Camera:
     self.picam2.configure(self.full_res_config)
     self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
 
-  def start(self, main):
+  def start(self):
     self.picam2.start()
 
   def change_mode(self, mode):
