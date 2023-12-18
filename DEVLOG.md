@@ -68,6 +68,22 @@ this is so dumb wtf... I'm stuck because I can't change a variable/doesn't work 
 
 crowd sourcing my problems lol
 
+10:01 AM
+
+hmm... left and back are both on when pushing left
+
+they are next to each other... maybe a short? I'll test after a reboot
+
+10:05 AM
+
+I'm checking this because the camera keeps being on by default/some button being pressed when starting main
+
+damn fresh start and they're touching... which shouldn't matter for the code now
+
+I will have to unsolder this stuff/use the pi zero 2 anyway
+
+so first boot camera on isn't set
+
 
 
 ---

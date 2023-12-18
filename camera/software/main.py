@@ -34,15 +34,15 @@ class Main:
     self.live_preview_thread = None
     self.live_preview_start = 0
     self.shutter_event_processing = False
-    self.last_photo_path = None
+    self.photo_taken_path = None
 
     # keep main running
     while (self.on):
       print('on') # replace with battery check
       time.sleep(60)
 
-  def set_last_photo_path(self, path):
-    self.last_photo_path = path
+  def set_photo_taken_path(self, path):
+    self.photo_taken_path = path
 
   def button_pressed(self, button):
     print(self.camera_on)
@@ -52,7 +52,7 @@ class Main:
       self.display.draw_text("Camera on")
     
     if (button == "SHUTTER" and self.camera_on):
-      self.camera.take_photo(self.set_last_photo_path)
+      self.camera.take_photo(self.set_photo_taken_path)
       self.display.display_image(self.photo_taken_path)
       time.sleep(5)
       self.clear_screen()
