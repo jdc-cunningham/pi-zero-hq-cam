@@ -244,6 +244,18 @@ this code is still buggy but it works/can fix itself
 
 when you take a photo it doesn't pause the live preview/too slow
 
+2:08 PM
+
+getting ready to leave, I'm pumped
+
+I gotta try out the other lenses
+
+I had a thought, timelapse mode, be easy to set that
+
+Put camera aside, verify photo looks good on phone
+
+code got worse, after photo just stuck on camera on msg
+
 
 
 ---
