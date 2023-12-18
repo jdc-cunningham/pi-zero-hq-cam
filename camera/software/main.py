@@ -26,7 +26,8 @@ class Main:
     self.display = Display()
     self.display.show_boot_scene()
     self.live_preview_active = False
-    self.camera = Camera(self.display)
+    self.camera = Camera(self.display, self)
+    self.picam2.start()
     self.camera_on = False
     self.buttons = Buttons(self.button_pressed)
     self.buttons_thread = Thread(target=self.buttons.start)
@@ -35,27 +36,27 @@ class Main:
     self.live_preview_start = 0
     self.shutter_event_processing = False
     self.photo_taken_path = None
+    self.display.draw_text("Camera on") # set last so everything is ready
 
     # keep main running
     while (self.on):
       print('on') # replace with battery check
       time.sleep(60)
 
-  def set_photo_taken_path(self, path):
-    self.photo_taken_path = path
+  # def set_photo_taken_path(self, path):
+  #   self.photo_taken_path = path
 
   def button_pressed(self, button):
-    print(self.camera_on)
-
-    if (button == "CENTER" and not self.camera_on):
-      self.camera.start(self)
-      self.display.draw_text("Camera on")
-    
-    if (button == "SHUTTER" and self.camera_on):
-      self.camera.take_photo(self.set_photo_taken_path)
-      self.display.display_image(self.photo_taken_path)
-      time.sleep(5)
-      self.clear_screen()
-      self.display.draw_text("Camera on")
+    if (button == "SHUTTER"):
+      if (not self.live_preview_active):
+        self.live_preview_active = True
+        self.live_preview_start = time.time()
+        self.camera.start_live_preview(self.live_preview_active, self.live_preview_start)
+      else:
+        self.camera.take_photo(self.set_last_photo_path)
+        self.live_preview_active = False
+        self.display.clear_screen()
+        self.display.draw_text("Photo captured")
+        self.display.clear_screen()
 
 Main()

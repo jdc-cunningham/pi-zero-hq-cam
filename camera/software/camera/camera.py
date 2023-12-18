@@ -3,7 +3,8 @@ import time
 from picamera2 import Picamera2
 
 class Camera:
-  def __init__(self, display):
+  def __init__(self, display, main):
+    self.main = main
     self.display = display
     self.picam2 = Picamera2()
     self.small_config = self.picam2.create_still_configuration(main={"size": (128, 128)})
@@ -29,7 +30,7 @@ class Camera:
       self.display.display_buffer(pil_img.load())
 
       if (time.time() < live_preview_start - 10):
-        live_preview_active = False
+        self.main.live_preview_active = False
         break
 
   def take_photo(self, set_last_photo_path):
