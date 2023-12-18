@@ -11,10 +11,9 @@ from PIL import ImageFont
 from PIL import ImageColor
 
 class Display:
-  def __init__(self, get_photo_count):
+  def __init__(self):
     self.base_path = "/home/pi/pi-zero-hq-cam/camera/software/display-images/"
     self.font_path = "/home/pi/pi-zero-hq-cam/camera/software/display/"
-    self.file_count = get_photo_count()
     Device_Init()
 
   def display_image(self, img_path):
