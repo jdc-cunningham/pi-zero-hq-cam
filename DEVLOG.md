@@ -84,7 +84,19 @@ I will have to unsolder this stuff/use the pi zero 2 anyway
 
 so first boot camera on isn't set
 
+working as expected...
 
+next run?...
+
+No it's true now.... wth
+
+center button is stuck on
+
+huh
+
+I wonder if I have to turn the camera off... would think it turns off when the script is closed
+
+maybe I have to clear the pins
 
 ---
 

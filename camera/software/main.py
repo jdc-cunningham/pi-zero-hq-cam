@@ -10,9 +10,9 @@
 '''
 
 import time, os
+import RPi.GPIO as GPIO
 
 from threading import Thread
-
 from buttons.buttons import Buttons
 # from battery.battery import BattDb
 from camera.camera import Camera
@@ -21,6 +21,8 @@ from display.display import Display
 
 class Main:
   def __init__(self):
+    GPIO.cleanup()
+
     self.on = True # what
     self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
     self.display = Display()
