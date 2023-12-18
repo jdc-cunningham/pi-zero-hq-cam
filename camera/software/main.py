@@ -21,9 +21,6 @@ from display.display import Display
 
 class Main:
   def __init__(self):
-    GPIO.cleanup()
-    GPIO.setmode(GPIO.BCM)
-
     self.on = True # what
     self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
     self.display = Display()

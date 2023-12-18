@@ -98,6 +98,18 @@ I wonder if I have to turn the camera off... would think it turns off when the s
 
 maybe I have to clear the pins
 
+10:17 AM
+
+hmm.... resetting means I have to rebind
+
+the thing is normally this camera you turn it on and the softare runs once/as is
+
+development I keep starting/stopping it which is causing problems...
+
+which case I can add a dev file to reset stuff
+
+need a quick break
+
 ---
 
 12/15/2023
