@@ -36,4 +36,5 @@ class Camera:
   def take_photo(self):
     self.main.live_preview_pause = True
     img_path = self.img_base_path + str(time.time()).split(".")[0] + ".jpg"
+    self.change_mode("full")
     self.picam2.capture_file(img_path)
