@@ -50,14 +50,14 @@ class Main:
   def button_pressed(self, button):
     print(button)
     if (button == "SHUTTER"):
-      if (not self.live_preview_active or not self.live_preview_active):
-        if (self.live_preview_active):
-          self.live_preview_pause = False
-          self.camera.start_live_preview()
-        else:
-          self.live_preview_active = True
+      if (self.live_preview_active and self.live_preview_pause):
+        self.live_preview_pause = False
+        return
 
+      if (not self.live_preview_active):
+        self.live_preview_active = True
         self.live_preview_start = time.time()
+        self.camera.start_live_preview()
       else:
         self.live_preview_start = time.time() # reset counter
         self.camera.take_photo()
