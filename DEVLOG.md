@@ -210,6 +210,10 @@ live preview is going solid though
 
 looks like the preview while loop blocks the processing
 
+1:02 PM
+
+alright so was able to take a picture, but can't stop the preview, the 10 second time out isn't working
+
 
 
 ---

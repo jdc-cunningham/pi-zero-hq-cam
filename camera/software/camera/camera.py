@@ -30,8 +30,9 @@ class Camera:
         pil_img = self.picam2.capture_image()
         self.display.display_buffer(pil_img.load())
 
-      if (time.time() < self.main.live_preview_start - 10):
+      if (time.time() > self.main.live_preview_start + 10):
         self.main.live_preview_active = False
+        self.display.clear_screen()
         break
 
   def start_live_preview(self):
