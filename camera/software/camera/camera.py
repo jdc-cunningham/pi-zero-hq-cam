@@ -24,7 +24,7 @@ class Camera:
   def start_live_preview(self):
     self.display.clear_screen()
 
-    while (live_preview_active):
+    while (self.main.live_preview_active):
       if (not self.main.live_preview_pause):
         pil_img = self.picam2.capture_image()
         self.display.display_buffer(pil_img.load())
