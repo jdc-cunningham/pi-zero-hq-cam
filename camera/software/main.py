@@ -53,7 +53,7 @@ class Main:
     
     if (button == "SHUTTER" and self.camera_on):
       self.camera.take_photo(self.set_last_photo_path)
-      self.display.dislay_image(self.photo_taken_path)
+      self.display.display_image(self.photo_taken_path)
       time.sleep(5)
       self.clear_screen()
       self.display.draw_text("Camera on")
