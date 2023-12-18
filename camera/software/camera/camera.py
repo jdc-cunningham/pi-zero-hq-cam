@@ -7,9 +7,9 @@ class Camera:
     self.main = main
     self.display = display
     self.picam2 = Picamera2()
-    self.small_config = self.picam2.create_still_configuration(main={"size": (128, 128)})
+    self.small_res_config = self.picam2.create_still_configuration(main={"size": (128, 128)})
     self.full_res_config = self.picam2.create_still_configuration()
-    self.picam2.configure(self.full_res_config)
+    self.picam2.configure(self.small_res_config)
     self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
 
   def start(self):
