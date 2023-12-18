@@ -158,6 +158,12 @@ I'll move GPIO 1 to 7 (next to it)
 
 I'll move 22 to 18 (center)
 
+11:41 AM
+
+oh no... I forgot GPIO 7 was problematic can't use that one
+
+
+
 ---
 
 12/15/2023
