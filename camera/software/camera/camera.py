@@ -14,7 +14,6 @@ class Camera:
 
   def start(self, main):
     self.picam2.start()
-    main.camera_on = True
 
   def change_mode(self, mode):
     if (mode == "full"):
