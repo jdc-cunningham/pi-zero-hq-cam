@@ -25,13 +25,14 @@ class Camera:
   def live_preview(self):
     self.display.clear_screen()
 
-    while (self.main.live_preview_active):
+    while (self.main.live_preview_active and not self.main.live_preview_pause):
       if (not self.main.live_preview_pause):
         pil_img = self.picam2.capture_image()
         self.display.display_buffer(pil_img.load())
 
+      # after 10 seconds turn off
       if (time.time() > self.main.live_preview_start + 10):
-        self.main.live_preview_active = False
+        self.main.live_preview_pause = True
         self.display.clear_screen()
         self.display.draw_text("Camera active")
         break
