@@ -162,6 +162,10 @@ I'll move 22 to 18 (center)
 
 oh no... I forgot GPIO 7 was problematic can't use that one
 
+11:51 AM
+
+I need to check the soldering, I was thinking too with the wiring change maybe that affected the old code/hardware
+
 
 
 ---
