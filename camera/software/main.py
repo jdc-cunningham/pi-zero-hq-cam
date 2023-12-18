@@ -48,9 +48,10 @@ class Main:
   #   self.photo_taken_path = path
 
   def button_pressed(self, button):
-    print(button)
     if (button == "SHUTTER"):
+
       if (self.live_preview_active and self.live_preview_pause):
+        self.live_preview_start = time.time()
         self.live_preview_pause = False
         return
 
