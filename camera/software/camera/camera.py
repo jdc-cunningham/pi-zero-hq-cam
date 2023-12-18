@@ -33,6 +33,7 @@ class Camera:
       if (time.time() > self.main.live_preview_start + 10):
         self.main.live_preview_active = False
         self.display.clear_screen()
+        self.display.draw_text("Camera active")
         break
 
   def start_live_preview(self):
