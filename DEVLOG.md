@@ -206,6 +206,10 @@ dang it, doesn't take a photo
 
 live preview is going solid though
 
+12:58 PM
+
+looks like the preview while loop blocks the processing
+
 
 
 ---

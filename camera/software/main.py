@@ -23,6 +23,7 @@ class Main:
   def __init__(self):
     self.on = True # what
     self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
+    self.live_preview_pause = False
     self.display = Display()
     self.display.show_boot_scene()
     self.live_preview_active = False
@@ -37,7 +38,6 @@ class Main:
     self.shutter_event_processing = False
     self.photo_taken_path = None
     self.display.draw_text("Camera on") # set last so everything is ready
-    self.live_preview_pause = False
 
     # keep main running
     while (self.on):
@@ -48,6 +48,7 @@ class Main:
   #   self.photo_taken_path = path
 
   def button_pressed(self, button):
+    print(button)
     if (button == "SHUTTER"):
       if (not self.live_preview_active):
         self.live_preview_active = True

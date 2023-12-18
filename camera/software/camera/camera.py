@@ -1,5 +1,6 @@
 import time
 
+from threading import Thread
 from picamera2 import Picamera2
 
 class Camera:
@@ -21,7 +22,7 @@ class Camera:
     else:
       self.picam2.switch_mode(self.small_config)
 
-  def start_live_preview(self):
+  def live_preview(self):
     self.display.clear_screen()
 
     while (self.main.live_preview_active):
@@ -32,6 +33,9 @@ class Camera:
       if (time.time() < self.main.live_preview_start - 10):
         self.main.live_preview_active = False
         break
+
+  def start_live_preview(self):
+    Thread(target=self.live_preview).start()
 
   def take_photo(self):
     self.main.live_preview_pause = True
