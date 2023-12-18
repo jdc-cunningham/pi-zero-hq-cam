@@ -31,9 +31,6 @@ class Display:
     self.display_image(boot_img_path)
     time.sleep(3)
     self.clear_screen()
-    
-    # list files
-    self.draw_text("file count: " + str(self.file_count))
 
   def draw_text(self, text):
     image = Image.new("RGB", (128, 128), "BLACK")
