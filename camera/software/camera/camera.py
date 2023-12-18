@@ -31,7 +31,7 @@ class Camera:
         self.display.display_buffer(pil_img.load())
 
       # after 10 seconds turn off
-      if (time.time() > self.main.live_preview_start + 10):
+      if (time.time() > self.main.live_preview_start + 10 and not self.main.live_preview_pause):
         self.main.live_preview_pause = True
         self.display.clear_screen()
         self.display.draw_text("Camera on")

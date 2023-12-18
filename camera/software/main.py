@@ -59,11 +59,13 @@ class Main:
         self.live_preview_start = time.time()
         self.camera.start_live_preview()
       else:
-        self.live_preview_start = time.time() # reset counter
+        self.display.clear_screen()
+        self.display.draw_text("Taking photo...")
         self.camera.take_photo()
         self.display.clear_screen()
         self.display.draw_text("Photo captured")
         self.display.clear_screen()
         self.live_preview_pause = False # keep going or 10 second cutoff kicks in
+        self.live_preview_start = time.time() # reset counter
 
 Main()
