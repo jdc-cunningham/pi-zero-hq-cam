@@ -52,7 +52,25 @@ I can't think right now is the thing... I'm aimless
 
 bro wtf... my desktop just bluescreened lol... been a long time since that happened
 
+9:32 AM
 
+I have to "wrap" this project up this week eg. next two days which isn't possible but I have to go back to reality (being poor) and I need to land a new dev job or freelance in my spare time
+
+9:38 AM
+
+wtf man... the variable I pass into the method, isn't changed
+
+9:45 AM
+
+this is so dumb wtf... I'm stuck because I can't change a variable/doesn't work like I'd expect it to
+
+9:54 AM
+
+crowd sourcing my problems lol
+
+
+
+---
 
 12/15/2023
 

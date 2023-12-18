@@ -11,9 +11,9 @@ class Camera:
     self.picam2.configure(self.full_res_config)
     self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
 
-  def start(self, camera_on):
+  def start(self, main):
     self.picam2.start()
-    camera_on = True
+    main.camera_on = True
 
   def change_mode(self, mode):
     if (mode == "full"):
@@ -32,7 +32,7 @@ class Camera:
         live_preview_active = False
         break
 
-  def take_photo(self, photo_taken_path):
+  def take_photo(self, set_last_photo_path):
     img_path = self.img_base_path + str(time.time()).split(".")[0] + ".jpg"
     self.picam2.capture_file(img_path)
-    photo_taken_path = img_path
+    set_last_photo_path(img_path)
