@@ -38,3 +38,4 @@ class Camera:
     img_path = self.img_base_path + str(time.time()).split(".")[0] + ".jpg"
     self.change_mode("full")
     self.picam2.capture_file(img_path)
+    self.change_mode("small")
