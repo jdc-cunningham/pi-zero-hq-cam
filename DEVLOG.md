@@ -172,7 +172,25 @@ Alright I verified the new mappings work
 
 I want to test the previous "bad" oled/live preview code
 
+no.... the git folder is corrupted again... this is #5
 
+I wonder if it's because I'm turning it on/off so often while it runs code
+
+12:07 PM
+
+oh man it's looking good!
+
+I've had the live preview code running for a while now
+
+I don't want to jinx it.
+
+12:13 PM
+
+Alright... let's gooooo
+
+I can go back to my original code ha
+
+Oh man I gotta remember what it was (git)
 
 ---
 
