@@ -8,9 +8,12 @@ class Camera:
     self.picam2 = Picamera2()
     self.small_config = self.picam2.create_still_configuration(main={"size": (128, 128)})
     self.full_res_config = self.picam2.create_still_configuration()
-    self.picam2.configure(self.small_config)
-    self.picam2.start()
+    self.picam2.configure(self.full_res_config)
     self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
+
+  def start(self, camera_on):
+    self.picam2.start()
+    camera_on = True
 
   def change_mode(self, mode):
     if (mode == "full"):
@@ -29,7 +32,7 @@ class Camera:
         live_preview_active = False
         break
 
-  def take_photo(self):
-    self.change_mode('full')
-    self.picam2.capture_file(self.img_base_path + str(time.time()).split(".")[0] + ".jpg")
-    self.change_mode('small')
+  def take_photo(self, photo_taken_path):
+    img_path = self.img_base_path + str(time.time()).split(".")[0] + ".jpg"
+    self.picam2.capture_file(img_path)
+    photo_taken_path = img_path

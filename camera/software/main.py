@@ -27,46 +27,30 @@ class Main:
     self.display.show_boot_scene()
     self.live_preview_active = False
     self.camera = Camera(self.display)
+    self.camera_on = False
     self.buttons = Buttons(self.button_pressed)
     self.buttons_thread = Thread(target=self.buttons.start)
     self.buttons_thread.start()
     self.live_preview_thread = None
     self.live_preview_start = 0
     self.shutter_event_processing = False
+    self.photo_taken_path = None
 
     # keep main running
     while (self.on):
       print('on') # replace with battery check
       time.sleep(60)
 
-  # https://stackoverflow.com/a/8311376/2710227
-  def get_photo_count(self):
-    _, _, files = next(os.walk(self.img_base_path))
-    return len(files)
-
-  def start_live_preview(self):
-    self.live_preview_active = True
-    self.live_preview_start = time.time()
-    self.live_preview_thread = Thread(target=self.camera.start_live_preview, args=(self.live_preview_active, self.live_preview_start))
-    self.live_preview_thread.start()
-    self.shutter_event_processing = False
-
   def button_pressed(self, button):
-    print(button)
-    print(self.live_preview_active)
-
-    if (button == "SHUTTER" and not self.shutter_event_processing):
-      self.shutter_event_processing = True
-
-      if (not self.live_preview_active):
-        self.start_live_preview()
-      else:
-        self.live_preview_active = False
-        time.sleep(1.5)
-        self.display.clear_screen()
-        time.sleep(2)
-        self.camera.take_photo()
-        time.sleep(5)
-        self.start_live_preview()
+    if (button == "CENTER" and not self.camera_on):
+      self.camera.start(self.camera_on)
+      self.display.draw_text("Camera on")
+    
+    if (button == "SHUTTER" and self.camera_on):
+      self.camera.take_photo(self.photo_taken_path)
+      self.display.dislay_image(self.photo_taken_path)
+      time.sleep(5)
+      self.clear_screen()
+      self.display.draw_text("Camera on")
 
 Main()
