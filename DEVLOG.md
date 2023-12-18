@@ -194,7 +194,11 @@ Oh man I gotta remember what it was (git)
 
 12:31 PM
 
-OMG my brain... I have time, you have all the time in the world (League of Extraordinary Gentlemen)
+OMG my brain... I have time, take your time boy, you have all the time in the world (League of Extraordinary Gentlemen)
+
+12:38 PM
+
+I'm so excited to go outside lmao... it looks great out there, bright as hell, probably can't see the OLED sadly, it is recessed
 
 
 
