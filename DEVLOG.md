@@ -1,3 +1,45 @@
+12/18/2023 Monday
+
+8:51 AM
+
+Damn, I slept, I passed out at 10 PM and here I am now
+
+Today is a nice day, sunny... while this project is not done yet I think I have to take this opportunity to go out and film
+
+Worst case scenario, I will bind the back button to be the "preview activate" where I can briefly run the preview and focus the scene, then restart, shutter button to take a photo
+
+But for today I will start working on the menu system
+
+I have ordered 3 Pi Zero 2s... because I'm impatient, sadly I overpaid for one of them, one of those price gouging sellers. I wanted to get it in right away. I unfortunately work on Wednesday, I thought I had that day off.
+
+I'm kind of mellowed out right now though, don't have a fast drive to work on this
+
+My body's in pain too from work, my knees/finger tips, it's weird. Before it was my back and heels.
+
+I did discover last time I worked on this project that if I have two ssh sessions going, the bad state is recoverable from (don't have to restart)
+
+I'm just sad that even a basic loop of displaying an image (without camera being on) fails over time
+
+9:00 AM
+
+Kind of floundering unsure what to do... I want the menu but don't know what to make
+
+9:08 AM
+
+I had a thought... for today, video moment
+
+I can bind the center button to turn the camera on, then put a status on the OLED eg. "camera on" then when I push the shutter, it will take a button
+
+Unfortunately I can't tell what the image looks like
+
+Maybe I can show the photo after it's taken and then it goes away, try again
+
+I will see if that doesn't fail as bad
+
+I don't have a menu design yet in mind, I'm thinking icons that you can move/hover around, text bottom of screen with a message
+
+
+
 12/15/2023
 
 9:38 PM
