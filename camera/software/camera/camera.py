@@ -20,7 +20,7 @@ class Camera:
     if (mode == "full"):
       self.picam2.switch_mode(self.full_res_config)
     else:
-      self.picam2.switch_mode(self.small_config)
+      self.picam2.switch_mode(self.small_res_config)
 
   def live_preview(self):
     self.display.clear_screen()
