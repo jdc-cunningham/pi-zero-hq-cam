@@ -166,6 +166,12 @@ oh no... I forgot GPIO 7 was problematic can't use that one
 
 I need to check the soldering, I was thinking too with the wiring change maybe that affected the old code/hardware
 
+12:01 PM
+
+Alright I verified the new mappings work
+
+I want to test the previous "bad" oled/live preview code
+
 
 
 ---
