@@ -200,6 +200,12 @@ OMG my brain... I have time, take your time boy, you have all the time in the wo
 
 I'm so excited to go outside lmao... it looks great out there, bright as hell, probably can't see the OLED sadly, it is recessed
 
+12:47 PM
+
+dang it, doesn't take a photo
+
+live preview is going solid though
+
 
 
 ---

@@ -21,19 +21,19 @@ class Camera:
     else:
       self.picam2.switch_mode(self.small_config)
 
-  def start_live_preview(self, live_preview_active, live_preview_start):
+  def start_live_preview(self):
     self.display.clear_screen()
 
     while (live_preview_active):
-      pil_img = self.picam2.capture_image()
-      self.display.display_buffer(pil_img.load())
+      if (not self.main.live_preview_pause):
+        pil_img = self.picam2.capture_image()
+        self.display.display_buffer(pil_img.load())
 
-      if (time.time() < live_preview_start - 10):
+      if (time.time() < self.main.live_preview_start - 10):
         self.main.live_preview_active = False
         break
 
-  def take_photo(self, set_last_photo_path):
+  def take_photo(self):
     self.main.live_preview_pause = True
     img_path = self.img_base_path + str(time.time()).split(".")[0] + ".jpg"
     self.picam2.capture_file(img_path)
-    set_last_photo_path(img_path)

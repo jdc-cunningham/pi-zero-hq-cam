@@ -52,10 +52,10 @@ class Main:
       if (not self.live_preview_active):
         self.live_preview_active = True
         self.live_preview_start = time.time()
-        self.camera.start_live_preview(self.live_preview_active, self.live_preview_start)
+        self.camera.start_live_preview()
       else:
         self.live_preview_start = time.time() # reset counter
-        self.camera.take_photo(self.set_last_photo_path)
+        self.camera.take_photo()
         self.display.clear_screen()
         self.display.draw_text("Photo captured")
         self.display.clear_screen()
