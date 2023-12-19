@@ -1,0 +1,5 @@
+# files
+*.pyc
+
+# folders
+captured-media/
