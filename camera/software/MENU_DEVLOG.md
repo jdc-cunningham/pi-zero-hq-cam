@@ -28,3 +28,10 @@ Some ideas on main/home menu
 I don't have small text only 24 and 18 I think
 
 I can pull the smaller text from the ml-hat-cam project
+
+3:36 PM
+
+bare minimum I can do today besides printing is come up with the menu design
+
+Unfortunately I'll have to wait till Christmas before I can write more code ha... that'll be my present I guess lol
+
