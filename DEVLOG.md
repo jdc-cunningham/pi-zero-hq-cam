@@ -1,3 +1,35 @@
+12/19/2023
+
+9:40 AM
+
+I feel slow today. But I'll keep going.
+
+9:48 AM
+
+I tried VS Code remote SSH extension but apparently it does not support Pi Zeros (too little RAM) damn
+
+Alright... I'll do my development on both sides I guess.
+
+So yesterday, while I was able to take photos, the experience was very bad.
+
+The preview (10 seconds) was too short, when taking a photo there would be a display write overlap
+
+9:51 AM
+
+well... not sure if it's a good thing or not but the scalped Pi Zero 2 I bought should arrive today vs. the regular priced ones that'll come in this weekend damn.
+
+I'm somewhat starting over with the code, because now that everything works as I expect, I can restructure it to my original plan... not this random workaround stuff
+
+Today's focus is a menu, battery system would be nice but I have so much of it now... I do wish I had a current shunt.
+
+I could do software testing to check battery life, where it runs a program to stress itself/log uptime, then turn off periodically like a real world use case.
+
+Need a process block to ignore buttons since they can fire rapidly
+
+
+
+---
+
 12/18/2023 Monday
 
 8:51 AM
