@@ -28,8 +28,3 @@ Some ideas on main/home menu
 I don't have small text only 24 and 18 I think
 
 I can pull the smaller text from the ml-hat-cam project
-
-3:04 PM
-
-These are the features
-
