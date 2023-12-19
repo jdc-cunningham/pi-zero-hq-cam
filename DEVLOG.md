@@ -42,6 +42,22 @@ I'll design the ring mount for the 35 mm, it's less material, even less for Ardu
 
 One quick thing I can do is increase the timelapse preview, also after you enter preview, after it leaves preview (10 sec) assumes you want to take a photo
 
+10:39 AM
+
+Holy crap... 35mm is very small (cropped) it's not like 35mm on a full frame.
+
+I need to understand that/why
+
+even 20 seconds is just barely enough to dial a shot in, guess I should go for 30 seconds dang
+
+I'm not sure what to use 35mm for, guess I'll find out in the summer time, provided my life turns around by then
+
+11:57 AM
+
+Looks like I'll only get the 35mm done today
+
+
+
 ---
 
 12/18/2023 Monday
