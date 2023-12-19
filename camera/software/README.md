@@ -29,10 +29,10 @@ Commands for myself
 Add the service
 
 ```
-$sudo nano /etc/systemd/system/boot_ml-hat-cam.service
+$sudo nano /etc/systemd/system/pi-cam.service
 $sudo systemctl enable pi-cam.service
 $sudo systemctl daemon-reload
-$sudo systemctl restart boot_ml-hat-cam.service
+$sudo systemctl restart pi-cam.service
 ```
 
 Verify it's working with
