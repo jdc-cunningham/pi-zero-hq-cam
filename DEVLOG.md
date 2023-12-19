@@ -56,6 +56,10 @@ I'm not sure what to use 35mm for, guess I'll find out in the summer time, provi
 
 Looks like I'll only get the 35mm done today
 
+12:22 PM
+
+I'm worried right now, mentally wondering, so design work is easier than code structure
+
 
 
 ---
