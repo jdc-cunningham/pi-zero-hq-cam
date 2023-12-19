@@ -1,0 +1,6 @@
+# files
+*.pyc
+DEVLOG.md
+
+# folders
+captured-media/
