@@ -7,4 +7,4 @@
 
 20% infill, supports, PLA, 50mm/s print speed
 
-<img src="../../design-see-through.JPG"/>
+<img src="../../readme-images/design-see-through.JPG"/>
