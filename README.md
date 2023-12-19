@@ -2,9 +2,7 @@
 
 A pi zero camera body using the hq camera
 
-<img src="./readme-images/raspberry-pi-zero-hq-camera-35mm.JPG"/>
-
-<img src="./readme-images/ring.JPG"/>
+<img src="./readme-images/cam-lenses.JPG"/>
 
 <img src="./readme-images/cam.JPG"/>
 
