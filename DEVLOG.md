@@ -26,7 +26,21 @@ I could do software testing to check battery life, where it runs a program to st
 
 Need a process block to ignore buttons since they can fire rapidly
 
+10:06 AM
 
+Distracted, remembering reality
+
+10:12 AM
+
+Hmm... I'm tempted to print the other barrel rings, I do want them
+
+10:16 AM
+
+I'm designing a front-cap for the 5mm lens. I currently can't find the 5mm's end cap (screw mount) but I can keep one lens attached to the camera for now.
+
+I'll design the ring mount for the 35 mm, it's less material, even less for Arducam 12mm maybe I can get them both done today idk though, that's 7 parts
+
+One quick thing I can do is increase the timelapse preview, also after you enter preview, after it leaves preview (10 sec) assumes you want to take a photo
 
 ---
 
