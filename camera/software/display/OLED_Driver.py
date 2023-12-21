@@ -72,7 +72,7 @@ GPIO.setup(OLED_DC_PIN, GPIO.OUT)
 GPIO.setup(OLED_CS_PIN, GPIO.OUT)
 #SPI init
 SPI = spidev.SpiDev(0, 0)
-SPI.max_speed_hz = 9000000
+SPI.max_speed_hz = 9000000 # 21000000 if pi zero 2
 SPI.mode = 0b00
 
 
