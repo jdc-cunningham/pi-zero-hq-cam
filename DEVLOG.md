@@ -16,6 +16,10 @@ This is so dumb it's hand drawn but it's not about the scenes (can be updated), 
 
 I was also thinking for recording, red dot, side note no audio sucks, but also one less thing to worry about
 
+11:05 PM
+
+what the heck man... this lens cap is still too small, I'll have to do it again tomorrow, at least it's an hour print but still... this'll be the 3rd attempt
+
 ---
 
 12/19/2023
