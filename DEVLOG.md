@@ -54,6 +54,12 @@ I like the way react works, where you pass in parameters and it outputs a displa
 
 I'm thinking about doing that with the menu, will see
 
+8:03 PM
+
+Oh I forgot, I had an idea for an expansion USB mic/speaker it's like a T-shape (center speaker, strereo mic)
+
+That would be an easy way to add that feature, but it's a custom chip design, outside my skill set right now
+
 ---
 
 12/21/2023

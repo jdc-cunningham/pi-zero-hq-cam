@@ -49,3 +49,7 @@ M1.7*6 screws
 - solder pi to hanger screw mount
 
 join two halves together, 4 screws
+
+### Future
+
+A USB mic/stereo that can get plugged into the exposed USB port too add audio in/out
