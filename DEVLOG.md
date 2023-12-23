@@ -42,6 +42,12 @@ Ooh... I just had an idea... it could get annoying but when you point the camera
 
 That feature (blinking chibi animation) is on my list of things to do but for now just using that generated character
 
+Damn I'm so tired... what I need to do is make this code simpler/reusable and then be able to pass in a flag (currently duplicated code) eg. if it's making a menu inactive it just flips the color of the line fill
+
+The telemetry will show the IMU live readouts and details about the pi zero 1/2 eg. cores/ram/storage/etc... just data (excuse to show something cool)
+
+the IMU thing I want the horizon level (it would go over a photo)
+
 ---
 
 12/21/2023
