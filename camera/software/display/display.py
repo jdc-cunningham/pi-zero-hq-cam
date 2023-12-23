@@ -59,7 +59,16 @@ class Display:
       draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 16)
 
   def draw_active_square(self, which_icon):
-    print('method')
+    draw = self.active_img # no err check
+
+    if (which_icon == "bluetooth"):
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 16)
+    elif (which_icon == "telemetry"):
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 16)
+    elif (which_icon == "files"):
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 16)
+    else:
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 16)
 
   def draw_text(self, text):
     image = Image.new("RGB", (128, 128), "BLACK")
