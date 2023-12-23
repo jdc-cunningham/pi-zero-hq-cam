@@ -51,7 +51,7 @@ class Display:
     draw = self.active_img # no err check
 
     if (cur_icon == "bluetooth"):
-      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 2)
+      draw.line([(15, 100), (41, 100)], fill = "MAGENTA", width = 2)
     elif (cur_icon == "telemetry"):
       draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 2)
     elif (cur_icon == "files"):
@@ -66,7 +66,8 @@ class Display:
     base_img.paste(self.active_img)
 
     if (which_icon == "bluetooth"):
-      draw.line([(10, 104), (41, 104)], fill = "MAGENTA", width = 2)
+      draw.line([(5, 98), (25, 98)], fill = "MAGENTA", width = 2)
+      draw.line([(5, 125), (25, 125)], fill = "MAGENTA", width = 2)
     elif (which_icon == "telemetry"):
       draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 2)
     elif (which_icon == "files"):
