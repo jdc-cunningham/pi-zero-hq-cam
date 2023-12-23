@@ -9,24 +9,31 @@
   - CRON sqlite db counter for battery consumption
 '''
 
-import time, os
-import RPi.GPIO as GPIO
+import time
 
 from threading import Thread
 from buttons.buttons import Buttons
 # from battery.battery import BattDb
 from camera.camera import Camera
+from menu.menu import Menu
 from display.display import Display
-# from menu.menu import Menu
 
 class Main:
   def __init__(self):
-    
+    self.on = True
+    self.display = self.display = Display()
+
+    self.startup()
 
     # keep main running
     while (self.on):
       print('on') # replace with battery check
       time.sleep(60)
+
+  def startup(self):
+    self.display.show_boot_scene()
+    self.display.show_home_sprite()
+
 
   def button_pressed(self, button):
     print('stuff')

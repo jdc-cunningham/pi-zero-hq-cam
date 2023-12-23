@@ -1,3 +1,29 @@
+12/22/2023
+
+5:57 PM
+
+I will write code today, I don't want to wait for the 3 days off I have from work
+
+Won't be crazy progress but something
+
+6:11 PM
+
+damn I'm spent... will try
+
+6:28 PM
+
+There is a "system design" thing I still haven't seen/figured out yet
+
+I have to make the pieces to see the bigger picture
+
+6:35 PM
+
+I'm glad for the Pi Zero 2 upgrade, it's snappy, easier to develop on
+
+
+
+---
+
 12/21/2023
 
 7:16 PM

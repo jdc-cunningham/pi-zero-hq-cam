@@ -14,6 +14,9 @@ class Display:
   def __init__(self):
     self.base_path = "/home/pi/pi-zero-hq-cam/camera/software/display-images/"
     self.font_path = "/home/pi/pi-zero-hq-cam/camera/software/display/"
+    self.menu_path = "/home/pi/pi-zero-hq-cam/camera/software/menu/"
+
+    # setup OLED
     Device_Init()
 
   def display_image(self, img_path):
@@ -31,6 +34,10 @@ class Display:
     self.display_image(boot_img_path)
     time.sleep(3)
     self.clear_screen()
+  
+  def show_home_sprite(self):
+    home_sprite_path = self.menu_path + "/menu-sprites/home.jpg"
+    self.display_image(home_sprite_path)
 
   def draw_text(self, text):
     image = Image.new("RGB", (128, 128), "BLACK")
