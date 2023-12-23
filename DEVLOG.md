@@ -24,6 +24,12 @@ I'm glad for the Pi Zero 2 upgrade, it's snappy, easier to develop on
 
 Ooh... not even that far already having separation of concerns issues
 
+7:11 PM
+
+man I'm so tired... my eyes hurt lol
+
+Trying to draw a box on an existing image, the other examples were on a basic black background
+
 
 
 ---
