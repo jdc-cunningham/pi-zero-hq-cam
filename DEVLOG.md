@@ -48,6 +48,12 @@ The telemetry will show the IMU live readouts and details about the pi zero 1/2 
 
 the IMU thing I want the horizon level (it would go over a photo)
 
+7:50 PM
+
+I like the way react works, where you pass in parameters and it outputs a display
+
+I'm thinking about doing that with the menu, will see
+
 ---
 
 12/21/2023
