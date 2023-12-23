@@ -74,6 +74,8 @@ class Display:
     else:
       draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 16)
 
+    Display_Image(base_img)
+
   def draw_text(self, text):
     image = Image.new("RGB", (128, 128), "BLACK")
     self.active_img = image
