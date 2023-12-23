@@ -36,6 +36,12 @@ Ugh... I need primitives, it's not dry
 
 Also need to separate state from display logic eg. the menu vs. display code
 
+7:44 PM
+
+Ooh... I just had an idea... it could get annoying but when you point the camera at the ground, this chibi animation could briefly popup (blinking eyes)
+
+That feature (blinking chibi animation) is on my list of things to do but for now just using that generated character
+
 ---
 
 12/21/2023
