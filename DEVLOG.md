@@ -30,7 +30,11 @@ man I'm so tired... my eyes hurt lol
 
 Trying to draw a box on an existing image, the other examples were on a basic black background
 
+7:43 PM
 
+Ugh... I need primitives, it's not dry
+
+Also need to separate state from display logic eg. the menu vs. display code
 
 ---
 
