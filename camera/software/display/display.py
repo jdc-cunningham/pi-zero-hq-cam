@@ -40,7 +40,7 @@ class Display:
   def show_home_sprite(self):
     home_sprite_path = self.menu_path + "/menu-sprites/home.jpg"
     self.display_image(home_sprite_path)
-    self.draw_active_square(self, "bluetooth")
+    self.draw_active_square("bluetooth")
 
   def draw_square(tl_coord, br_coord):
       print('method')
