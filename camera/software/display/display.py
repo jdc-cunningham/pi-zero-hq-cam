@@ -60,7 +60,8 @@ class Display:
 
   def draw_active_square(self, which_icon):
     # paste lol cool https://stackoverflow.com/a/2563883
-    draw = Image.new("RGB", (128, 128), "BLACK")
+    disp_img = Image.new("RGB", (128, 128), "BLACK")
+    draw = ImageDraw.Draw(disp_img)
     draw.paste(self.active_img)
 
     if (which_icon == "bluetooth"):
