@@ -59,7 +59,9 @@ class Display:
       draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 16)
 
   def draw_active_square(self, which_icon):
-    draw = self.active_img # no err check
+    # paste lol cool https://stackoverflow.com/a/2563883
+    draw = Image.new("RGB", (128, 128), "BLACK")
+    draw.paste(self.active_img)
 
     if (which_icon == "bluetooth"):
       draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 16)
