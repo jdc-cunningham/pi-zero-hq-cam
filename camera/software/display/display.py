@@ -51,13 +51,13 @@ class Display:
     draw = self.active_img # no err check
 
     if (cur_icon == "bluetooth"):
-      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 1)
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 2)
     elif (cur_icon == "telemetry"):
-      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 1)
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 2)
     elif (cur_icon == "files"):
-      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 1)
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 2)
     else:
-      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 1)
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 2)
 
   def draw_active_square(self, which_icon):
     # paste lol cool https://stackoverflow.com/a/2563883
@@ -66,13 +66,13 @@ class Display:
     base_img.paste(self.active_img)
 
     if (which_icon == "bluetooth"):
-      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 1)
+      draw.line([(10, 104), (41, 104)], fill = "MAGENTA", width = 2)
     elif (which_icon == "telemetry"):
-      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 1)
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 2)
     elif (which_icon == "files"):
-      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 1)
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 2)
     else:
-      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 1)
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 2)
 
     Display_Image(base_img)
 
