@@ -20,6 +20,10 @@ I have to make the pieces to see the bigger picture
 
 I'm glad for the Pi Zero 2 upgrade, it's snappy, easier to develop on
 
+6:48 PM
+
+Ooh... not even that far already having separation of concerns issues
+
 
 
 ---

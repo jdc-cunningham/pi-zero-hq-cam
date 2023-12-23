@@ -12,6 +12,7 @@ from PIL import ImageColor
 
 class Display:
   def __init__(self):
+    self.active_img = None
     self.base_path = "/home/pi/pi-zero-hq-cam/camera/software/display-images/"
     self.font_path = "/home/pi/pi-zero-hq-cam/camera/software/display/"
     self.menu_path = "/home/pi/pi-zero-hq-cam/camera/software/menu/"
@@ -31,6 +32,7 @@ class Display:
 
   def show_boot_scene(self):
     boot_img_path = self.base_path + "/boot.jpg"
+    self.active_img = Image.open(boot_img_path)
     self.display_image(boot_img_path)
     time.sleep(3)
     self.clear_screen()
@@ -38,9 +40,30 @@ class Display:
   def show_home_sprite(self):
     home_sprite_path = self.menu_path + "/menu-sprites/home.jpg"
     self.display_image(home_sprite_path)
+    self.draw_active_square(self, "bluetooth")
+
+  def draw_square(tl_coord, br_coord):
+      print('method')
+
+  # draw same square but black
+  def undraw_active_square(self, cur_icon):
+    draw = self.active_img # no err check
+
+    if (cur_icon == "bluetooth"):
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 16)
+    elif (cur_icon == "telemetry"):
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 16)
+    elif (cur_icon == "files"):
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 16)
+    else:
+      draw.line([(21, 107), (41, 107)], fill = "MAGENTA", width = 16)
+
+  def draw_active_square(self, which_icon):
+    print('method')
 
   def draw_text(self, text):
     image = Image.new("RGB", (128, 128), "BLACK")
+    self.active_img = image
     draw = ImageDraw.Draw(image)
     font = ImageFont.truetype(self.font_path + "cambriab.ttf", 12)
 
