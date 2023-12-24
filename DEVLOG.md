@@ -165,6 +165,16 @@ Ahh... the menu should be made from individual sprites/paste with offset
 
 Easier to update
 
+5:35 PM
+
+Bro how did I get this design wrong damn
+
+it's too short
+
+I'll modify my aperture ring temporarily for my print but the one in the repo will be corrected
+
+
+
 ---
 
 12/23/2023
