@@ -1,3 +1,19 @@
+12/23/2023
+
+8:15 PM
+
+I'm super tired today, my fingers/hands hurt
+
+I binge ate so I'm in a food coma
+
+I wanted to note that I thought about having video/part of the next video that focuses on the camera UI/UX and footage
+
+Anyway I need a video mode/icon to toggle between photo/video
+
+Won't have audio but gotta have that cliche focus pull
+
+---
+
 12/22/2023
 
 5:57 PM
