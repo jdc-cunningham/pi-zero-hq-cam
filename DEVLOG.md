@@ -75,6 +75,30 @@ Concrete goals:
 
 That's plenty there to guide what needs to be done
 
+11:54 AM
+
+At some point I do want an auto-battery-benchmark thing which pretty much just runs the camera's live preview for like 30 seconds, turns off, repeats... until the camera dies. It would keep writing to a file then later on next boot read that file and see the max lifetime.
+
+It would then set the system against this eg. 80% of that time to make sure battery is kept in decent health
+
+12:04 PM
+
+I'm floundering, kind of chilling... wish I had a Christmas feast, personal problems
+
+I'm still not seeing the full picture, of how this camera's code is structured... the top-down flow
+
+Man... I wish I added a current shunt/adc to it, to get info on the battery ahh well...
+
+The BMS cut off will turn the battery off/battery itself has protection too (not great, double but battery I had on hand)
+
+12:11 PM
+
+was trying to design some icon for the video/photography toggle but I might just use words
+
+I was also thinking about the photo crop zoom pan thing..., it's just switching photo modes and then keeping track of offsets/what's painted on the screen
+
+I still have to look into the cli-args for fast photo/settings
+
 ---
 
 12/23/2023
