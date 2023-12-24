@@ -1,5 +1,11 @@
 underline for menu icon active is fine, top also looks tacky
 
+astro mode also with photography
+
+just point it at the sky
+
+maybe assistive focusing via phone
+
 12/23/2023
 
 8:15 PM
