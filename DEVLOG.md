@@ -1,3 +1,5 @@
+underline for menu icon active is fine, top also looks tacky
+
 12/23/2023
 
 8:15 PM
