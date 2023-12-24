@@ -99,6 +99,12 @@ I was also thinking about the photo crop zoom pan thing..., it's just switching 
 
 I still have to look into the cli-args for fast photo/settings
 
+I do want that astro mode... will need to test it somewhere too
+
+damn... I feel like this is a wasted day, I'm just tired, my 
+
+I guess I'll just chill today, think and write them down
+
 ---
 
 12/23/2023
