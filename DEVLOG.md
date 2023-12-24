@@ -137,6 +137,10 @@ Idk if I want to commit to making the rings... it is nice to have a zoom lens th
 
 8-50mm is nice, I'll do it, I have time
 
+1:43 PM
+
+Makes me realize need photo modes like "sunny" day
+
 ---
 
 12/23/2023
