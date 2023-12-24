@@ -21,7 +21,7 @@ from display.display import Display
 class Main:
   def __init__(self):
     self.on = True
-    self.display = self.display = Display()
+    self.display = Display()
 
     self.startup()
 
@@ -34,6 +34,8 @@ class Main:
     self.display.show_boot_scene()
     self.display.show_home_sprite()
 
+  def check_sensors():
+    print('integrate imu in startup')
 
   def button_pressed(self, button):
     print('stuff')

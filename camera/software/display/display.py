@@ -88,3 +88,15 @@ class Display:
     Display_Image(image)
 
     time.sleep(2)
+
+  def set_center_home_text(self, text):
+    base_img = Image.new("RGB", (128, 128), "BLACK")
+    draw = ImageDraw.Draw(base_img)
+    base_img.paste(self.active_img)
+
+    draw.line([(0, 20), [128, 90]], fill = "BLACK", width = 70)
+    # math to shift left text based on length
+    font = ImageFont.truetype(self.font_path + "cambriab.ttf", 18)
+    draw.text((0, 45), text, fill = "WHITE", font = font)
+
+    Display_Image(base_img)

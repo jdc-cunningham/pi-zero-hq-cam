@@ -6,6 +6,77 @@ just point it at the sky
 
 maybe assistive focusing via phone
 
+12/24/2023
+
+10:49 AM
+
+Let's goooo baby, early day, thought I'd have to work till 5:30 PM like the usual
+
+last night was bad man, my finger tip hurt so bad had to take ibuprofen to sleep
+
+I took one in the morning too in order to get through the morning part of the day
+
+thankfully I can type
+
+the camera has a crop factor of 5.5 apparently so the 5mm is equivalent to 27.5mm so my thought of 35mm wasn't far oof, same for 12mm being like a 100mm full frame
+
+so... I'm not 100% like if I let myself sleep in... still kinda in work mode since my mind was comitted to working that 10 hour shift
+
+also got up 4.5 hours ago
+
+let's get to it
+
+10:59 AM
+
+There's so much to it I feel overwhelmed, I know that it needs to:
+
+- interactive menu
+- zoom-pan-crop
+- record video
+
+At minimum for the next video/major progress of this project
+
+But I want the other stuff to work too, battery status... IMU is being watched
+
+Had a thought today about the threads needing to use callbacks so I don't have overlapping events, particularly with the display
+
+11:01 AM
+
+quick break
+
+11:32 AM
+
+Damn I'm tired
+
+I have to mentally wrap this project up on this break (3 days off in a row) because after that I have to start applying for tech jobs
+
+Concrete goals:
+
+- camera turns on
+- shows splash screen
+  - current is a static image
+  - [ ] future will be an animated chibi eyes character
+- show the menu
+- [ ] underline for active, none at first, camera ready message
+  - need positions of each cursor, track previous to undo
+- [ ] clicking center button (if camera preview not active) will open files... (center option) but not clear that's active
+  - bring up cursor under files icon
+- [ ] clicking arrows (left/right) moves cursor left/right
+- [ ] up/down arrow allows you to go the upper row (camera toggle only) which can flip modes eg. photo or video
+- [ ] boot
+  - get battery status
+  - bring up sensor(s)
+- [ ] telemetry page
+  - show the battery
+  - cpu info
+  - imu values (just accel 3-axis)
+- [ ] settings page
+
+
+That's plenty there to guide what needs to be done
+
+---
+
 12/23/2023
 
 8:15 PM
