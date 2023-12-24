@@ -141,6 +141,30 @@ Idk if I want to commit to making the rings... it is nice to have a zoom lens th
 
 Makes me realize need photo modes like "sunny" day
 
+2:08 PM
+
+Alright, ate some ramen, watched a diving/crabbing YT video
+
+Now to design this lens barrel wrapper and print it.
+
+I did have a thought about making the grip lines better looking
+
+idk I'm manually extruding every line and there are a lot is the thing... I could cut back then be able to do fancy slices
+
+cat's laying across my desk, nice
+
+3:33 PM
+
+Oh damn... I just realized I need the 3 values or at least exposure/iso
+
+Those would be modified along with the aperture (manual)
+
+Damn I have to rework the menu to show that
+
+Ahh... the menu should be made from individual sprites/paste with offset
+
+Easier to update
+
 ---
 
 12/23/2023
