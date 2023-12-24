@@ -105,6 +105,38 @@ damn... I feel like this is a wasted day, I'm just tired, my
 
 I guess I'll just chill today, think and write them down
 
+12:24 PM
+
+Ooh.... I had a thought... I could even do birding with the ML hat cam lens
+
+Until I build the second tripod version, I could use that lens for telephoto... although without stabilization it'll probably be bad
+
+Stil... it is a lens not being used currently
+
+Damn, I need to print another set of barrel wrappers for that hmm... but I'm intrigued... birding with a raspberry pi
+
+12:36 PM
+
+This lens is hardcore the 8-50mm it has 3 levels/rotation rings
+
+yeah birding with 300mm can be done
+
+12:38 PM
+
+Yeah that's what I can do today, design/print the lens barrel wrappers around the 8-50mm that'll be the next outing is birding since it's winter and everything's dead right now
+
+1:07 PM
+
+Good thing I tried this... it's actually hard to focus this lens with the rpi... I'm trying this smaller adapter
+
+1:33 PM
+
+I had to use two rings to get it to be decent... the colors are bad... I mean it's a cloudy day so maybe and I'm not using any settings...
+
+Idk if I want to commit to making the rings... it is nice to have a zoom lens though
+
+8-50mm is nice, I'll do it, I have time
+
 ---
 
 12/23/2023
