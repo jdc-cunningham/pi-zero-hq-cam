@@ -173,7 +173,9 @@ it's too short
 
 I'll modify my aperture ring temporarily for my print but the one in the repo will be corrected
 
+5:37 PM
 
+Oh I got it, it was designed against 1 adapter ring depth
 
 ---
 
