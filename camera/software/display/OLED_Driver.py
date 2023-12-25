@@ -1,5 +1,8 @@
  # -*- coding:UTF-8 -*-
 
+# from:
+# https://github.com/waveshare/1.5inch-RGB-OLED-Module/blob/master/python/OLED_Driver.py
+
 import spidev
 
 import RPi.GPIO as GPIO
@@ -54,7 +57,6 @@ WHITE   = 0xFFFF
 #buffer
 color_byte = [0x00, 0x00]
 color_fill_byte = [0x00, 0x00]*(SSD1351_WIDTH)
-
 
 #GPIO Set
 GPIO.setmode(GPIO.BCM)
@@ -207,7 +209,12 @@ def Draw_Pixel(x, y):
 def Delay(x):
     time.sleep(x / 1000.0)
 	
-def Device_Init():
+def Device_Init(pi_ver):
+    global SPI
+
+    if (pi_ver == 2):
+        SPI.max_speed_hz = 21000000        
+
     OLED_CS(0)
     OLED_RST(0)
     Delay(500)

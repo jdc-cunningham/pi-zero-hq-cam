@@ -11,14 +11,14 @@ from PIL import ImageFont
 from PIL import ImageColor
 
 class Display:
-  def __init__(self):
+  def __init__(self, main):
     self.active_img = None
     self.base_path = "/home/pi/pi-zero-hq-cam/camera/software/display-images/"
     self.font_path = "/home/pi/pi-zero-hq-cam/camera/software/display/"
     self.menu_path = "/home/pi/pi-zero-hq-cam/camera/software/menu/"
 
     # setup OLED
-    Device_Init()
+    Device_Init(main)
 
   def display_image(self, img_path):
     image = Image.open(img_path)

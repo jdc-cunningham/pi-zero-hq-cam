@@ -154,6 +154,12 @@ Okay I have laid out the menu, it's still not in a programmatic way, I just manu
 
 Quick break, then start writing code
 
+11:48 AM
+
+Alright let's go, exploratory session is done, put the poompa music on and bust it out
+
+
+
 ---
 
 12/24/2023
