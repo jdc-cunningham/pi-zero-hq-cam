@@ -72,6 +72,9 @@ Concrete goals:
   - imu values (just accel 3-axis)
 - [ ] settings page
 
+- [ ] test if camera can stream and call libcamera at same time
+  - don't think so, need that fast, cli-args way to take photos to pick up
+  - shutter, iso, color balance values
 
 That's plenty there to guide what needs to be done
 
