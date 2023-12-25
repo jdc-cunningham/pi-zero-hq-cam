@@ -13,7 +13,7 @@ from PIL import ImageColor
 class Display:
   def __init__(self, main):
     self.active_img = None
-    self.base_path = "/home/pi/pi-zero-hq-cam/camera/software/display-images/"
+    self.base_path = "/home/pi/pi-zero-hq-cam/camera/software/display/images/"
     self.font_path = "/home/pi/pi-zero-hq-cam/camera/software/display/"
     self.menu_path = "/home/pi/pi-zero-hq-cam/camera/software/menu/"
 
