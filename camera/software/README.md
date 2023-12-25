@@ -46,3 +46,9 @@ Verify it's working with
 The menu is made by stacking layers... in general there is a base sprite (that has most icons in it) then the text/active menu square drawn around an icon is layered on top.
 
 <img src="../../readme-images/menu-early-design-test-code.JPG"/>
+
+### Development notes
+
+As of this time I have not found a way to mount/develop against the Pi. I also have not mocked the features eg. OLED, etc... to run on say a Windows computer.
+
+I am using SFTP to edit files on the pi and then run the code via ssh session

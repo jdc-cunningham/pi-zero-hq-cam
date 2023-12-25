@@ -1,3 +1,4 @@
+import os
 import time
 
 #--------------Driver Library-----------------#
@@ -11,23 +12,21 @@ from PIL import ImageFont
 from PIL import ImageColor
 
 #--------------Assets------------------#
-battery_sprite_path = "../menu/menu-sprites/battery_25_15.jpg"
-folder_sprite_path = "../menu/menu-sprites/folder_21_18.jpg"
-gear_sprite_path = "../menu/menu-sprites/gear_23_20.jpg"
+base_path = os.getcwd() # root of repo eg. /software/ since main.py calls process
 
-base_path = "../display/images/"
-font_path = "../display/"
-menu_path = "../menu/"
+battery_sprite_path = base_path + "/menu/menu-sprites/battery_25_15.jpg"
+folder_sprite_path = base_path + "/menu/menu-sprites/folder_21_18.jpg"
+gear_sprite_path = base_path + "/menu/menu-sprites/gear_23_20.jpg"
 
-small_font = ImageFont.truetype("alt-font.ttc", 13)
-large_font = ImageFont.truetype("alt-font.ttc", 16)
+small_font = ImageFont.truetype(base_path + "/display/alt-font.ttc", 13)
+large_font = ImageFont.truetype(base_path + "/display/alt-font.ttc", 16)
 
 class Display:
-  def __init__(self, main):
+  def __init__(self, pi_ver):
     self.active_img = None
 
     # setup OLED
-    Device_Init(main)
+    Device_Init(pi_ver)
 
   def start_menu(self):
     image = Image.new("RGB", (128, 128), "BLACK")
@@ -61,13 +60,8 @@ class Display:
     Clear_Screen()
 
   def show_boot_scene(self):
-    boot_img_path = base_path + "/boot.jpg"
+    boot_img_path = base_path + "/display/images/boot.jpg"
     self.active_img = Image.open(boot_img_path)
     self.display_image(boot_img_path)
     time.sleep(3)
     self.clear_screen()
-  
-  def show_home_sprite(self):
-    home_sprite_path = self.menu_path + "/menu-sprites/home.jpg"
-    self.active_img = Image.open(home_sprite_path)
-    self.display_image(home_sprite_path)
