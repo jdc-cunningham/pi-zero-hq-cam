@@ -22,6 +22,7 @@ class Main:
   def __init__(self):
     self.on = True
     self.display = None
+    self.controls = None
 
     self.startup()
 
@@ -33,7 +34,10 @@ class Main:
   def startup(self):
     self.display = Display(self)
     self.display.show_boot_scene()
-    self.display.show_home_sprite()
+    self.display.start_menu()
+    self.controls = Buttons(self.button_pressed)
+
+    Thread(target=self.buttons.start)
 
   def button_pressed(self, button):
     print('stuff')

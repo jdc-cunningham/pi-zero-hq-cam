@@ -20,6 +20,9 @@ class Display:
     # setup OLED
     Device_Init(main)
 
+  def start_menu(self):
+    print('start menu')
+
   def display_image(self, img_path):
     image = Image.open(img_path)
     Display_Image(image)
