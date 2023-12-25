@@ -1,3 +1,29 @@
+Concrete goals:
+
+- camera turns on
+- shows splash screen
+  - current is a static image
+  - [ ] future will be an animated chibi eyes character
+- show the menu
+- [ ] underline for active, none at first, camera ready message
+  - need positions of each cursor, track previous to undo
+- [ ] clicking center button (if camera preview not active) will open files... (center option) but not clear that's active
+  - bring up cursor under files icon
+- [ ] clicking arrows (left/right) moves cursor left/right
+- [ ] up/down arrow allows you to go the upper row (camera toggle only) which can flip modes eg. photo or video
+- [ ] boot
+  - get battery status
+  - bring up sensor(s)
+- [ ] telemetry page
+  - show the battery
+  - cpu info
+  - imu values (just accel 3-axis)
+- [ ] settings page
+
+- [ ] test if camera can stream and call libcamera at same time
+  - don't think so, need that fast, cli-args way to take photos to pick up
+  - shutter, iso, color balance values
+
 underline for menu icon active is fine, top also looks tacky
 
 astro mode also with photography
@@ -5,6 +31,128 @@ astro mode also with photography
 just point it at the sky
 
 maybe assistive focusing via phone
+
+12/25/2023
+
+9:31 AM
+
+Nice... got to sleep in
+
+My fingers still hurt but not as bad
+
+This time it's my thumb
+
+The back right edge (top view) of my thumbnail
+
+Anyway I reset master last night to the code that was ran at the park... I'll treat that as version 0.0.1
+
+Mostly I don't want to track the devlog (this) in master, keep the madness away from the soup
+
+I like it just to capture a snippet of my consciousness, it's like a rattling can of spare parts (Gir)
+
+I need to see the end goal, what do I want?
+
+- zoom-crop-pan (for focus)
+- faster photo taking
+- basic menu "framework"
+
+- view files on camera (extra)
+
+I'm printing the final barrel lens wrapper for the 8-50mm now
+
+Yesterday I thought about the menu sprite stacking method, how that would be the way to go vs. a base image that has all the parts on it combined, I think pasting data vs. showing it is fast.
+
+9:41 AM
+
+Yeah that image delay has got to go
+
+9:50 AM
+
+I'm reading this post
+
+https://forums.raspberrypi.com/viewtopic.php?t=352301
+
+I have used that signal kill method before (for my security pi cam) but my concern is once you start it with certain parameters, will you be able to change them quickly?
+
+The other thing is can the stream still work too.
+
+I guess I'll find out right now
+
+Damn... "pipeline handler in use by another process"
+
+9:59 AM
+
+Oh no... this is a skill gap thing, I think it is possible but hard for me right now
+
+To modify/understand libcamera to use it with picamera2 together
+
+A dumb solution is to keep the preview as is... then when taking a photo, kill the picamera2 instance and take a fast photo with libcamera
+
+10:03 AM
+
+Ooh... set controls nice
+
+Saw here
+
+https://forum.arducam.com/t/how-to-make-libcamera-still-faster/4898/2
+
+Yeah I think I can go with this approach for now, what's nice is the exposure and what not can be set on the preview
+
+I think it all starts with the menu so I'll start there
+
+Hmm... db or file to store config...
+
+- [ ] build current menu design
+
+That's this one
+
+<img src="./devlog-images/menu-design-12252023.jpg"/>
+
+These were the previous designs
+
+<img src="./devlog-images/post-boot-charged-question.png"/>
+
+<br/>
+
+<img src="./devlog-images/home.png"/>
+
+<br/>
+
+<img src="./devlog-images/menu-base-sprite--large.png" width="300px"/>
+
+You can see above how the sprites were pre-stacked, that would be hard to change
+
+Also I changed the design anyway to see the current exposure/shutter values
+
+10:13 AM
+
+I'm like panicking, so much to do, where to start ha
+
+10:16 AM
+
+I think the menu layering/offset stuff is an important first step
+
+Oh... I can actually mock the menu generation via making real images locally on the desktop hmm
+
+Man's using his brain
+
+10:43 AM
+
+So yeah I can dial in the icons this way
+
+<img src="./devlog-images/menu-prototype.JPG"/>
+
+Cool
+
+11:04 AM
+
+Okay I have laid out the menu, it's still not in a programmatic way, I just manually aligned everything to get the values... I could see how you'd turn this into a library eg. group things, shift them together, real-time render, here I'm using PIL and VS Code's photo view, CLI call to do a "hot reload" in a way
+
+- [ ] add pi version detection (dump cpuinfo grep core count)
+
+
+
+---
 
 12/24/2023
 
