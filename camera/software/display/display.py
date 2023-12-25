@@ -19,8 +19,8 @@ base_path = "../display/images/"
 font_path = "../display/"
 menu_path = "../menu/"
 
-small_font = ImageFont.truetype(font_path + "alt-font.ttc", 13)
-large_font = ImageFont.truetype(font_path + "alt-font.ttc", 16)
+small_font = ImageFont.truetype("alt-font.ttc", 13)
+large_font = ImageFont.truetype("alt-font.ttc", 16)
 
 class Display:
   def __init__(self, main):
@@ -32,9 +32,6 @@ class Display:
   def start_menu(self):
     image = Image.new("RGB", (128, 128), "BLACK")
     draw = ImageDraw.Draw(image)
-
-    small_font = ImageFont.truetype(font_path + "alt-font.ttc", 13)
-    large_font = ImageFont.truetype(font_path + "alt-font.ttc", 16)
 
     draw.text((7, 3), "video", fill = "WHITE", font = small_font)
     draw.text((7, 90), "S: 1/60", fill = "WHITE", font = small_font)
