@@ -150,7 +150,9 @@ Okay I have laid out the menu, it's still not in a programmatic way, I just manu
 
 - [ ] add pi version detection (dump cpuinfo grep core count)
 
+11:11 AM
 
+Quick break, then start writing code
 
 ---
 
