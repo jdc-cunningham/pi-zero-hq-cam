@@ -11,13 +11,13 @@ from PIL import ImageFont
 from PIL import ImageColor
 
 #--------------Assets------------------#
-battery_sprite_path = "../../menu/menu-sprites/battery_25_15.jpg"
-folder_sprite_path = "../../menu/menu-sprites/folder_21_18.jpg"
-gear_sprite_path = "../../menu/menu-sprites/gear_23_20.jpg"
+battery_sprite_path = "../menu/menu-sprites/battery_25_15.jpg"
+folder_sprite_path = "../menu/menu-sprites/folder_21_18.jpg"
+gear_sprite_path = "../menu/menu-sprites/gear_23_20.jpg"
 
-base_path = "../../display/images/"
-font_path = "../../display/"
-menu_path = "../../menu/"
+base_path = "../display/images/"
+font_path = "../display/"
+menu_path = "../menu/"
 
 small_font = ImageFont.truetype(font_path + "alt-font.ttc", 13)
 large_font = ImageFont.truetype(font_path + "alt-font.ttc", 16)
