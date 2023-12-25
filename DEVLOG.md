@@ -228,7 +228,9 @@ Where am I now, midwest
 - [ ] sub pages of menu eg. file display
 - [ ] manual mode
 
+4:37 PM
 
+OMG... it's too big jeez... how did I get this wrong
 
 ---
 
