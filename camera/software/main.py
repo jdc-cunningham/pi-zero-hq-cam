@@ -36,7 +36,7 @@ class Main:
 
   def startup(self):
     self.utils = Utils()
-    self.display = Display(self.utils.pi_ver)
+    self.display = Display(self.utils.pi_ver, self.utils)
     self.camera = Camera(self.display, self)
     self.menu = Menu(self.display, self.camera)
     self.display.show_boot_scene()

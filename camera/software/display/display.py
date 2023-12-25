@@ -22,9 +22,11 @@ small_font = ImageFont.truetype(base_path + "/display/alt-font.ttc", 13)
 large_font = ImageFont.truetype(base_path + "/display/alt-font.ttc", 16)
 
 class Display:
-  def __init__(self, pi_ver):
+  def __init__(self, pi_ver, utils):
     self.active_img = None
     self.active_icon = None
+    self.utils = utils
+    self.file_count = self.utils.get_file_count() # maybe shouldn't be here
 
     # setup OLED
     Device_Init(pi_ver)
@@ -40,7 +42,7 @@ class Display:
     # draw.text((7, 105), "E: 100", fill = "WHITE", font = small_font)
     draw.text((22, 48), center_text, fill = "WHITE", font = large_font)
     draw.text((66, 3), "3 hrs", fill = "WHITE", font = small_font)
-    draw.text((60, 103), "24", fill = "WHITE", font = small_font)
+    draw.text((60, 103), str(self.file_count), fill = "WHITE", font = small_font)
 
     battery_icon = Image.open(battery_sprite_path)
     folder_icon = Image.open(folder_sprite_path)

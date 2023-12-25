@@ -1,3 +1,5 @@
+import os, os.path
+
 from subprocess import run
 
 class Utils:
@@ -17,4 +19,11 @@ class Utils:
       self.pi_ver = 2 if len(core_count.stdout.split("\n")) == 5 else 1 # this is dumb
     except:
       # I put this here because the above doesn't run on pi zero 1, 3.5.3 python
-      print('failed to determine pi version')
+      print('failed to determine pi zero version')
+
+  # https://stackoverflow.com/a/2632251
+  def get_file_count(self):
+    base_path = os.getcwd()
+    capture_path = base_path + "/captured-media/"
+    # -1 for gitkeep file
+    return len([name for name in os.listdir(capture_path) if os.path.isfile(os.path.join(capture_path, name))]) - 1
