@@ -217,6 +217,19 @@ There is still plenty of work I can do on the side
 
 I am starting to lose it though the focus/productivity
 
+2:34 PM
+
+Where am I now, midwest
+
+- have a display menu
+- [ ] back button to exit live preview
+- [ ] zoom-pan-crop (prioritize)
+- [ ] faster photo taking
+- [ ] sub pages of menu eg. file display
+- [ ] manual mode
+
+
+
 ---
 
 12/24/2023
