@@ -24,18 +24,21 @@ large_font = ImageFont.truetype(base_path + "/display/alt-font.ttc", 16)
 class Display:
   def __init__(self, pi_ver):
     self.active_img = None
+    self.active_icon = None
 
     # setup OLED
     Device_Init(pi_ver)
-
-  def start_menu(self):
+  
+  def render_menu_base(self, center_text = "Camera on"):
     image = Image.new("RGB", (128, 128), "BLACK")
     draw = ImageDraw.Draw(image)
 
     draw.text((7, 3), "video", fill = "WHITE", font = small_font)
-    draw.text((7, 90), "S: 1/60", fill = "WHITE", font = small_font)
-    draw.text((7, 105), "E: 100", fill = "WHITE", font = small_font)
-    draw.text((22, 48), "Camera on", fill = "WHITE", font = large_font)
+    draw.text((7, 105), "Auto", fill = "WHITE", font = small_font)
+    # manual photography mode
+    # draw.text((7, 90), "S: 1/60", fill = "WHITE", font = small_font)
+    # draw.text((7, 105), "E: 100", fill = "WHITE", font = small_font)
+    draw.text((22, 48), center_text, fill = "WHITE", font = large_font)
     draw.text((66, 3), "3 hrs", fill = "WHITE", font = small_font)
     draw.text((60, 103), "24", fill = "WHITE", font = small_font)
 
@@ -45,9 +48,14 @@ class Display:
 
     image.paste(battery_icon, (98, 5))
     image.paste(folder_icon, (77, 103))
-    image.paste(gear_icon, (101, 103))
+    image.paste(gear_icon, (101, 102))
 
-    Display_Image(image)
+    return image
+
+  def start_menu(self):
+    menu_base = self.render_menu_base()
+
+    Display_Image(menu_base)
 
   def display_image(self, img_path):
     image = Image.open(img_path)
@@ -65,3 +73,28 @@ class Display:
     self.display_image(boot_img_path)
     time.sleep(3)
     self.clear_screen()
+
+  def set_menu_center_text(self, draw, text, x = 22, y = 48):
+    draw.text((x, y), text, fill = "WHITE", font = large_font)
+
+  def draw_active_icon(self, icon_name):
+    image = self.render_menu_base("")
+    draw = ImageDraw.Draw(image)
+
+    if (icon_name == "Files"):
+      draw.line([(60, 121), (98, 121)], fill = "MAGENTA", width = 2)
+      self.set_menu_center_text(draw, "Files")
+
+    if (icon_name == "Camera Settings"):
+      draw.line([(7, 121), (34, 121)], fill = "MAGENTA", width = 2)
+      self.set_menu_center_text(draw, "Camera Settings", 5)
+
+    if (icon_name == "Photo Video Toggle"):
+      draw.line([(7, 22), (34, 22)], fill = "MAGENTA", width = 2)
+      self.set_menu_center_text(draw, "Toggle Mode")
+
+    if (icon_name == "Settings"):
+      draw.line([(101, 122), (124, 122)], fill = "MAGENTA", width = 2)
+      self.set_menu_center_text(draw, "Settings")
+    
+    Display_Image(image)

@@ -212,9 +212,6 @@ def Delay(x):
 def Device_Init(pi_ver):
     global SPI
 
-    print('pi ver')
-    print(pi_ver)
-
     if (pi_ver == 2):
         SPI.max_speed_hz = 21000000        
 

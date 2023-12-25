@@ -25,6 +25,7 @@ class Main:
     self.display = None
     self.controls = None
     self.utils = None
+    self.menu = None
 
     self.startup()
 
@@ -36,6 +37,8 @@ class Main:
   def startup(self):
     self.utils = Utils()
     self.display = Display(self.utils.pi_ver)
+    self.camera = Camera(self.display, self)
+    self.menu = Menu(self.display, self.camera)
     self.display.show_boot_scene()
     self.display.start_menu()
     self.controls = Buttons(self.button_pressed)
@@ -43,6 +46,9 @@ class Main:
     Thread(target=self.controls.start).start()
 
   def button_pressed(self, button):
-    print('stuff')
+    if (button == "SHUTTER"):
+      print('photo')
+    else:
+      self.menu.update_state(button)
 
 Main()
