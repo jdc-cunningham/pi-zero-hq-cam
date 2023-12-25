@@ -209,6 +209,14 @@ Back on, quick food break, bread is great man
 
 I'm going to jump over to the live camera real quick, get that feature back
 
+2:32 PM
+
+Dang... battery died/too low to run camera preview/OLED, charging
+
+There is still plenty of work I can do on the side
+
+I am starting to lose it though the focus/productivity
+
 ---
 
 12/24/2023
