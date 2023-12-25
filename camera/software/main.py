@@ -37,7 +37,7 @@ class Main:
     self.display.start_menu()
     self.controls = Buttons(self.button_pressed)
 
-    Thread(target=self.buttons.start)
+    Thread(target=self.controls.start)
 
   def button_pressed(self, button):
     print('stuff')
