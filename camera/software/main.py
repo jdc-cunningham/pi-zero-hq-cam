@@ -11,7 +11,6 @@
 
 import time
 
-from threading import Thread
 from buttons.buttons import Buttons
 # from battery.battery import BattDb
 from camera.camera import Camera
@@ -26,6 +25,7 @@ class Main:
     self.controls = None
     self.utils = None
     self.menu = None
+    self.camera = None
 
     self.startup()
 
@@ -43,11 +43,12 @@ class Main:
     self.display.start_menu()
     self.controls = Buttons(self.button_pressed)
 
-    Thread(target=self.controls.start).start()
+    self.camera.start()
+    self.controls.start()
 
   def button_pressed(self, button):
     if (button == "SHUTTER"):
-      print('photo')
+      self.camera.handle_shutter()
     else:
       self.menu.update_state(button)
 

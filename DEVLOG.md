@@ -158,7 +158,56 @@ Quick break, then start writing code
 
 Alright let's go, exploratory session is done, put the poompa music on and bust it out
 
+12:45 PM
 
+I'm editing via sftp
+
+I'm stuck on this dumb subprocess output thing, can't get the number out
+
+1:01 PM
+
+So right now I have a painted menu from subparts
+
+I don't have a state manager yet, doing that now
+
+The menu right now has 5 parts:
+
+- video/photo toggle
+- shutter/exposure settings (need auto by default)
+- files
+- settings
+
+With regard to the d-pad and back button the state manager will be a 2D array
+
+Hold on
+
+- camera on/ready
+- shutter -> show live preview
+  - cancel by hitting back
+- any dpad button, activate center file
+- left, auto or exposure
+- up (from any) highlights toggle
+- right is gear
+
+1:47 PM
+
+Damn I have a working menu now, still doesn't integrate with the stuff but yeah, it's navigatable at least
+
+quick break
+
+1:52 PM
+
+dang it I wrote the file count code already, lost it
+
+2:04 PM
+
+Damn I'm losing the focus... mind is darting
+
+2:14 PM
+
+Back on, quick food break, bread is great man
+
+I'm going to jump over to the live camera real quick, get that feature back
 
 ---
 
