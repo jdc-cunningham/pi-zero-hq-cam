@@ -46,6 +46,10 @@ First thing I will tackle is the zoom-crop-panning
 
 It is so depressing outside... just grey, whole week, sad
 
+9:29 AM
+
+This camera code is nasty, I just copied over what I had from before
+
 
 
 12/25/2023

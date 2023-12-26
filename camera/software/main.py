@@ -26,6 +26,8 @@ class Main:
     self.utils = None
     self.menu = None
     self.camera = None
+    self.live_preview_active = False
+    self.zoom_active = False
 
     self.startup()
 
@@ -50,6 +52,11 @@ class Main:
     if (button == "SHUTTER"):
       self.camera.handle_shutter()
     else:
-      self.menu.update_state(button)
+      if (self.live_preview_active and (button == "CENTER" or button == "BACK")):
+        self.camera.handle_zoom(button)
+      elif (self.zoom_active and (button != "CENTER")):
+        self.camera.handle_pan(button)
+      else:
+        self.menu.update_state(button)
 
 Main()
