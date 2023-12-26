@@ -17,6 +17,7 @@ from camera.camera import Camera
 from menu.menu import Menu
 from display.display import Display
 from utils.utils import Utils
+from imu.imu import Imu # 6050 or GY-91
 
 class Main:
   def __init__(self):
@@ -29,6 +30,7 @@ class Main:
     self.live_preview_active = False
     self.zoom_active = False
     self.processing = False # debouncer for button action
+    self.active_menu = "Home"
 
     self.startup()
 
@@ -39,13 +41,15 @@ class Main:
 
   def startup(self):
     self.utils = Utils()
-    self.display = Display(self.utils.pi_ver, self.utils)
+    self.display = Display(self.utils.pi_ver, self.utils, self)
     self.camera = Camera(self.display, self)
     self.menu = Menu(self.display, self.camera, self)
     self.display.show_boot_scene()
     self.display.start_menu()
     self.controls = Buttons(self.button_pressed)
+    self.imu = Imu()
 
+    self.imu.start()
     self.camera.start()
     self.controls.start()
 

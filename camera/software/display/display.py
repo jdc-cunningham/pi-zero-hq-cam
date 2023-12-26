@@ -11,6 +11,9 @@ from PIL import ImageDraw
 from PIL import ImageFont
 from PIL import ImageColor
 
+# temporary (lol)
+from threading import Thread
+
 #--------------Assets------------------#
 base_path = os.getcwd() # root of repo eg. /software/ since main.py calls process
 
@@ -22,7 +25,8 @@ small_font = ImageFont.truetype(base_path + "/display/alt-font.ttc", 13)
 large_font = ImageFont.truetype(base_path + "/display/alt-font.ttc", 16)
 
 class Display:
-  def __init__(self, pi_ver, utils):
+  def __init__(self, pi_ver, utils, main):
+    self.main = main
     self.active_img = None
     self.active_icon = None
     self.utils = utils
@@ -109,3 +113,51 @@ class Display:
     draw.text((0, 96), text, fill = "WHITE", font = font)
 
     Display_Image(image)
+
+  def get_settings_img(self):
+    image = Image.new("RGB", (128, 128), "BLACK")
+    draw = ImageDraw.Draw(image)
+
+    draw.line([(0, 0), (128, 0)], fill = "WHITE", width = 40)
+    draw.text((5, 0), "Settings", fill = "BLACK", font = large_font)
+    draw.text((5, 26), "Telemetry", fill = "WHITE", font = large_font)
+
+    return image
+  
+  def render_settings(self):
+    image = self.get_settings_img()
+
+    Display_Image(image)
+
+  def draw_active_telemetry(self):
+    image = self.get_settings_img()
+    draw = ImageDraw.Draw(image)
+
+    draw.line([(0, 26), (0, 42)], fill = "MAGENTA", width = 2)
+
+    Display_Image(image)
+
+  def render_live_telemetry(self):
+    while (self.main.menu.active_menu_item == "Telemetry"):
+      image = Image.new("RGB", (128, 128), "BLACK")
+      draw = ImageDraw.Draw(image)
+
+      accel = self.main.imu.accel
+      gyro = self.main.imu.gyro
+
+      draw.line([(0, 0), (128, 0)], fill = "WHITE", width = 40)
+      draw.text((5, 0), "Raw Telemetry", fill = "BLACK", font = large_font)
+      draw.text((5, 26), "accel x: " + str(accel[0])[0:8], fill = "WHITE", font = small_font)
+      draw.text((5, 36), "accel y: " + str(accel[1])[0:8], fill = "WHITE", font = small_font)
+      draw.text((5, 46), "accel z: " + str(accel[2])[0:8], fill = "WHITE", font = small_font)
+      draw.text((5, 56), "gyro x: " + str(gyro[0])[0:8], fill = "WHITE", font = small_font)
+      draw.text((5, 66), "gyro y: " + str(gyro[1])[0:8], fill = "WHITE", font = small_font)
+      draw.text((5, 76), "gyro z: " + str(gyro[2])[0:8], fill = "WHITE", font = small_font)
+
+      Display_Image(image)
+    
+  # special page, it is not static
+  # has active loop to display data
+  def render_telemetry_page(self):
+    # this is not good, brought in main context into display to pull imu values
+    Thread(target=self.render_live_telemetry()).start()
