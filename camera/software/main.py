@@ -69,6 +69,9 @@ class Main:
         self.camera.handle_zoom(button)
       elif (self.zoom_active and (button != "CENTER")):
         self.camera.handle_pan(button)
+      elif (self.live_preview_active):
+        self.processing = False
+        return
       else:
         self.menu.update_state(button)
 

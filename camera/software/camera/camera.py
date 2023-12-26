@@ -43,7 +43,6 @@ class Camera:
   def check_mod(self, pil_img):
     if (self.zoom_level > 1):
       if (self.zoom_level == 4):
-        self.pan_offset = [443, 316] # based on (1014/2) - (128/2)
         return pil_img.crop((self.pan_offset[0], self.pan_offset[1], self.pan_offset[0] + self.crop[0], self.pan_offset[1] + self.crop[1]))
     else:
       return pil_img
@@ -133,6 +132,7 @@ class Camera:
 
     if (self.zoom_level == 1):
       self.zoom_level = 4
+      self.pan_offset = [443, 316] # based on (1014/2) - (128/2)
       self.change_mode("zoom 4x")
 
   def zoom_out(self):
@@ -155,30 +155,30 @@ class Camera:
   def handle_pan(self, button):
     self.reset_preview_time()
 
-    pan_offset = self.pan_offset
-    po_x = pan_offset[0]
-    po_y = pan_offset[1]
+    print('offsets')
+    print(self.pan_offset[0])
+    print(self.pan_offset[1])
 
     # this may not be perfectly covering all surface area of the image
     if (button == "UP"):
-      if (po_y > 128):
-        po_y -= 128
+      if (self.pan_offset[1] > 128):
+        self.pan_offset[1] -= 128
       else:
-        po_y = 0
+        self.pan_offset[1] = 0
     if (button == "DOWN"):
-      if (po_y < 632):
-        po_y += 128
+      if (self.pan_offset[1] < 632):
+        self.pan_offset[1] += 128
       else:
-        po_y = 632
+        self.pan_offset[1] = 632
     if (button == "LEFT"):
-      if (po_x > 128):
-        po_x -= 128
+      if (self.pan_offset[0] > 128):
+        self.pan_offset[0] -= 128
       else:
-        po_x = 128
+        self.pan_offset[0] = 128
     if (button == "RIGHT"):
-      if (po_x < 886):
-        po_x += 128
+      if (self.pan_offset[0] < 886):
+        self.pan_offset[0] += 128
       else:
-        po_x = 886
+        self.pan_offset[0] = 886
     
     self.main.processing = False
