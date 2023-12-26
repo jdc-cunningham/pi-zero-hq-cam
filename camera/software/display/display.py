@@ -160,4 +160,4 @@ class Display:
   # has active loop to display data
   def render_telemetry_page(self):
     # this is not good, brought in main context into display to pull imu values
-    Thread(target=self.render_live_telemetry()).start()
+    Thread(target=self.render_live_telemetry).start()

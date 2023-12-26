@@ -152,6 +152,46 @@ Then you gotta have an active thing, click it, open the photo... but you'd expec
 
 I'll do that tomorrow morning since that's a hard task
 
+1:26 PM
+
+Damn I am poor AF right now, my own fault but yeah
+
+Going to the store...
+
+2:28 PM
+
+Back on
+
+- [ ] video sub page
+  - photo text top-left
+  - center message "click to record"
+  - first preview overlay (rec red square, time)
+- [ ] file view (hard)
+- [ ] settings
+  - telemetry option
+- [ ] telemetry page
+  - show details of pi zero (1/2)
+  - imu data
+  - file system
+
+2:39 PM
+
+I want to get something done before I get into a vegetative state, I already partook in a snickers bar and mentos
+
+2:58 PM
+
+The issue is there's no hierarchy/relationships with the menu/state management
+
+It would be cool if you had something like a JSON object define what is rendered
+
+3:33 PM
+
+As I add on menu pages/states I am seeing a pattern that could be used for future structuring/better code
+
+4:06 PM
+
+Alright I added raw telemetry in, can't get out though
+
 ---
 
 12/25/2023
