@@ -232,6 +232,14 @@ Where am I now, midwest
 
 OMG... it's too big jeez... how did I get this wrong
 
+7:46 PM
+
+done charging
+
+it took like 5 hours to charge? damn
+
+it was on for like a couple days ish... I still have to do that battery profiling feature
+
 ---
 
 12/24/2023
