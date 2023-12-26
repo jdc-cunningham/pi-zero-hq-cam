@@ -1,5 +1,6 @@
 class Menu:
-  def __init__(self, display, camera):
+  def __init__(self, display, camera, main):
+    self.main = main
     self.display = display
     self.camera = camera
     self.menu_mode = True # or False for camera
@@ -34,3 +35,5 @@ class Menu:
 
     if (self.menu_x == 1 and self.menu_y == 0):
       self.display.draw_active_icon("Settings")
+    
+    self.main.processing = False

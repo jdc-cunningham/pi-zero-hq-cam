@@ -28,6 +28,7 @@ class Main:
     self.camera = None
     self.live_preview_active = False
     self.zoom_active = False
+    self.processing = False # debouncer for button action
 
     self.startup()
 
@@ -40,7 +41,7 @@ class Main:
     self.utils = Utils()
     self.display = Display(self.utils.pi_ver, self.utils)
     self.camera = Camera(self.display, self)
-    self.menu = Menu(self.display, self.camera)
+    self.menu = Menu(self.display, self.camera, self)
     self.display.show_boot_scene()
     self.display.start_menu()
     self.controls = Buttons(self.button_pressed)
@@ -49,14 +50,29 @@ class Main:
     self.controls.start()
 
   def button_pressed(self, button):
+    # debouncer
+    if (self.processing):
+      return
+
+    self.processing = True
+
     if (button == "SHUTTER"):
       self.camera.handle_shutter()
     else:
-      if (self.live_preview_active and (button == "CENTER" or button == "BACK")):
+      if (self.live_preview_active and button == "BACK"):
+        if (self.zoom_active):
+          self.camera.zoom_out()
+        else:
+          self.camera.toggle_live_preview(False)
+        self.processing = False
+      elif (self.live_preview_active and (button == "CENTER" or button == "BACK")):
         self.camera.handle_zoom(button)
       elif (self.zoom_active and (button != "CENTER")):
         self.camera.handle_pan(button)
       else:
         self.menu.update_state(button)
+
+    # debounce
+    time.sleep(0.3)
 
 Main()
