@@ -155,10 +155,6 @@ class Camera:
   def handle_pan(self, button):
     self.reset_preview_time()
 
-    print('offsets')
-    print(self.pan_offset[0])
-    print(self.pan_offset[1])
-
     # this may not be perfectly covering all surface area of the image
     if (button == "UP"):
       if (self.pan_offset[1] > 128):
