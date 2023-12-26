@@ -16,8 +16,9 @@ class Camera:
     self.small_res_config = self.picam2.create_still_configuration(main={"size": (128, 128)}) # should not be a square
     self.zoom_4x_config = self.picam2.create_still_configuration(main={"size": (1014, 760)})
     self.full_res_config = self.picam2.create_still_configuration() # also same as 16x
-    self.zoom_level = 1 # 1, 4, 16
+    self.zoom_level = 1 # 1, 4 capped to 4 because 16x would be way too much (OLED refresh rate and vibration of hand)
     self.pan_offset = [0, 0] # depends on zoom level, should be at center crop
+    self.crop = [128, 128]
 
     self.picam2.configure(self.small_res_config)
 
@@ -35,12 +36,22 @@ class Camera:
     else:
       self.picam2.switch_mode(self.small_res_config)
 
+  # here you can crop/pan the image before it is displayed on the OLED
+  def check_mod(self, pil_img):
+    if (self.zoom_level > 1):
+      if (self.zoom_level == 4):
+        self.pan_offset = [443, 316] # based on (1014/2) - (128/2)
+        return pil_img.crop((self.pan_offset[0], self.pan_offset[1], self.pan_offset[0] + self.crop[0], self.pan_offset[1] + self.crop[1]))
+    else:
+      return pil_img
+
   def live_preview(self):
     self.display.clear_screen()
 
     while (self.live_preview_active):
       if (not self.live_preview_pause):
         pil_img = self.picam2.capture_image()
+        pil_img = self.check_mod(pil_img) # bad name
         self.display.display_buffer(pil_img.load())
 
       # after 1 min turn live preview off
@@ -61,9 +72,12 @@ class Camera:
     self.picam2.capture_file(img_path)
     self.change_mode("small")
 
+  def reset_preview_time(self):
+    self.live_preview_start = time.time()
+
   def set_live_preview_active(self, preview_active):
     if (preview_active):
-      self.live_preview_start = time.time()
+      self.reset_preview_time()
       self.live_preview_pause = False
       self.live_preview_active = True
       self.main.live_preview_active = True
@@ -95,17 +109,15 @@ class Camera:
     if (self.zoom_level == 1):
       self.zoom_level = 4
       self.change_mode("zoom 4x")
-    elif (self.zoom_level == 4):
-      self.zoom_level = 16
-      self.change_mode("zoom 16x")
 
   def zoom_out(self):
-    if (self.zoom_level == 16):
-      self.zoom_level = 4
-    elif (self.zoom_level == 4):
+    if (self.zoom_level == 4):
       self.zoom_level = 1
+      self.change_mode("small")
 
   def handle_zoom(self, button):
+    self.reset_preview_time()
+
     if (button == "CENTER"):
       self.zoom_in()
     else:
@@ -113,10 +125,10 @@ class Camera:
 
   def handle_pan(self, button):
     if (button == "UP"):
-
+      print('pan up')
     if (button == "LEFT"):
-
+      print('pan left')
     if (button == "RIGHT"):
-
+      print('pan right')
     if (button == "DOWN"):
-
+      print('pan down')

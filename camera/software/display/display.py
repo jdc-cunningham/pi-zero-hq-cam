@@ -100,3 +100,12 @@ class Display:
       self.set_menu_center_text(draw, "Settings")
     
     Display_Image(image)
+  
+  def draw_text(self, text):
+    image = Image.new("RGB", (128, 128), "BLACK")
+    draw = ImageDraw.Draw(image)
+    font = large_font
+
+    draw.text((0, 96), text, fill = "WHITE", font = font)
+
+    Display_Image(image)
