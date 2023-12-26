@@ -167,9 +167,9 @@ Back on
   - center message "click to record"
   - first preview overlay (rec red square, time)
 - [ ] file view (hard)
-- [ ] settings
+- [x] settings
   - telemetry option
-- [ ] telemetry page
+- [x] telemetry page
   - show details of pi zero (1/2)
   - imu data
   - file system
