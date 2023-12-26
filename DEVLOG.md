@@ -32,6 +32,22 @@ just point it at the sky
 
 maybe assistive focusing via phone
 
+12/26/2023
+
+9:13 AM
+
+Alright I'm back on... slept
+
+A little distracted in the morning
+
+First thing I will tackle is the zoom-crop-panning
+
+9:17 AM
+
+It is so depressing outside... just grey, whole week, sad
+
+
+
 12/25/2023
 
 9:31 AM
