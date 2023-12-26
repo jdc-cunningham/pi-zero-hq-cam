@@ -50,7 +50,109 @@ It is so depressing outside... just grey, whole week, sad
 
 This camera code is nasty, I just copied over what I had from before
 
+9:52 AM
 
+quick break
+
+10:27 AM
+
+Unfortunately I don't feel energetic today but my brain is fresh
+
+I will get it done, then I gotta return back to reality (poverty/being a dumbass)
+
+10:32 AM
+
+Hmm... I'm thinking about the cropping
+
+11:08 AM
+
+Testing the panning code, it keeps showing the menu between frames
+
+11:11 AM
+
+Oh... one issue is the button is not debounced
+
+11:44 AM
+
+Yeah this seems like a simple problem but not working
+
+12:02 PM
+
+New issue is when I back out of zoom in, it stops the oled update
+
+12:10 PM
+
+So I don't think the pan is working... I fixed the back button, also OLED paint collision
+
+Seeing the file counter incrementing is pretty neat
+
+I don't have the sub menus built yet, I suppose that could be today and tomorrow
+
+12:15 PM
+
+What is interesting is how the button presses affect the display
+
+Down does not affect it which is odd... hopefully that doesn't mean that it's broken
+
+No it's not, ran test
+
+12:19 PM
+
+Okay... so references don't work in python I guess, to pretty up a class property, temporarily assinging it to a variable then changing that variable is not changing the class property I guess... hmm
+
+12:21 PM
+
+No... even changing it to direct calls, not advancing
+
+12:26 PM
+
+Alright I fixed it, had a dumb fixed value
+
+Quick food break, I do have to shop today but I'll do that later as my brain gets worse
+
+I have to do the sub pages now
+
+I have not looked into the faster photos yet but it's not terribly slow since the camera is started in advance/kept running
+
+12:37 PM
+
+man... the weather today sucks... it's rainy/snowy today and tomorrow
+
+at least I have the indoor garden to film
+
+I only have 1 more day, need to figure out what to prioritize because I have to stop working on this project for a while
+
+I do want to make a submenu for sure
+
+The settings would be a good one
+
+File view too
+
+Video seems like an easy one since that's a built in method, just need a recording status or red dot
+
+and time overlay
+
+I suppose you should know what size your file system is too... I'm using 128GB so it's not really a concern
+
+The battery is also not factored in/tracked
+
+I might just do this shopping now to get it out of the way/not think about it
+
+The manual mode, I have to learn how to use it, I mean I know how regarding "set_options" or something like that, with picamera2 but this also needs like an incrementer interface, track the state (db or temporary) does it resume on boot sort of thing
+
+There's nothing really useful to have settings for right now although I would like that gimmick of seeing the telemetry data
+
+12:46 PM
+
+File view would be hard... have to paginate them, split the tiles
+
+Render with PIL... I mean it's not "hard" it's tedious
+
+Then you gotta have an active thing, click it, open the photo... but you'd expect a camera to be able to do that
+
+I'll do that tomorrow morning since that's a hard task
+
+---
 
 12/25/2023
 
