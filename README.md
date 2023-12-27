@@ -4,9 +4,9 @@
 
 A pi zero (1/2) camera body using the hq camera
 
-<img src="./readme-images/cam-lenses.JPG"/>
+<img src="./cam-lenses.JPG"/>
 
-<img src="./readme-images/boot-menu.gif"/>
+<img src="./boot-menu.gif"/>
 
 ### Features
 
