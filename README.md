@@ -6,7 +6,7 @@ A pi zero (1/2) camera body using the hq camera
 
 <img src="./cam-lenses.JPG"/>
 
-<img src="./boot-menu.gif"/>
+<img src="./current-menu.JPG"/>
 
 ### Features
 
