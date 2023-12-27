@@ -1,3 +1,9 @@
+### Current code overview
+
+See the video below
+
+<a href="https://youtu.be/E31nRjYFxPQ"><img src="./menu-yt-thumb.JPG"/></a>
+
 ### Deps
 
 - need SPI enabled (raspi-config)
@@ -8,6 +14,8 @@
 There is a boot script that runs `main.py` in the `software` folder
 
 It uses systemd, see the basic service file below below (systemd service)
+
+Create a file named `pi-cam.service` in the `/etc/systemd/system/` folder
 
 ```
 [Unit]
@@ -38,3 +46,9 @@ $sudo systemctl restart pi-cam.service
 Verify it's working with
 
 `$sudo systemctl status pi-cam.service`
+
+### Development notes
+
+As of this time I have not found a way to mount/develop against the Pi. I also have not mocked the features eg. OLED, etc... to run on say a Windows computer.
+
+I am using SFTP to edit files on the pi and then run the code via ssh session

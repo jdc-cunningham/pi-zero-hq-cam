@@ -3,6 +3,8 @@
 import RPi.GPIO as GPIO
 import time
 
+from threading import Thread
+
 class Buttons():
   def __init__(self, callback = None):
     self.exit = False
@@ -18,8 +20,11 @@ class Buttons():
     GPIO.setup(26, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)  # BACK
     GPIO.setup(12, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)  # SHUTTER
 
-  # listen for input
   def start(self):
+    Thread(target=self.listen).start()
+
+  # listen for input
+  def listen(self):
     while True:
       if self.exit: return False
 

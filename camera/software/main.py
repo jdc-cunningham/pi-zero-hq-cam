@@ -9,66 +9,83 @@
   - CRON sqlite db counter for battery consumption
 '''
 
-import time, os
-import RPi.GPIO as GPIO
+import time
 
-from threading import Thread
 from buttons.buttons import Buttons
 # from battery.battery import BattDb
 from camera.camera import Camera
+from menu.menu import Menu
 from display.display import Display
-# from menu.menu import Menu
+from utils.utils import Utils
+from imu.imu import Imu # 6050 or GY-91
 
 class Main:
   def __init__(self):
-    self.on = True # what
-    self.img_base_path = "/home/pi/pi-zero-hq-cam/camera/software/captured-media/"
-    self.live_preview_start = 0
-    self.live_preview_pause = False
-    self.display = Display()
-    self.display.show_boot_scene()
+    self.on = True
+    self.display = None
+    self.controls = None
+    self.utils = None
+    self.menu = None
+    self.camera = None
     self.live_preview_active = False
-    self.camera = Camera(self.display, self)
-    self.camera.start()
-    self.camera_on = False
-    self.buttons = Buttons(self.button_pressed)
-    self.buttons_thread = Thread(target=self.buttons.start)
-    self.buttons_thread.start()
-    self.live_preview_thread = None
-    self.shutter_event_processing = False
-    self.photo_taken_path = None
-    self.display.draw_text("Camera on") # set last so everything is ready
+    self.zoom_active = False
+    self.processing = False # debouncer for button action
+    self.active_menu = "Home"
+
+    self.startup()
 
     # keep main running
     while (self.on):
       print('on') # replace with battery check
       time.sleep(60)
 
-  # def set_photo_taken_path(self, path):
-  #   self.photo_taken_path = path
+  def startup(self):
+    self.utils = Utils()
+    self.display = Display(self.utils.pi_ver, self.utils, self)
+    self.camera = Camera(self.display, self)
+    self.menu = Menu(self.display, self.camera, self)
+    self.display.show_boot_scene()
+    self.display.start_menu()
+    self.controls = Buttons(self.button_pressed)
+    self.imu = Imu()
+
+    self.imu.start()
+    self.camera.start()
+    self.controls.start()
 
   def button_pressed(self, button):
+    # debouncer
+    if (self.processing):
+      return
+
+    self.processing = True
+
     if (button == "SHUTTER"):
-
-      if (self.live_preview_active and self.live_preview_pause):
-        self.live_preview_start = time.time()
-        self.live_preview_pause = False
-        time.sleep(0.5)
-        return
-
-      if (not self.live_preview_active):
-        self.live_preview_active = True
-        self.live_preview_start = time.time()
-        self.camera.start_live_preview()
+      if (self.active_menu == "Video"):
+        self.menu.update_state(button)
       else:
-        self.main.live_preview_pause = True
-        self.display.clear_screen()
-        self.display.draw_text("Taking photo...")
-        self.camera.take_photo()
-        self.display.clear_screen()
-        self.display.draw_text("Photo captured")
-        self.display.clear_screen()
-        self.live_preview_pause = False # keep going or 10 second cutoff kicks in
-        self.live_preview_start = time.time() # reset counter
+        self.camera.handle_shutter()
+    else:
+      if (self.live_preview_active and button == "BACK"):
+        if (self.zoom_active):
+          self.camera.zoom_out()
+        else:
+          self.camera.toggle_live_preview(False)
+          self.live_preview_active = False
+          time.sleep(0.15)
+          self.display.start_menu()
+        self.processing = False
+      elif (self.live_preview_active and (button == "CENTER" or button == "BACK")):
+        self.camera.handle_zoom(button)
+      elif (self.zoom_active and (button != "CENTER")):
+        self.camera.handle_pan(button)
+      elif (self.live_preview_active):
+        self.processing = False
+        return
+      else:
+        self.menu.update_state(button)
+
+    # debounce
+    time.sleep(0.3)
 
 Main()
