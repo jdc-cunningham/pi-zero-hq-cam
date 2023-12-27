@@ -113,6 +113,22 @@ It's still a bug where after you take a photo you can't exit the live preview
 
 Maybe because of zoom mode
 
+11:02 AM
+
+I'm deciding development is done now, except the chibi intro animation, I'll add that real quick
+
+The file view needs some process in the background to generate/make those thumbnails
+
+It takes too long if you try to do it on the fly eg. I think at least 1 second each image so 5 seconds+ to load a file view page
+
+In general though this code has gotten bad, it has to be restructured/have some pattern particularly for the menu state management/navigation
+
+would also be nice to have some kind of web menu editor, that could be done
+
+and the testing mentioned above
+
+
+
 ---
 
 12/26/2023

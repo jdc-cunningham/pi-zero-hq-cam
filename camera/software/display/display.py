@@ -75,10 +75,70 @@ class Display:
     Clear_Screen()
 
   def show_boot_scene(self):
-    boot_img_path = base_path + "/display/images/boot.jpg"
-    self.active_img = Image.open(boot_img_path)
-    self.display_image(boot_img_path)
-    time.sleep(3)
+    image = Image.new("RGB", (128, 128), "BLACK")
+    draw = ImageDraw.Draw(image)
+
+    # look right
+    draw.line([(20, 40), (50, 40)], fill = "WHITE", width = 3) # left eyebrow
+    draw.line([(33, 44), (50, 44)], fill = "WHITE", width = 6) # left eye
+    draw.line([(38, 48), (48, 48)], fill = "WHITE", width = 2) # left eye bottom
+
+    draw.line([(75, 40), (105, 40)], fill = "WHITE", width = 3) # right eyebrow
+    draw.line([(88, 44), (105, 44)], fill = "WHITE", width = 6) # right eye
+    draw.line([(93, 48), (103, 48)], fill = "WHITE", width = 2) # right eye bottom
+
+    draw.line([(40, 95), (35, 93)], fill = "WHITE", width = 1)  # mouth left
+    draw.line([(40, 95), (90, 95)], fill = "WHITE", width = 1)  # mouth
+
+    Display_Image(image)
+
+    time.sleep(1)
+
+    image = Image.new("RGB", (128, 128), "BLACK")
+    draw = ImageDraw.Draw(image)
+
+    # wink
+    draw.line([(20, 45), (50, 45)], fill = "WHITE", width = 3) # left eyebrow
+
+    draw.line([(75, 40), (105, 40)], fill = "WHITE", width = 3) # right eyebrow
+    draw.line([(88, 44), (105, 44)], fill = "WHITE", width = 6) # right eye
+    draw.line([(93, 48), (103, 48)], fill = "WHITE", width = 2) # right eye bottom
+
+    draw.line([(40, 95), (35, 93)], fill = "WHITE", width = 1)  # mouth left
+    draw.line([(40, 95), (90, 95)], fill = "WHITE", width = 1)  # mouth
+
+    Display_Image(image)
+
+    time.sleep(0.5)
+
+    image = Image.new("RGB", (128, 128), "BLACK")
+    draw = ImageDraw.Draw(image)
+
+    # look right
+    draw.line([(20, 40), (50, 40)], fill = "WHITE", width = 4)  # left eyebrow
+    draw.line([(35, 45), (50, 45)], fill = "WHITE", width = 5)  # left eye
+    draw.line([(38, 48), (48, 48)], fill = "WHITE", width = 2)  # left eye bottom
+
+    draw.line([(75, 40), (105, 40)], fill = "WHITE", width = 4) # right eyebrow
+    draw.line([(90, 45), (105, 45)], fill = "WHITE", width = 5) # right eye
+    draw.line([(93, 48), (103, 48)], fill = "WHITE", width = 2) # right eye bottom
+
+    draw.line([(40, 95), (35, 93)], fill = "WHITE", width = 1)  # mouth left
+    draw.line([(40, 95), (90, 95)], fill = "WHITE", width = 1)  # mouth
+
+    Display_Image(image)
+
+    time.sleep(1)
+
+    image = Image.new("RGB", (128, 128), "BLACK")
+    draw = ImageDraw.Draw(image)
+
+    draw.text((20, 55), "Pi Zero Cam", fill = "WHITE", font = large_font)
+
+    Display_Image(image)
+
+    time.sleep(1)
+
     self.clear_screen()
 
   def set_menu_center_text(self, draw, text, x = 22, y = 48):
