@@ -34,7 +34,7 @@ class Camera:
   
   def start_video_recording(self):
     video_filename =  self.img_base_path + str(time.time()).split(".")[0] + ".h264"
-    self.picam2.start_recording(self.encoder, self.record_path + self.filename + '.h264', quality=Quality.HIGH)
+    self.picam2.start_recording(self.encoder, video_filename, quality=Quality.HIGH)
 
   def stop_video_recording(self):
     self.picam2.stop_recording()

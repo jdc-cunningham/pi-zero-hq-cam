@@ -1,3 +1,5 @@
+import time
+
 class Menu:
   def __init__(self, display, camera, main):
     self.main = main
@@ -12,6 +14,7 @@ class Menu:
     self.files_page = 1 # this shouldn't be here
     self.files_pages = 1
     self.files_y = 0 # footer or files
+    self.recording_video = False
 
   def update_state(self, button_pressed):
     if (self.main.active_menu == "Home"):
@@ -101,7 +104,16 @@ class Menu:
 
     if (self.main.active_menu == "Video"):
       if (button == "SHUTTER"):
-        self.display.draw_text("Recording video...")
-        self.camera.start_video_recording()
+        if (not self.recording_video):
+          self.display.draw_text("Recording video...")
+          self.camera.start_video_recording()
+          self.recording_video = True
+        else:
+          self.camera.stop_video_recording()
+          self.recording_video = False
+          self.display.draw_text("Recording saved")
+          time.sleep(0.3)
+          self.display.start_menu()
+
 
     self.main.processing = False
