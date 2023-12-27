@@ -57,6 +57,14 @@ class Menu:
       if (self.menu_y == -1 or self.menu_y == -2):
         self.display.draw_active_icon("Photo Video Toggle")
 
+        if (button == "CENTER"):
+          self.camera.change_mode("video")
+          self.display.toggle_text("video") # what
+        
+        if (button == "BACK"):
+          self.camera.change_mode("small")
+          self.display.toggle_text("photo")
+
       if (self.menu_x == 1 and self.menu_y == 0):
         self.display.draw_active_icon("Settings")
 

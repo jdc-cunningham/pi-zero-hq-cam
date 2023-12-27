@@ -35,11 +35,11 @@ class Display:
     # setup OLED
     Device_Init(pi_ver)
   
-  def render_menu_base(self, center_text = "Camera on"):
+  def render_menu_base(self, center_text = "Camera on", photo_text = "photo"):
     image = Image.new("RGB", (128, 128), "BLACK")
     draw = ImageDraw.Draw(image)
 
-    draw.text((7, 3), "video", fill = "WHITE", font = small_font)
+    draw.text((7, 3), photo_text, fill = "WHITE", font = small_font)
     draw.text((7, 105), "Auto", fill = "WHITE", font = small_font)
     # manual photography mode
     # draw.text((7, 90), "S: 1/60", fill = "WHITE", font = small_font)
@@ -105,6 +105,14 @@ class Display:
     
     Display_Image(image)
   
+  def toggle_text(self, mode):
+    if (mode == "video"):
+      image = self.render_menu_base("Tap to record", "video")
+    else:
+      image = self.render_menu_base("Toggle Mode", "photo")
+
+    Display_Image(image)
+
   def draw_text(self, text):
     image = Image.new("RGB", (128, 128), "BLACK")
     draw = ImageDraw.Draw(image)

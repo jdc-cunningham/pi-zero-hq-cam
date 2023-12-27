@@ -2,6 +2,7 @@ import os, time
 
 from threading import Thread
 from picamera2 import Picamera2
+from picamera2.encoders import H264Encoder, Quality
 
 class Camera:
   def __init__(self, display, main):
@@ -13,9 +14,11 @@ class Camera:
     self.live_preview_start = 0
     self.live_preview_pause = False
     self.picam2 = Picamera2()
+    self.encoder = H264Encoder()
     self.small_res_config = self.picam2.create_still_configuration(main={"size": (128, 128)}) # should not be a square
     self.zoom_4x_config = self.picam2.create_still_configuration(main={"size": (1014, 760)})
     self.full_res_config = self.picam2.create_still_configuration() # also same as 16x
+    self.video_config = self.picam2.create_video_configuration()
     self.zoom_level = 1 # 1, 4 capped to 4 because 16x would be way too much (OLED refresh rate and vibration of hand)
     self.pan_offset = [0, 0] # depends on zoom level, should be at center crop
     self.crop = [128, 128]
@@ -28,6 +31,13 @@ class Camera:
 
   def stop(self):
     self.picam2.stop()
+  
+  def start_video_recording(self):
+    video_filename =  self.img_base_path + str(time.time()).split(".")[0] + ".h264"
+    self.picam2.start_recording(self.encoder, self.record_path + self.filename + '.h264', quality=Quality.HIGH)
+
+  def stop_video_recording(self):
+    self.picam2.stop_recording()
 
   def change_mode(self, mode):
     if (mode == "full" or mode == "zoom 16x"):
@@ -35,6 +45,8 @@ class Camera:
     elif (mode == "zoom 4x"):
       self.picam2.switch_mode(self.zoom_4x_config)
       self.last_mode = mode
+    elif (mode == "video"):
+      self.picam2.switch_mode(self.video_config)
     else:
       self.picam2.switch_mode(self.small_res_config)
       self.last_mode = mode

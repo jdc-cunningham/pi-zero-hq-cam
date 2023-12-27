@@ -68,6 +68,9 @@ class Main:
           self.camera.zoom_out()
         else:
           self.camera.toggle_live_preview(False)
+          self.live_preview_active = False
+          time.sleep(0.15)
+          self.display.start_menu()
         self.processing = False
       elif (self.live_preview_active and (button == "CENTER" or button == "BACK")):
         self.camera.handle_zoom(button)
