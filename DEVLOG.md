@@ -42,6 +42,22 @@ need overlay/time
 
 - [ ] after taking some photos, can't go back to menu, zoom out is fine
 
+9:08 AM
+
+Back on... I guess I'll do the video mode first since that's easy/will be part of the file view
+
+I may add file deletion but it may be too much
+
+I do have time, but I gotta make videos too
+
+9:12 AM
+
+I wish I had solution for the menu/state manager right now but I don't
+
+I have some idea but yeah it is still nasty
+
+
+
 12/26/2023
 
 9:13 AM
