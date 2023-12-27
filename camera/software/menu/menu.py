@@ -66,10 +66,12 @@ class Menu:
         if (button == "CENTER"):
           self.camera.change_mode("video")
           self.display.toggle_text("video") # what
+          self.main.active_menu = "Video"
         
         if (button == "BACK"):
           self.camera.change_mode("small")
           self.display.toggle_text("photo")
+          self.main.active_menu = "Home"
 
       if (self.menu_x == 1 and self.menu_y == 0):
         self.display.draw_active_icon("Settings")
@@ -96,5 +98,10 @@ class Menu:
         # future is view full size, delete
       else: # thumbnails
         print('navigate footer/pagination')
+
+    if (self.main.active_menu == "Video"):
+      if (button == "SHUTTER"):
+        self.display.draw_text("Recording video...")
+        self.camera.start_video_recording()
 
     self.main.processing = False
