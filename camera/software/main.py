@@ -61,7 +61,10 @@ class Main:
     self.processing = True
 
     if (button == "SHUTTER"):
-      self.camera.handle_shutter()
+      if (self.active_menu == "Video"):
+        self.menu.update_state(button)
+      else:
+        self.camera.handle_shutter()
     else:
       if (self.live_preview_active and button == "BACK"):
         if (self.zoom_active):
