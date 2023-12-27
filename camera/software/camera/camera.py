@@ -151,6 +151,7 @@ class Camera:
       self.zoom_level = 1
       self.change_mode("small")
       self.zoom_active = False
+      self.main.zoom_active = False
 
   def handle_zoom(self, button):
     self.reset_preview_time()

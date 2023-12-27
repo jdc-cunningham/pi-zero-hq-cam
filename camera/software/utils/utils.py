@@ -27,3 +27,16 @@ class Utils:
     capture_path = base_path + "/captured-media/"
     # -1 for gitkeep file
     return len([name for name in os.listdir(capture_path) if os.path.isfile(os.path.join(capture_path, name))]) - 1
+  
+  def get_files(self):
+    base_path = os.getcwd()
+    capture_path = base_path + "/captured-media/"
+    files = os.listdir(capture_path)
+
+    ret_files = []
+
+    for file in files:
+      if (not 'gitkeep' in file):
+        ret_files.append(file)
+
+    return ret_files

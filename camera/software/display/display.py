@@ -1,5 +1,6 @@
 import os
 import time
+import math
 
 #--------------Driver Library-----------------#
 import RPi.GPIO as GPIO
@@ -169,3 +170,63 @@ class Display:
   def render_telemetry_page(self):
     # this is not good, brought in main context into display to pull imu values
     Thread(target=self.render_live_telemetry).start()
+  
+  # this will need a background process to generate thumbnails
+  # since it takes 5+ seconds to do the step below/show files
+
+  # this takes a list of img file paths (up to 4)
+  # if it's a video, need ffmpeg to get a thumbnail (future)
+  # render the OLED scene with these images and pagination footer
+  # yeah this is hard, need offsets
+  # https://stackoverflow.com/a/451580
+  def get_files_scene(self, file_paths, page, pages):
+    image = Image.new("RGB", (128, 128), "BLACK")
+    draw = ImageDraw.Draw(image)
+    base_img_path = base_path + "/captured-media/"
+
+    # this is dumb, my brain is blocked right now, panicking, too much to do
+    # this code has to be reworked anyway this is like a demo
+    page_map = [[], [0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11]] # matches file list
+
+    new_size = (45, 45)
+
+    files = page_map[page]
+    
+    for file in files:
+      cam_image = Image.open(base_img_path + file_paths[file])
+      base_width= 45
+      wpercent = (base_width / float(cam_image.size[0]))
+      hsize = int((float(cam_image.size[1]) * float(wpercent)))
+      cam_image = cam_image.resize((base_width, hsize), resample=Image.LANCZOS)
+
+      # this is dumb
+      if (file == 0):
+        image.paste(cam_image, (15, 7))
+      if (file == 1):
+        image.paste(cam_image, (67, 7))
+      if (file == 2):
+        image.paste(cam_image, (15, 60))
+      if (file == 3):
+        image.paste(cam_image, (67, 60))
+
+    if (page > 1):
+      draw.text((7, 110), "<", fill = "WHITE", font = small_font)
+
+    draw.text((50, 110), str(page) + "/" + str(pages), fill = "WHITE", font = small_font)
+
+    if (pages > 1):
+      draw.text((110, 110), ">", fill = "WHITE", font = small_font)
+
+    return image
+
+  def render_files(self):
+    files = self.utils.get_files()
+    file_count = len(files)
+    self.main.menu.files_pages = 1 if ((file_count / 4) < 1) else math.ceil(file_count / 4)
+
+    if (file_count == 0):
+      self.draw_text("No Files")
+    else:
+      self.main.active_menu = "Files"
+      files_scene = self.get_files_scene(files, self.main.menu.files_page, self.main.menu.files_pages)
+      Display_Image(files_scene)

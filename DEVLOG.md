@@ -56,7 +56,64 @@ I wish I had solution for the menu/state manager right now but I don't
 
 I have some idea but yeah it is still nasty
 
+9:24 AM
 
+This is extra but I would like the chibi animation eyes on the intro screen, gives it more life
+
+I'll save that for last
+
+9:30 AM
+
+Oh man... I forgot about this, last time I did video recording with the pi it was stuck at 720p for some reason
+
+9:33 AM
+
+Oh damn... I will have to use that preview lores thing if I want to see what is being recorded for video
+
+9:35 AM
+
+I will have to put this on pause, stuck/need to research, onto file view
+
+9:37 AM
+
+recording a video would have no preview right now
+
+9:50 AM
+
+Okay files view...
+
+There won't be a header, waste of space, and need footer for pagination
+
+I was thinking about this, at some point there should be a process to generate thumbnails
+
+But... it does 4 images at a time that's not terrible... so it'll just load/scale them down and then display
+
+9:54 AM
+
+Damn lol, with a 4-tile layout the images are 45px square
+
+- get list of files (minus gitkeep)
+- divide by 4 to paginate/round up
+- index of page
+- get 4 images, scale down, paint to oled
+- show footer
+- handle menu
+- can go up/focus on image, view large
+  - zoom/delete is extra
+
+10:08 AM
+
+Had a thought... since the menu is rendered/an image, you can do visual testing on it
+
+The button events have to be mocked out though/not tied to physical hardware
+
+10:22 AM
+
+It's still a bug where after you take a photo you can't exit the live preview
+
+Maybe because of zoom mode
+
+---
 
 12/26/2023
 

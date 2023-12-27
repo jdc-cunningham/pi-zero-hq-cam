@@ -9,6 +9,9 @@ class Menu:
     self.menu_y = 0 # -2, -1, 0, 1 (-2 is towards top)
     self.menu_settings_y = 0 # I'm seeing the pattern now, grouping
     self.active_menu_item = None
+    self.files_page = 1 # this shouldn't be here
+    self.files_pages = 1
+    self.files_y = 0 # footer or files
 
   def update_state(self, button_pressed):
     if (self.main.active_menu == "Home"):
@@ -51,6 +54,9 @@ class Menu:
       if (self.menu_x == 0 and self.menu_y == 0):
         self.display.draw_active_icon("Files")
 
+        if (button == "CENTER"):
+          self.display.render_files()
+
       if (self.menu_x == -1 and self.menu_y == 0):
         self.display.draw_active_icon("Camera Settings")
 
@@ -79,5 +85,16 @@ class Menu:
       if (self.menu_settings_y == 1):
         self.display.draw_active_telemetry()
         self.active_menu_item = "Telemetry"
+
+    if (self.main.active_menu == "Files"):
+      if (button == "BACK"):
+        self.main.active_menu = "Home"
+        self.display.start_menu()
+
+      if (self.files_y == 0): # footer
+        print('navigate files')
+        # future is view full size, delete
+      else: # thumbnails
+        print('navigate footer/pagination')
 
     self.main.processing = False
