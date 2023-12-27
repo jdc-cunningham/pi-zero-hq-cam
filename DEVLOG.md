@@ -40,6 +40,8 @@ shutter operates the same (preview) but clicking again starts a video
 
 need overlay/time
 
+- [ ] after taking some photos, can't go back to menu, zoom out is fine
+
 12/26/2023
 
 9:13 AM
