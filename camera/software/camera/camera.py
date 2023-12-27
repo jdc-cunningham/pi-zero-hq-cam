@@ -54,7 +54,6 @@ class Camera:
       branch_hit = False
 
       if (not self.live_preview_pause):
-        print('oled paint')
         branch_hit = True
         pil_img = self.picam2.capture_image()
         pil_img = self.check_mod(pil_img) # bad name

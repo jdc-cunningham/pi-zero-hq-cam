@@ -32,6 +32,14 @@ just point it at the sky
 
 maybe assistive focusing via phone
 
+12/27/2023
+
+for video, switch the top-left out with photo, click that, toggle means in video mode
+
+shutter operates the same (preview) but clicking again starts a video
+
+need overlay/time
+
 12/26/2023
 
 9:13 AM
