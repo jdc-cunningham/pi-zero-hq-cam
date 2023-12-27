@@ -78,7 +78,7 @@ class Camera:
         self.zoom_level = 1
         self.pan_offset = [0, 0]
         self.display.clear_screen()
-        self.change_mode("full")
+        self.change_mode("small")
         self.display.start_menu()
 
       if (not branch_hit):
