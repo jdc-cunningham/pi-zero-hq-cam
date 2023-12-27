@@ -36,7 +36,7 @@ class Utils:
     ret_files = []
 
     for file in files:
-      if (not 'gitkeep' in file):
+      if (not 'gitkeep' in file and not 'h264' in file):
         ret_files.append(file)
 
     return ret_files

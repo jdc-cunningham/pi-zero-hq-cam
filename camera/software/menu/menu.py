@@ -113,6 +113,7 @@ class Menu:
           self.recording_video = False
           self.display.draw_text("Recording saved")
           time.sleep(0.3)
+          self.main.active_menu = "Home"
           self.display.start_menu()
 
 
