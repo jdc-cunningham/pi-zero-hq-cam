@@ -8,6 +8,16 @@ A pi zero (1/2) camera body using the hq camera
 
 <img src="./current-menu.JPG"/>
 
+### Who is this camera for?
+
+This camera is not about quality. You obviously can't compare this to a real camera eg. a Sony Alpha. This camera is about writing your own software/a stepping stone for other camera designs.
+
+#### Example photo
+
+<img src="./sample-photo-cropped.JPG"/>
+
+Next time I get to go to the park on a good day I'll update this photo
+
 ### Features
 
 - sqlite software battery indicator (CRON, uptime based no ADC) -- NOT IMPLEMENTED
