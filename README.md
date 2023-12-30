@@ -8,6 +8,8 @@ A pi zero (1/2) camera body using the hq camera
 
 <img src="./current-menu.JPG"/>
 
+<img src="./demo.gif"/>
+
 ### Who is this camera for?
 
 This camera is not about quality. You obviously can't compare this to a real camera eg. a Sony Alpha. This camera is about writing your own software/a stepping stone for other camera designs.
@@ -20,11 +22,19 @@ Next time I get to go to the park on a good day I'll update this photo
 
 ### Features
 
-- sqlite software battery indicator (CRON, uptime based no ADC) -- NOT IMPLEMENTED
-- 1.5" OLED display for camera pass through/focus assist via digital crop zoom
-- 10-axis IMU for horizon leveling (OVERLAY NOT IMPLEMENTED)
-- bluetooth file transfer via mobile app (NOT IMPLEMENTED)
-- 7 button interface (d-pad, back, shutter)
+#### Implemented
+
+- live preview with zoom-crop panning, take photo auto settings
+- video recording (720p) auto settings
+- IMU readout @ 60hz via settings/telemetry page
+- basic menu navigation
+- demo of file view
+
+#### Not Implemented (yet)
+- sqlite software battery indicator (CRON, uptime based no ADC)
+- horizon leveling
+- bluetooth file transfer via mobile app
+- full multi-file view/single file management
 
 ### Estimated cost
 
