@@ -192,6 +192,7 @@ class Display:
     draw.text((5, 0), "Settings", fill = "BLACK", font = large_font)
     draw.text((5, 26), "Telemetry", fill = "WHITE", font = large_font)
     draw.text((5, 52), "Battery Profiler", fill = "WHITE", font = large_font)
+    draw.text((5, 78), "Timelapse", fill = "WHITE", font = large_font)
 
     return image
   
@@ -205,6 +206,15 @@ class Display:
     draw = ImageDraw.Draw(image)
 
     draw.text((0, 48), "Profiling battery", fill = "WHITE", font = large_font)
+    draw.text((0, 72), "Press back to cancel", fill = "WHITE", font = small_font)
+
+    Display_Image(image)
+
+  def render_timelapse(self):
+    image = Image.new("RGB", (128, 128), "BLACK")
+    draw = ImageDraw.Draw(image)
+
+    draw.text((0, 48), "1 min timelapse", fill = "WHITE", font = large_font)
     draw.text((0, 72), "Press back to cancel", fill = "WHITE", font = small_font)
 
     Display_Image(image)
@@ -232,6 +242,14 @@ class Display:
     draw = ImageDraw.Draw(image)
 
     draw.line([(0, 52), (0, 68)], fill = "MAGENTA", width = 2)
+
+    Display_Image(image)
+
+  def draw_active_timelapse(self):
+    image = self.get_settings_img()
+    draw = ImageDraw.Draw(image)
+
+    draw.line([(0, 78), (0, 94)], fill = "MAGENTA", width = 2)
 
     Display_Image(image)
 

@@ -32,7 +32,7 @@ class Menu:
         self.menu_y += 1
 
     if (self.main.active_menu == "Settings"):
-      if (button_pressed == "DOWN" and self.menu_settings_y < 2):
+      if (button_pressed == "DOWN" and self.menu_settings_y < 3):
         self.menu_settings_y += 1
       
       if (button_pressed == "UP" and self.menu_settings_y > -1):
@@ -58,6 +58,12 @@ class Menu:
       if (button_pressed == "CENTER" and self.active_menu_item == "Battery Profiler"):
         self.display.render_battery_profiler()
         self.main.battery.start_profiler()
+        self.main.processing = False
+        return
+      
+      if (button_pressed == "CENTER" and self.active_menu_item == "Timelapse"):
+        self.display.render_timelapse()
+        self.main.camera.start_timelapse()
         self.main.processing = False
         return
 
@@ -107,6 +113,11 @@ class Menu:
         self.display.draw_active_battery_profiler()
         self.active_menu_item = "Battery Profiler"
 
+      if (self.menu_settings_y == 3):
+        self.display.render_settings()
+        self.display.draw_active_timelapse()
+        self.active_menu_item = "Timelapse"
+
     if (self.main.active_menu == "Files"):
       if (button == "BACK"):
         self.main.active_menu = "Home"
@@ -135,6 +146,12 @@ class Menu:
     if (self.main.active_menu == "Battery Profiler"):
       if (button == "BACK"):
         self.main.battery.stop_profiler()
+        self.main.active_menu = "Home"
+        self.start_menu()
+
+    if (self.main.active_menu == "Timelapse"):
+      if (button == "BACK"):
+        self.main.camera.stop_timelapse()
         self.main.active_menu = "Home"
         self.start_menu()
 
