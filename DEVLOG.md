@@ -1,3 +1,8 @@
+- add timelapse feature (too easy not to do)
+  - can timelapse the water line of lake
+- add battery manager
+- charge before going
+
 12/31/2023
 
 6:48 PM
