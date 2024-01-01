@@ -38,7 +38,9 @@ What's bad about the current menu system?
 
 ugh... my mind is all over the place
 
+10:53 AM
 
+Alright now to try this battery profiler code out
 
 ---
 
