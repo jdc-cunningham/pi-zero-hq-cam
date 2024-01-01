@@ -6,9 +6,9 @@ import time
 from threading import Thread
 
 class Buttons():
-  def __init__(self, callback = None):
+  def __init__(self, main):
     self.exit = False
-    self.callback = callback
+    self.callback = main.button_pressed
 
     # already set as BCM by OLED
 

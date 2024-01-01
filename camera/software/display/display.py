@@ -26,15 +26,15 @@ small_font = ImageFont.truetype(base_path + "/display/alt-font.ttc", 13)
 large_font = ImageFont.truetype(base_path + "/display/alt-font.ttc", 16)
 
 class Display:
-  def __init__(self, pi_ver, utils, main):
+  def __init__(self, main):
     self.main = main
     self.active_img = None
     self.active_icon = None
-    self.utils = utils
+    self.utils = main.utils
     self.file_count = self.utils.get_file_count() # maybe shouldn't be here
 
     # setup OLED
-    Device_Init(pi_ver)
+    Device_Init(main.pi_ver)
   
   def render_menu_base(self, center_text = "Camera on", photo_text = "photo"):
     image = Image.new("RGB", (128, 128), "BLACK")
@@ -190,11 +190,21 @@ class Display:
     draw.line([(0, 0), (128, 0)], fill = "WHITE", width = 40)
     draw.text((5, 0), "Settings", fill = "BLACK", font = large_font)
     draw.text((5, 26), "Telemetry", fill = "WHITE", font = large_font)
+    draw.text((5, 52), "Battery Profiler", fill = "WHITE", font = large_font)
 
     return image
   
   def render_settings(self):
     image = self.get_settings_img()
+
+    Display_Image(image)
+
+  def render_battery_profiler(self):
+    image = Image.new("RGB", (128, 128), "BLACK")
+    draw = ImageDraw.Draw(image)
+
+    draw.text((22, 48), "Profiling battery", fill = "BLACK", font = large_font)
+    draw.text((22, 72), "Press back to cancel", fill = "WHITE", font = small_font)
 
     Display_Image(image)
 

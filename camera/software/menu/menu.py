@@ -1,10 +1,10 @@
 import time
 
 class Menu:
-  def __init__(self, display, camera, main):
+  def __init__(self, main):
     self.main = main
-    self.display = display
-    self.camera = camera
+    self.display = main.display
+    self.camera = main.camera
     self.menu_mode = True # or False for camera
     self.active_menu_item = None
     self.menu_x = 0 # -1, 0, 1
@@ -40,6 +40,10 @@ class Menu:
       if (button_pressed == "BACK"):
         if (self.active_menu_item == "Telemetry"):
           self.active_menu_item = None
+
+        if (self.active_menu_item == "Battery Profiler"):
+          self.active_menu_item = None
+          self.battery.stop_profiler()
 
         self.menu_settings_y = 0
         self.display.start_menu()
@@ -90,6 +94,11 @@ class Menu:
       if (self.menu_settings_y == 1):
         self.display.draw_active_telemetry()
         self.active_menu_item = "Telemetry"
+
+      if (self.menu_settings_y == 2):
+        self.display.render_battery_profiler()
+        self.active_menu_item = "Battery Profiler"
+        self.battery.start_profiler()
 
     if (self.main.active_menu == "Files"):
       if (button == "BACK"):

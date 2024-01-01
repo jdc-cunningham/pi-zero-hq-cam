@@ -5,6 +5,37 @@
 - add battery manager
 - charge before going
 
+01/01/2024
+
+10:02 AM
+
+New Year New Me? Maybe
+
+Slept in a bit, got ready... man my body is in pain... took an Ibuprofen
+
+"Within my mind I'm everyone..." not sure my this SP song came to mind but yeah
+
+So it's cloudy right now, should clear up in 3 hours, I'll write the battery profiler/timelapse feature by then
+
+The timelapse won't be permanent code since I have to come up with a pattern for the muli-level menus and state management
+
+10:12 AM
+
+Ugh... my mind is already swimming
+
+I think I decided to give myself 1 day out of the 3 days off to have fun... the rest of my time is trying to upskill/get a new job/freelance
+
+10:26 AM
+
+What's bad about the current menu system?
+
+- lot of if else branches
+- disconected between the two functions/no logical flow of state
+- no order/structure, can't go past 1 depth since it's harder
+- random state everywhere in menu properties
+
+---
+
 12/31/2023
 
 6:48 PM

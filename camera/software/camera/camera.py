@@ -5,9 +5,9 @@ from picamera2 import Picamera2
 from picamera2.encoders import H264Encoder, Quality
 
 class Camera:
-  def __init__(self, display, main):
-    self.display = display
+  def __init__(self, main):
     self.main = main
+    self.display = main.display
     self.manual_mode = False
     self.img_base_path = os.getcwd() + "/captured-media/"
     self.live_preview_active = False

@@ -12,7 +12,7 @@
 import time
 
 from buttons.buttons import Buttons
-# from battery.battery import BattDb
+from battery.battery import Battery
 from camera.camera import Camera
 from menu.menu import Menu
 from display.display import Display
@@ -31,6 +31,7 @@ class Main:
     self.zoom_active = False
     self.processing = False # debouncer for button action
     self.active_menu = "Home"
+    self.battery = None
 
     self.startup()
 
@@ -40,13 +41,14 @@ class Main:
       time.sleep(60)
 
   def startup(self):
+    self.battery = Battery(self)
     self.utils = Utils()
-    self.display = Display(self.utils.pi_ver, self.utils, self)
-    self.camera = Camera(self.display, self)
-    self.menu = Menu(self.display, self.camera, self)
+    self.display = Display(self)
+    self.camera = Camera(self)
+    self.menu = Menu(self)
     self.display.show_boot_scene()
     self.display.start_menu()
-    self.controls = Buttons(self.button_pressed)
+    self.controls = Buttons(self)
     self.imu = Imu()
 
     self.imu.start()

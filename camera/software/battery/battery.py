@@ -1,14 +1,19 @@
 # https://github.com/jdc-cunningham/ml-hat-cam/blob/main/code/batt_db/batt_db.py
 
+import os
 import sqlite3
 import traceback
+import time
 
-base_path = "/home/pi/custom-pi-zero-camera-body/code" # due to CRON
+from threading import Thread
 
-class BattDb:
-  def __init__(self):
+base_path = os.getcwd()
+
+class Battery:
+  def __init__(self, main):
     self.con = sqlite3.connect(base_path + "/battery.db", check_same_thread=False)
     self.init_batt_table()
+    self.main = main
 
   def get_con(self):
     return self.con
@@ -78,3 +83,18 @@ class BattDb:
     left_over = round(100 - used_per, 2)
 
     return str(left_over) + "%"
+  
+  def profile_battery(self):
+    while (self.run_profiler):
+      # turn camera on/off every minute
+      self.main.camera.toggle_live_preview(True)
+      time.sleep(60)
+      self.main.camera.toggle_live_preview(False)
+
+  def start_profiler(self):
+    self.reset_uptime()
+    self.run_profiler = True
+    Thread(target=self.profile_battery).start()
+
+  def stop_profiler(self):
+    self.run_profiler = False
