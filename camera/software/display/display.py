@@ -46,7 +46,7 @@ class Display:
     # draw.text((7, 90), "S: 1/60", fill = "WHITE", font = small_font)
     # draw.text((7, 105), "E: 100", fill = "WHITE", font = small_font)
     draw.text((22, 48), center_text, fill = "WHITE", font = large_font)
-    draw.text((66, 3), "3 hrs", fill = "WHITE", font = small_font)
+    draw.text((66, 3), self.main.battery.get_remaining_time(), fill = "WHITE", font = small_font)
     draw.text((60, 103), str(self.utils.get_file_count()), fill = "WHITE", font = small_font)
 
     battery_icon = Image.open(battery_sprite_path)
