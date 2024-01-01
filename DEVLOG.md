@@ -1,5 +1,7 @@
 - add timelapse feature (too easy not to do)
   - can timelapse the water line of lake
+  - add t prefix to file name
+  - need submenu to set interval time (minutes)
 - add battery manager
 - charge before going
 
