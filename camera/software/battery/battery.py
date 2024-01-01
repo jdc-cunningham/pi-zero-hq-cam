@@ -1,16 +1,16 @@
 # https://github.com/jdc-cunningham/ml-hat-cam/blob/main/code/batt_db/batt_db.py
 
-import os
 import sqlite3
 import traceback
 import time
 
 from threading import Thread
 
-base_path = os.getcwd()
+# this is hardcoded since depending on what calls this file, the os.getcwd() output changes
+base_path = "/home/pi/pi-zero-hq-cam/camera/software/"
 
 class Battery:
-  def __init__(self, main):
+  def __init__(self, main = None):
     self.con = sqlite3.connect(base_path + "/battery/battery.db", check_same_thread=False)
     self.init_batt_table()
     self.main = main
@@ -126,10 +126,9 @@ class Battery:
   # should also make it look at some changing scene to help randomize what is displayed
   def profile_battery(self):
     while (self.run_profiler):
-      # turn camera on/off every minute
+      # turn camera on every minute, it will turn the preview off after 1 minute
       self.main.camera.handle_shutter()
-      time.sleep(60)
-      self.main.button_pressed("BACK")
+      time.sleep(65)
 
   def start_profiler(self):
     self.reset_uptime()
