@@ -116,7 +116,7 @@ class Battery:
     if (left_over_mins < 60):
       left_over_disp = str(left_over_mins) + " mins"
     else:
-      left_over_disp = str((left_over_mins / 60)) + " hrs"
+      left_over_disp = str(round((left_over_mins / 60), 1)) + " hrs"
 
     return left_over_disp
 

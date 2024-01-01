@@ -134,10 +134,11 @@ class Display:
     draw = ImageDraw.Draw(image)
 
     draw.text((20, 55), "Pi Zero Cam", fill = "WHITE", font = large_font)
+    draw.text((20, 70), "v 1.1.0", fill = "WHITE", font = small_font)
 
     Display_Image(image)
 
-    time.sleep(1)
+    time.sleep(3)
 
     self.clear_screen()
 
