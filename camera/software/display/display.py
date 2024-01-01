@@ -34,7 +34,7 @@ class Display:
     self.file_count = self.utils.get_file_count() # maybe shouldn't be here
 
     # setup OLED
-    Device_Init(main.pi_ver)
+    Device_Init(main.utils.pi_ver)
   
   def render_menu_base(self, center_text = "Camera on", photo_text = "photo"):
     image = Image.new("RGB", (128, 128), "BLACK")
@@ -46,7 +46,7 @@ class Display:
     # draw.text((7, 90), "S: 1/60", fill = "WHITE", font = small_font)
     # draw.text((7, 105), "E: 100", fill = "WHITE", font = small_font)
     draw.text((22, 48), center_text, fill = "WHITE", font = large_font)
-    draw.text((66, 3), self.main.battery.get_remaining_time(), fill = "WHITE", font = small_font)
+    draw.text((58, 3), self.main.battery.get_remaining_time(), fill = "WHITE", font = small_font)
     draw.text((60, 103), str(self.utils.get_file_count()), fill = "WHITE", font = small_font)
 
     battery_icon = Image.open(battery_sprite_path)
@@ -203,8 +203,8 @@ class Display:
     image = Image.new("RGB", (128, 128), "BLACK")
     draw = ImageDraw.Draw(image)
 
-    draw.text((22, 48), "Profiling battery", fill = "BLACK", font = large_font)
-    draw.text((22, 72), "Press back to cancel", fill = "WHITE", font = small_font)
+    draw.text((0, 48), "Profiling battery", fill = "WHITE", font = large_font)
+    draw.text((0, 72), "Press back to cancel", fill = "WHITE", font = small_font)
 
     Display_Image(image)
 
@@ -223,6 +223,14 @@ class Display:
     draw = ImageDraw.Draw(image)
 
     draw.line([(0, 26), (0, 42)], fill = "MAGENTA", width = 2)
+
+    Display_Image(image)
+
+  def draw_active_battery_profiler(self):
+    image = self.get_settings_img()
+    draw = ImageDraw.Draw(image)
+
+    draw.line([(0, 52), (0, 68)], fill = "MAGENTA", width = 2)
 
     Display_Image(image)
 

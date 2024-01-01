@@ -32,7 +32,7 @@ class Menu:
         self.menu_y += 1
 
     if (self.main.active_menu == "Settings"):
-      if (button_pressed == "DOWN" and self.menu_settings_y < 1):
+      if (button_pressed == "DOWN" and self.menu_settings_y < 2):
         self.menu_settings_y += 1
       
       if (button_pressed == "UP" and self.menu_settings_y > -1):
@@ -44,7 +44,7 @@ class Menu:
 
         if (self.active_menu_item == "Battery Profiler"):
           self.active_menu_item = None
-          self.battery.stop_profiler()
+          self.main.battery.stop_profiler()
 
         self.menu_settings_y = 0
         self.display.start_menu()
@@ -52,6 +52,12 @@ class Menu:
 
       if (button_pressed == "CENTER" and self.active_menu_item == "Telemetry"):
         self.display.render_telemetry_page()
+        self.main.processing = False
+        return
+    
+      if (button_pressed == "CENTER" and self.active_menu_item == "Battery Profiler"):
+        self.display.render_battery_profiler()
+        self.main.battery.start_profiler()
         self.main.processing = False
         return
 
@@ -97,9 +103,9 @@ class Menu:
         self.active_menu_item = "Telemetry"
 
       if (self.menu_settings_y == 2):
-        self.display.render_battery_profiler()
+        self.display.render_settings()
+        self.display.draw_active_battery_profiler()
         self.active_menu_item = "Battery Profiler"
-        self.battery.start_profiler()
 
     if (self.main.active_menu == "Files"):
       if (button == "BACK"):
@@ -125,6 +131,12 @@ class Menu:
           time.sleep(0.3)
           self.main.active_menu = "Home"
           self.display.start_menu()
+
+    if (self.main.active_menu == "Battery Profiler"):
+      if (button == "BACK"):
+        self.main.battery.stop_profiler()
+        self.main.active_menu = "Home"
+        self.start_menu()
 
     if (self.main.active_menu == "Battery Charged"):
       if (button == "LEFT" and not self.battery_charged):

@@ -11,7 +11,7 @@ base_path = os.getcwd()
 
 class Battery:
   def __init__(self, main):
-    self.con = sqlite3.connect(base_path + "/battery.db", check_same_thread=False)
+    self.con = sqlite3.connect(base_path + "/battery/battery.db", check_same_thread=False)
     self.init_batt_table()
     self.main = main
 
@@ -116,7 +116,7 @@ class Battery:
     if (left_over_mins < 60):
       left_over_disp = str(left_over_mins) + " mins"
     else:
-      left_over_disp = (left_over_mins / 60) + " hrs"
+      left_over_disp = str((left_over_mins / 60)) + " hrs"
 
     return left_over_disp
 
@@ -127,13 +127,14 @@ class Battery:
   def profile_battery(self):
     while (self.run_profiler):
       # turn camera on/off every minute
-      self.main.camera.toggle_live_preview(True)
+      self.main.camera.handle_shutter()
       time.sleep(60)
-      self.main.camera.toggle_live_preview(False)
+      self.main.button_pressed("BACK")
 
   def start_profiler(self):
     self.reset_uptime()
     self.run_profiler = True
+    time.sleep(3) # time to show message
     Thread(target=self.profile_battery).start()
 
   def stop_profiler(self):
