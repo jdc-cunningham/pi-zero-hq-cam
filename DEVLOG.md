@@ -34,6 +34,12 @@ What's bad about the current menu system?
 - no order/structure, can't go past 1 depth since it's harder
 - random state everywhere in menu properties
 
+10:35 AM
+
+ugh... my mind is all over the place
+
+
+
 ---
 
 12/31/2023

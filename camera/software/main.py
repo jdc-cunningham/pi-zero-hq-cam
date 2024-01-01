@@ -32,6 +32,7 @@ class Main:
     self.processing = False # debouncer for button action
     self.active_menu = "Home"
     self.battery = None
+    self.battery_needs_charge = False
 
     self.startup()
 
@@ -39,6 +40,12 @@ class Main:
     while (self.on):
       print('on') # replace with battery check
       time.sleep(60)
+
+  # maybe shouldn't be here
+  def check_battery(self):
+    if (self.battery.get_remaining_capacity() <= 20):
+      self.active_menu = "Battery Charged" # question lol
+      self.display.render_battery_charged()
 
   def startup(self):
     self.battery = Battery(self)
@@ -54,6 +61,7 @@ class Main:
     self.imu.start()
     self.camera.start()
     self.controls.start()
+    self.check_battery()
 
   def button_pressed(self, button):
     # debouncer

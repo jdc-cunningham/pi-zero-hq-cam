@@ -15,6 +15,7 @@ class Menu:
     self.files_pages = 1
     self.files_y = 0 # footer or files
     self.recording_video = False
+    self.battery_charged = False # yes, no question
 
   def update_state(self, button_pressed):
     if (self.main.active_menu == "Home"):
@@ -125,5 +126,16 @@ class Menu:
           self.main.active_menu = "Home"
           self.display.start_menu()
 
+    if (self.main.active_menu == "Battery Charged"):
+      if (button == "LEFT" and not self.battery_charged):
+        self.battery_charged = True
+        self.render_battery_charged(True)
+
+      if (button == "CENTER"):
+        if (self.battery_charged):
+          self.main.battery.reset_uptime()
+
+        self.main.active_menu = "Home"
+        self.start_menu()
 
     self.main.processing = False

@@ -73,6 +73,17 @@ class Battery:
     cur.execute("UPDATE battery_status SET uptime = ? WHERE rowid = 1", [0])
     con.commit()
 
+  def get_remaining_capacity(self):
+    uptime = self.get_uptime_info()
+
+    if (uptime is None):
+      return "100%"
+    
+    used_per = (uptime[0] / uptime[1]) * 100
+    left_over = round(100 - used_per, 2)
+
+    return left_over
+
   def get_batt_status(self):
     uptime = self.get_uptime_info()
 
@@ -84,6 +95,35 @@ class Battery:
 
     return str(left_over) + "%"
   
+  # determined from profiler/cron ticker
+  def set_max_uptime(self):
+    con = self.get_con()
+    cur = self.get_cursor()
+    uptime = self.get_uptime_info()
+    max_uptime = uptime[0]
+    cur.execute("UPDATE battery_status SET max_uptime = ? WHERE rowid = 1", [max_uptime])
+    con.commit()
+  
+  def get_remaining_time(self):
+    uptime = self.get_uptime_info()
+
+    if (uptime is None):
+      return "100%"
+    
+    left_over_mins = (uptime[1] - uptime[0])
+    left_over_disp = ""
+
+    if (left_over_mins < 60):
+      left_over_disp = str(left_over_mins) + " mins"
+    else:
+      left_over_disp = (left_over_mins / 60) + " hrs"
+
+    return left_over_disp
+
+  # this runs until the camera dies
+  # depending on the size of your battery it could take several hours
+  # you could reduce the down time for the OLED but I was concerned about burn in
+  # should also make it look at some changing scene to help randomize what is displayed
   def profile_battery(self):
     while (self.run_profiler):
       # turn camera on/off every minute
