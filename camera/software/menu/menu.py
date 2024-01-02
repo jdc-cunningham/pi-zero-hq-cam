@@ -158,7 +158,7 @@ class Menu:
     if (self.main.active_menu == "Battery Charged"):
       if (button == "LEFT" and not self.battery_charged):
         self.battery_charged = True
-        self.render_battery_charged(True)
+        self.display.render_battery_charged(True)
 
       if (button == "CENTER"):
         if (self.battery_charged):

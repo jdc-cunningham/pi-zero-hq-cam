@@ -42,7 +42,9 @@ Oh yeah CRON wasn't working right so battery wasn't decrementing
 
 Yeah timelapse stop isn't working, back doesn't stop it interesting
 
+10:05 AM
 
+I need to see the question, so I'll manually trigger it
 
 ---
 

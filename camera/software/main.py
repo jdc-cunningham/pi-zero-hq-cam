@@ -46,6 +46,8 @@ class Main:
     if (self.battery.get_remaining_capacity() <= 20):
       self.active_menu = "Battery Charged" # question lol
       self.display.render_battery_charged()
+    else:
+      self.display.start_menu()
 
   def startup(self):
     self.battery = Battery(self)
@@ -54,7 +56,6 @@ class Main:
     self.camera = Camera(self)
     self.menu = Menu(self)
     self.display.show_boot_scene()
-    self.display.start_menu()
     self.controls = Buttons(self)
     self.imu = Imu()
 

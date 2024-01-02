@@ -36,7 +36,9 @@ class Battery:
       try:
         # ids could be useful if switching batteries
         cur.execute("CREATE TABLE battery_status(uptime, max_uptime)") # minute units
-        cur.execute("INSERT INTO battery_status VALUES(?, ?)", [0, 180]) # 3 hrs soft cut off
+        # 7.5 hrs soft cut off based on 18650 size of 3400mAh
+        # need to run battery profiler to get better value
+        cur.execute("INSERT INTO battery_status VALUES(?, ?)", [0, 450])
         con.commit()
       except Exception:
         print("create table error")
@@ -96,11 +98,11 @@ class Battery:
     return str(left_over) + "%"
   
   # determined from profiler/cron ticker
-  def set_max_uptime(self):
+  def set_max_uptime(self, max_uptime_val = None):
     con = self.get_con()
     cur = self.get_cursor()
     uptime = self.get_uptime_info()
-    max_uptime = uptime[0]
+    max_uptime = max_uptime_val if max_uptime_val else uptime[0]
     cur.execute("UPDATE battery_status SET max_uptime = ? WHERE rowid = 1", [max_uptime])
     con.commit()
   

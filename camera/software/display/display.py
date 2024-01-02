@@ -223,7 +223,7 @@ class Display:
     image = Image.new("RGB", (128, 128), "BLACK")
     draw = ImageDraw.Draw(image)
 
-    draw.text((22, 48), "Battery Charged?", fill = "BLACK", font = large_font)
+    draw.text((22, 48), "Battery Charged?", fill = "WHITE", font = large_font)
     draw.text((22, 72), "Yes", fill = "CYAN" if is_charged else "WHITE", font = small_font)
     draw.text((60, 72), "No", fill = "WHITE" if is_charged else "CYAN", font = small_font) # default option
 
