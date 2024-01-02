@@ -4,7 +4,7 @@
 
 A pi zero (1/2) camera body using the hq camera
 
-<img src="./cam-lenses.JPG"/>
+<img src="./pi-zero-hq-cam-01012024.JPG"/>
 
 <img src="./current-menu.JPG"/>
 
@@ -18,7 +18,7 @@ This camera is not about quality. You obviously can't compare this to a real cam
 
 <img src="./sample-photo-cropped.JPG"/>
 
-Next time I get to go to the park on a good day I'll update this photo
+Next time I get to go to the park on a good day I'll update this photo (with a nice photo)
 
 ### Features
 
