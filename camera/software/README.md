@@ -55,7 +55,9 @@ I am using SFTP to edit files on the pi and then run the code via ssh session
 
 ### Battery profiling
 
-`*/5 * * * * /home/usr/bin/python3 /home/pi/pi-zero-hq-cam/camera/software/cron_battery_ticker.py >> /home/pi/cron-battery-ticker.log 2>&1`
+`*/5 * * * * /usr/bin/python /home/pi/pi-zero-hq-cam/camera/software/cron_battery_ticker.py >> /home/pi/cron-battery-ticker.log 2>&1`
+
+Verify python binary location via `$which python`
 
 There is a Sqlite database `battery.db` that keeps track of the camera's uptime and a CRON job that increments a DB entry every 5 minutes.
 

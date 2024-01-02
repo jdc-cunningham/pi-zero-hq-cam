@@ -25,6 +25,25 @@ I've swapped switches around that died, it's not easy though have to desolder
 
 the battery init is wrong, it keeps saying 3 hrs so I gotta dump that table and see
 
+9:30 AM
+
+Some noted bugs:
+
+- frozen after photo (I think related to zoom in/out)
+- after timelapse menu painting is messed up
+- can't switch back from vid to photo
+- timelapse doesn't stop after backing out
+
+9:45 AM
+
+Oh yeah CRON wasn't working right so battery wasn't decrementing
+
+9:48 AM
+
+Yeah timelapse stop isn't working, back doesn't stop it interesting
+
+
+
 ---
 
 01/01/2024
@@ -81,6 +100,16 @@ I will shoot a brief timelapse of the shoreline, that would be something moving 
 12:36 PM
 
 The battery profiler still needs work, I need to manually trigger that question/make sure it works
+
+6:42 PM
+
+Editing a video, there were bugs... but nothing a power cycle couldn't fix lol (sad)
+
+the timelapse does not stop/keeps going
+
+the ordering of photos (based on epoch timestamp) is off for some reason... it's like it goes backwards in time on next boot
+
+I still have some things to wrap up before merging this code so I'll do it tomorrow morning
 
 ---
 
