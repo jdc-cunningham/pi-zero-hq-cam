@@ -56,6 +56,7 @@ class Menu:
         if (self.active_menu_item == "Battery Profiler"):
           self.display.render_battery_profiler()
           self.main.battery.start_profiler()
+          self.main.battery_profiler_active = True
           self.main.processing = False
           return
       
@@ -147,6 +148,7 @@ class Menu:
       if (button == "BACK"):
         self.main.battery.stop_profiler()
         self.main.active_menu = "Home"
+        self.main.battery_profiler_active = False
         self.display.start_menu()
 
     if (self.main.active_menu == "Timelapse"):

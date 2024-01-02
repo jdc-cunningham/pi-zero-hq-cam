@@ -52,6 +52,10 @@ I did the manual trigger, everything seems to be working, I briefly had the prof
 
 I have to wait/kill some time anyway before I can pickup the mic from the post office
 
+11:00 AM
+
+I forgot that the CRON bumper is also running so need to flag it, check which is running
+
 ---
 
 01/01/2024

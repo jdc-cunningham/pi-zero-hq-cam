@@ -33,6 +33,7 @@ class Main:
     self.active_menu = "Home"
     self.battery = None
     self.battery_needs_charge = False
+    self.battery_profiler_active = False
 
     self.startup()
 
