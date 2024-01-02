@@ -55,11 +55,7 @@ class Battery:
     
     return res
 
-  def update_batt_uptime(self, source):
-    # don't increment twice, also different times
-    if (source == "CRON" and self.main.battery_profiler_active):
-      return
-
+  def update_batt_uptime(self):
     con = self.get_con()
     cur = self.get_cursor()
     prev_uptime = self.get_uptime_info()
