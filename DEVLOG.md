@@ -5,6 +5,28 @@
 - add battery manager
 - charge before going
 
+01/02/2024
+
+9:17 AM
+
+Damn I feel slow today
+
+I want to wrap this up and then return to my reality of trying to get a new job
+
+9:23 AM
+
+At some point I ought to make a tripod base mount thing... particularly when I actually start dialing in the colors/get better photos
+
+That'll be near summer though, something worth photographing
+
+My t-key is dying man damn... I've been using this durgod 65 hades for 3.5 years now
+
+I've swapped switches around that died, it's not easy though have to desolder
+
+the battery init is wrong, it keeps saying 3 hrs so I gotta dump that table and see
+
+---
+
 01/01/2024
 
 10:02 AM
