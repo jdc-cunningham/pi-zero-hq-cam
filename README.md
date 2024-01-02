@@ -22,19 +22,7 @@ Next time I get to go to the park on a good day I'll update this photo (with a n
 
 ### Features
 
-#### Implemented
-
-- live preview with zoom-crop panning, take photo auto settings
-- video recording (720p) auto settings
-- IMU readout @ 60hz via settings/telemetry page
-- basic menu navigation
-- demo of file view
-
-#### Not Implemented (yet)
-- sqlite software battery indicator (CRON, uptime based no ADC)
-- horizon leveling
-- bluetooth file transfer via mobile app
-- full multi-file view/single file management
+[See list](./camera/software/FEATURES.md) and [Changelog](./CHANGELOG.md)
 
 ### Estimated cost
 

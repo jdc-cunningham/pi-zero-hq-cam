@@ -56,6 +56,12 @@ I have to wait/kill some time anyway before I can pickup the mic from the post o
 
 I forgot that the CRON bumper is also running so need to flag it, check which is running
 
+1:03 PM
+
+One thing I thought about, I could mix WDIO with Python regarding visual regression for testing
+
+That way I can write a test that steps through all the menus and verify they work
+
 ---
 
 01/01/2024

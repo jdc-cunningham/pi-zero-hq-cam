@@ -99,7 +99,7 @@ class Camera:
 
   def timelapse(self):
     while (self.timelapse_active):
-      time.sleep(60) # 1 minute, in the future set by menu display, normally longer
+      time.sleep(300) # 5 minutes, in the future set by menu display, normally longer
       self.take_photo()
 
   def start_timelapse(self):
