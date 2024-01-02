@@ -1,6 +1,6 @@
 ### About
 
-#### Ver 1.0.0
+#### Ver 1.1.0
 
 A pi zero (1/2) camera body using the hq camera
 
