@@ -46,6 +46,12 @@ Yeah timelapse stop isn't working, back doesn't stop it interesting
 
 I need to see the question, so I'll manually trigger it
 
+10:25 AM
+
+I did the manual trigger, everything seems to be working, I briefly had the profiler going but the OLED froze, was emitting this high pitch sound so I guess that means the battery is too low to function correctly... I still don't have a battery value so I'll charge to 100% now and then do the battery profiler... still can't consider this code done till I run through it all the way
+
+I have to wait/kill some time anyway before I can pickup the mic from the post office
+
 ---
 
 01/01/2024
