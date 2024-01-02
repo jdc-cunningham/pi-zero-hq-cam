@@ -62,6 +62,10 @@ One thing I thought about, I could mix WDIO with Python regarding visual regress
 
 That way I can write a test that steps through all the menus and verify they work
 
+3:42 PM
+
+OMG it's charged... finally, can start profiling
+
 ---
 
 01/01/2024
