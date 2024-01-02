@@ -66,6 +66,8 @@ That way I can write a test that steps through all the menus and verify they wor
 
 OMG it's charged... finally, can start profiling
 
+I gotta shoot the video so I'll have to wait anyway/charge it up again
+
 ---
 
 01/01/2024
