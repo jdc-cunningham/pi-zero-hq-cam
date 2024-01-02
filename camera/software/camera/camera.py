@@ -23,6 +23,7 @@ class Camera:
     self.pan_offset = [0, 0] # depends on zoom level, should be at center crop
     self.crop = [128, 128]
     self.last_mode = "small"
+    self.timelapse_active = False
 
     self.picam2.configure(self.small_res_config)
 
@@ -95,6 +96,20 @@ class Camera:
     self.change_mode("full")
     self.picam2.capture_file(img_path)
     self.change_mode(self.last_mode)
+
+  def timelapse(self):
+    while (self.timelapse_active):
+      time.sleep(60) # 1 minute, in the future set by menu display, normally longer
+      self.take_photo()
+
+  def start_timelapse(self):
+    self.change_mode("full")
+    self.timelapse_active = True
+    Thread(target=self.timelapse).start()
+
+  def stop_timelapse(self):
+    self.timelapse_active = False
+    self.change_mode("small")
 
   def reset_preview_time(self):
     self.live_preview_start = time.time()

@@ -42,6 +42,24 @@ ugh... my mind is all over the place
 
 Alright now to try this battery profiler code out
 
+12:21 PM
+
+Alright so the basic battery profiling interface and db/cron job has been setup
+
+I need to add a quick timelapse mode then go to the park
+
+It is unfortunately cold... 33F so I'm not sure how well this will go but it will be an adventure
+
+12:32 PM
+
+writing the timelapse code, it'll be short eg. take a photo every 60 seconds since I won't stick around for hours
+
+I will shoot a brief timelapse of the shoreline, that would be something moving and perhaps capture overhead clouds moving
+
+12:36 PM
+
+The battery profiler still needs work, I need to manually trigger that question/make sure it works
+
 ---
 
 12/31/2023
