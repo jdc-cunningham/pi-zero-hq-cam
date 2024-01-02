@@ -16,6 +16,6 @@ def set_max_uptime(val):
   batt.set_max_uptime(val)
 
 # force question to show up on boot
-# set_max_uptime(60)
+# set_max_uptime(10)
 check_capacity()
 dump_db_vals()

@@ -134,7 +134,7 @@ class Battery:
     while (self.run_profiler):
       # turn camera on every minute, it will turn the preview off after 1 minute
       self.main.camera.handle_shutter()
-      time.sleep(65)
+      time.sleep(125)
 
   def start_profiler(self):
     self.reset_uptime()
