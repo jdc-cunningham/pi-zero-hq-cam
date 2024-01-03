@@ -5,9 +5,9 @@ from picamera2 import Picamera2
 from picamera2.encoders import H264Encoder, Quality
 
 class Camera:
-  def __init__(self, display, main):
-    self.display = display
+  def __init__(self, main):
     self.main = main
+    self.display = main.display
     self.manual_mode = False
     self.img_base_path = os.getcwd() + "/captured-media/"
     self.live_preview_active = False
@@ -23,6 +23,7 @@ class Camera:
     self.pan_offset = [0, 0] # depends on zoom level, should be at center crop
     self.crop = [128, 128]
     self.last_mode = "small"
+    self.timelapse_active = False
 
     self.picam2.configure(self.small_res_config)
 
@@ -95,6 +96,20 @@ class Camera:
     self.change_mode("full")
     self.picam2.capture_file(img_path)
     self.change_mode(self.last_mode)
+
+  def timelapse(self):
+    while (self.timelapse_active):
+      time.sleep(300) # 5 minutes, in the future set by menu display, normally longer
+      self.take_photo()
+
+  def start_timelapse(self):
+    self.change_mode("full")
+    self.timelapse_active = True
+    Thread(target=self.timelapse).start()
+
+  def stop_timelapse(self):
+    self.timelapse_active = False
+    self.change_mode("small")
 
   def reset_preview_time(self):
     self.live_preview_start = time.time()

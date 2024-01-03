@@ -2,13 +2,18 @@
 
 import sqlite3
 import traceback
+import time
 
-base_path = "/home/pi/custom-pi-zero-camera-body/code" # due to CRON
+from threading import Thread
 
-class BattDb:
-  def __init__(self):
-    self.con = sqlite3.connect(base_path + "/battery.db", check_same_thread=False)
+# this is hardcoded since depending on what calls this file, the os.getcwd() output changes
+base_path = "/home/pi/pi-zero-hq-cam/camera/software/"
+
+class Battery:
+  def __init__(self, main = None):
+    self.con = sqlite3.connect(base_path + "/battery/battery.db", check_same_thread=False)
     self.init_batt_table()
+    self.main = main
 
   def get_con(self):
     return self.con
@@ -31,7 +36,9 @@ class BattDb:
       try:
         # ids could be useful if switching batteries
         cur.execute("CREATE TABLE battery_status(uptime, max_uptime)") # minute units
-        cur.execute("INSERT INTO battery_status VALUES(?, ?)", [0, 180]) # 3 hrs soft cut off
+        # 7.5 hrs soft cut off based on 18650 size of 3400mAh
+        # need to run battery profiler to get better value
+        cur.execute("INSERT INTO battery_status VALUES(?, ?)", [0, 450])
         con.commit()
       except Exception:
         print("create table error")
@@ -68,6 +75,17 @@ class BattDb:
     cur.execute("UPDATE battery_status SET uptime = ? WHERE rowid = 1", [0])
     con.commit()
 
+  def get_remaining_capacity(self):
+    uptime = self.get_uptime_info()
+
+    if (uptime is None):
+      return "100%"
+    
+    used_per = (uptime[0] / uptime[1]) * 100
+    left_over = round(100 - used_per, 2)
+
+    return left_over
+
   def get_batt_status(self):
     uptime = self.get_uptime_info()
 
@@ -78,3 +96,47 @@ class BattDb:
     left_over = round(100 - used_per, 2)
 
     return str(left_over) + "%"
+  
+  # determined from profiler/cron ticker
+  def set_max_uptime(self, max_uptime_val = None):
+    con = self.get_con()
+    cur = self.get_cursor()
+    uptime = self.get_uptime_info()
+    max_uptime = max_uptime_val if max_uptime_val else uptime[0]
+    cur.execute("UPDATE battery_status SET max_uptime = ? WHERE rowid = 1", [max_uptime])
+    con.commit()
+  
+  def get_remaining_time(self):
+    uptime = self.get_uptime_info()
+
+    if (uptime is None):
+      return "100%"
+    
+    left_over_mins = (uptime[1] - uptime[0])
+    left_over_disp = ""
+
+    if (left_over_mins < 60):
+      left_over_disp = str(left_over_mins) + " mins"
+    else:
+      left_over_disp = str(round((left_over_mins / 60), 1)) + " hrs"
+
+    return left_over_disp
+
+  # this runs until the camera dies
+  # depending on the size of your battery it could take several hours
+  # you could reduce the down time for the OLED but I was concerned about burn in
+  # should also make it look at some changing scene to help randomize what is displayed
+  def profile_battery(self):
+    while (self.run_profiler):
+      # turn camera on every minute, it will turn the preview off after 1 minute
+      self.main.camera.handle_shutter()
+      time.sleep(125)
+
+  def start_profiler(self):
+    self.reset_uptime()
+    self.run_profiler = True
+    time.sleep(3) # time to show message
+    Thread(target=self.profile_battery).start()
+
+  def stop_profiler(self):
+    self.run_profiler = False
