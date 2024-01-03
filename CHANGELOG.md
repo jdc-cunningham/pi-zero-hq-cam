@@ -17,6 +17,8 @@
 
 ### 0.0.1 (12/19/2023)
 
+[video](https://youtu.be/CfI78B7uEhQ?si=M_CHCzKxf_PONVFb&t=160)
+
 - able to show live preview
 - take photo
 - no menu
