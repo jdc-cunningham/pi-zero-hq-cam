@@ -1,9 +1,13 @@
 ### 1.1.0 (01/02/2024)
 
+[video](https://youtu.be/kRxcRApp_eA)
+
 - added battery profiler (software eg. CRON)
 - timelapse (no menu, fixed at 5 mins)
 
 ### 1.0.0 (12/27/2023)
+
+[video](https://www.youtube.com/watch?v=E31nRjYFxPQ)
 
 - first menu design
 - 4x zoom-crop panning
