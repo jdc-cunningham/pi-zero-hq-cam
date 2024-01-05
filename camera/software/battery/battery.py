@@ -55,7 +55,7 @@ class Battery:
     
     return res
 
-  def update_batt_uptime(self):
+  def update_batt_uptime(self, param_val = None):
     con = self.get_con()
     cur = self.get_cursor()
     prev_uptime = self.get_uptime_info()
@@ -66,7 +66,7 @@ class Battery:
     else:
       new_val = res[0] + 5
 
-    cur.execute("UPDATE battery_status SET uptime = ? WHERE rowid = 1", [new_val])
+    cur.execute("UPDATE battery_status SET uptime = ? WHERE rowid = 1", [param_val or new_val])
     con.commit()
 
   def reset_uptime(self):

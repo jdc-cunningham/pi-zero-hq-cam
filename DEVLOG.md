@@ -9,3 +9,13 @@ I ran the 50% on 50% idle profiler and I actually forgot about it for a day or t
 I had to manually set that (max_uptime) which is not great
 
 I had a thought, the idle thing that turns the camera on/off should do the incrementer too, it'll be a little inaccurate but works out
+
+2:36 PM
+
+This is odd... the runtime has a different value than what the test has, which is what the display is using... hmm
+
+2:45 PM
+
+I think there is some collision when it initializes a new one...
+
+I think it is working... but I want to test it/verify it as it counts
