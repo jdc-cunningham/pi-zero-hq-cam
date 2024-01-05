@@ -131,11 +131,16 @@ class Battery:
       # turn camera on every minute, it will turn the preview off after 1 minute
       self.main.camera.handle_shutter()
       time.sleep(125)
+      uptime = self.get_uptime_info()
+      prev_max_uptime = uptime[1]
+      new_max_uptime = prev_max_uptime + 2 # minutes
+      self.set_max_uptime(new_max_uptime)
 
   def start_profiler(self):
     self.reset_uptime()
     self.run_profiler = True
     time.sleep(3) # time to show message
+    self.set_max_uptime(0) # reset to count upwards
     Thread(target=self.profile_battery).start()
 
   def stop_profiler(self):
