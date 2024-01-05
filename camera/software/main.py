@@ -39,7 +39,9 @@ class Main:
 
     # keep main running
     while (self.on):
-      self.display.start_menu() # repaint menu particularly for battery
+      # repaint menu particularly for battery
+      if (self.active_menu == "Home"):
+        self.display.start_menu()
       time.sleep(300)
 
   # maybe shouldn't be here
