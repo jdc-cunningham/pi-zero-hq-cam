@@ -39,8 +39,10 @@ class Main:
 
     # keep main running
     while (self.on):
-      print('on') # replace with battery check
-      time.sleep(60)
+      # repaint menu particularly for battery
+      if (self.active_menu == "Home"):
+        self.display.start_menu()
+      time.sleep(300)
 
   # maybe shouldn't be here
   def check_battery(self):
