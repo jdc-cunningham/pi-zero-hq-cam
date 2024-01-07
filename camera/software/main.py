@@ -21,6 +21,7 @@ from imu.imu import Imu # 6050 or GY-91
 
 class Main:
   def __init__(self):
+    self.ver = "1.2.0"
     self.on = True
     self.display = None
     self.controls = None
