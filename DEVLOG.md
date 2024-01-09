@@ -1,6 +1,20 @@
 - mock out hardware
 - do basic run test of pytest + pixelmatch to assert
 
+01/08/2024
+
+6:03 PM
+
+Damn... my sleep pattern is off/sick still and I binge ate so I'm not in a productive state right now, I'm not doing anything groundbreaking it's just work so I think I can do it
+
+I'll quickly get pytest going where I can assert something, see about integrating the pixelmatch
+
+
+
+---
+
+01/07/2024
+
 12:58 AM
 
 Oh man I can't sleep, I will hate myself tomorrow
