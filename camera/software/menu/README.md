@@ -6,6 +6,10 @@ Below you can see the coordinate system
 
 When entering a specific menu subpage/state, the coordinate system is with respect to the active sub menu.
 
+### Menu map
+
+<img src="./menu-map.png"/>
+
 ### Functional
 
 - video recording (no time, no live passthrough)
