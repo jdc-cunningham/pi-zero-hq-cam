@@ -16,7 +16,7 @@ This camera is not about quality. You obviously can't compare this to a real cam
 
 #### Example photo
 
-<img src="./35mm-sample.JPG"/>
+<img src="./full-res-samples/arducam-35mm-flowers.jpg"/>
 
 Next time I get to go to the park on a good day I'll update this photo (with a nice photo)
 
